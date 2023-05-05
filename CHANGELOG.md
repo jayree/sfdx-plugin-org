@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/jayree/sfdx-plugin-org/compare/v1.0.2...v1.0.3) (2023-05-05)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/sf-plugins-core from 2.2.11 to 2.4.2 ([#17](https://github.com/jayree/sfdx-plugin-org/issues/17)) ([5613d34](https://github.com/jayree/sfdx-plugin-org/commit/5613d34ad6655ecb5a585bfdc9f40cb05fb6ad80))
+* **deps:** bump listr2 from 6.3.1 to 6.4.2 ([#16](https://github.com/jayree/sfdx-plugin-org/issues/16)) ([747a810](https://github.com/jayree/sfdx-plugin-org/commit/747a81021edee2b6d385fb75bbfa6429f1d275e5))
+
 ## [1.0.2](https://github.com/jayree/sfdx-plugin-org/compare/v1.0.1...v1.0.2) (2023-04-28)
 
 
