@@ -19,7 +19,7 @@
     "listr2": "^6.4.2",
     "playwright-chromium": "^1.33.0",
     "tabletojson": "^2.0.7",
-    "tslib": "^2.5.0"
+    "tslib": "^2.5.2"
   },
   "devDependencies": {
     "@oclif/plugin-command-snapshot": "^3.3.15",
