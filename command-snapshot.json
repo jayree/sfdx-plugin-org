@@ -3,36 +3,48 @@
     "command": "jayree:flow:get:coverage",
     "plugin": "@jayree/sfdx-plugin-org",
     "flags": ["api-version", "json", "target-org"],
-    "alias": ["jayree:flowtestcoverage"]
+    "alias": ["jayree:flowtestcoverage"],
+    "flagChars": ["o"],
+    "flagAliases": ["apiversion", "targetusername", "u"]
   },
   {
     "command": "jayree:org:configure",
     "plugin": "@jayree/sfdx-plugin-org",
     "flags": ["api-version", "concurrent", "json", "target-org", "tasks"],
-    "alias": []
+    "alias": [],
+    "flagChars": ["o", "t"],
+    "flagAliases": ["apiversion", "targetusername", "u"]
   },
   {
     "command": "jayree:org:configure:country",
     "plugin": "@jayree/sfdx-plugin-org",
     "flags": ["api-version", "json", "silent", "target-org"],
-    "alias": []
+    "alias": [],
+    "flagChars": ["o"],
+    "flagAliases": ["apiversion", "targetusername", "u"]
   },
   {
     "command": "jayree:org:configure:state",
     "plugin": "@jayree/sfdx-plugin-org",
     "flags": ["api-version", "category", "concurrent", "country-code", "json", "language", "target-org"],
-    "alias": []
+    "alias": [],
+    "flagChars": ["o"],
+    "flagAliases": ["apiversion", "countrycode", "targetusername", "u"]
   },
   {
     "command": "jayree:org:get:settings",
     "plugin": "@jayree/sfdx-plugin-org",
     "flags": ["api-version", "file", "json", "target-org", "writetoprojectscratchdeffile"],
-    "alias": ["jayree:org:settings"]
+    "alias": ["jayree:org:settings"],
+    "flagChars": ["f", "o", "w"],
+    "flagAliases": ["apiversion", "targetusername", "u"]
   },
   {
     "command": "jayree:org:stream",
     "plugin": "@jayree/sfdx-plugin-org",
     "flags": ["api-version", "channel", "json", "replay-id", "target-org"],
-    "alias": ["jayree:org:streaming"]
+    "alias": ["jayree:org:streaming"],
+    "flagChars": ["c", "o", "r"],
+    "flagAliases": ["apiversion", "p", "targetusername", "topic", "u"]
   }
 ]
