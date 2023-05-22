@@ -7,9 +7,8 @@
   "bugs": "https://github.com/jayree/sfdx-plugin-org/issues",
   "dependencies": {
     "@jayree/changelog": "^1.1.1",
-    "@oclif/core": "^2.8.2",
-    "@salesforce/kit": "^1.9.2",
     "@salesforce/sf-plugins-core": "^2.4.3",
+    "@salesforce/source-deploy-retrieve": "^8.5.1",
     "@salesforce/ts-types": "^1.7.3",
     "debug": "^4.3.4",
     "enquirer": "^2.3.6",
@@ -94,10 +93,10 @@
         "description": "manifest, source, and org automation toolset",
         "subtopics": {
           "org": {
-            "description": "manage your orgs",
+            "description": "Commands to manage orgs.",
             "subtopics": {
               "configure": {
-                "description": "manage state and country picklist values"
+                "description": "Manage org settings and state and country picklist values."
               }
             }
           }

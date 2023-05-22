@@ -8,20 +8,20 @@ update country integration values in the State/Country Picklists
 
 # countrycodeFlagDescription
 
-Alpha-2 code
+Alpha-2 code.
 
 # categoryFlagDescription
 
-Subdivision category
+Subdivision category.
 
 # languageFlagDescription
 
-Language code
+Language code.
 
 # silentFlagDescription
 
-silent mode
+silent mode.
 
 # concurrentFlagDescription
 
-execute tasks in parallel
+execute tasks in parallel.

@@ -17,13 +17,43 @@ sfdx plugins:install @jayree/sfdx-plugin-org
 ## Commands
 
 <!-- commands -->
+* [`sfdx jayree:flow:get:coverage`](#sfdx-jayreeflowgetcoverage)
 * [`sfdx jayree:org:configure`](#sfdx-jayreeorgconfigure)
 * [`sfdx jayree:org:configure:country`](#sfdx-jayreeorgconfigurecountry)
 * [`sfdx jayree:org:configure:state`](#sfdx-jayreeorgconfigurestate)
+* [`sfdx jayree:org:get:settings`](#sfdx-jayreeorggetsettings)
+* [`sfdx jayree:org:stream`](#sfdx-jayreeorgstream)
+
+### `sfdx jayree:flow:get:coverage`
+
+Check the flow test coverage of an Org.
+
+```
+USAGE
+  $ sfdx jayree:flow:get:coverage -o <value> [--json] [--api-version <value>]
+
+FLAGS
+  -o, --target-org=<value>  (required) Username or alias of the target org.
+  --api-version=<value>     Override the api version used for api requests made by this command
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+ALIASES
+  $ sfdx jayree:flowtestcoverage
+
+EXAMPLES
+  $ sfdx jayree:flowtestcoverage
+  === Flow Test Coverage
+  Coverage: 82%
+  ...
+```
+
+_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.0.4/src/commands/jayree/flow/get/coverage.ts)_
 
 ### `sfdx jayree:org:configure`
 
-make configuration changes that are not covered by the metadata API
+Make configuration changes that are not covered by the metadata API.
 
 ```
 USAGE
@@ -31,18 +61,18 @@ USAGE
 
 FLAGS
   -o, --target-org=<value>  (required) Username or alias of the target org.
-  -t, --tasks=<value>...    list of task titles, if no tasks are specified, all tasks marked as active will be executed
+  -t, --tasks=<value>...    List of task titles, if no tasks are specified, all tasks marked as active will be executed.
   --api-version=<value>     Override the api version used for api requests made by this command
-  --concurrent              execute tasks in parallel
+  --concurrent              Execute tasks in parallel.
 
 GLOBAL FLAGS
   --json  Format output as json.
 
 DESCRIPTION
-  make configuration changes that are not covered by the metadata API
+  Make configuration changes that are not covered by the metadata API.
   See example configuration on how to define tasks
 
-  make configuration changes that are not covered by the metadata API
+  Make configuration changes that are not covered by the metadata API.
   See example configuration on how to define tasks
 
 EXAMPLES
@@ -89,10 +119,10 @@ USAGE
 FLAGS
   -o, --target-org=<value>  (required) Username or alias of the target org.
   --api-version=<value>     Override the api version used for api requests made by this command
-  --category=<value>        Subdivision category
-  --concurrent=<value>      [default: 1] execute tasks in parallel
-  --country-code=<value>    Alpha-2 code
-  --language=<value>        Language code
+  --category=<value>        Subdivision category.
+  --concurrent=<value>      [default: 1] execute tasks in parallel.
+  --country-code=<value>    Alpha-2 code.
+  --language=<value>        Language code.
 
 GLOBAL FLAGS
   --json  Format output as json.
@@ -104,4 +134,62 @@ DESCRIPTION
 ```
 
 _See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.0.4/src/commands/jayree/org/configure/state.ts)_
+
+### `sfdx jayree:org:get:settings`
+
+Write the current settings from an Org to a scratch org def file.
+
+```
+USAGE
+  $ sfdx jayree:org:get:settings -o <value> [--json] [--api-version <value>] [-w] [-f <value>]
+
+FLAGS
+  -f, --file=<value>                  Write to 'file' instead of project-scratch-def.json.
+  -o, --target-org=<value>            (required) Username or alias of the target org.
+  -w, --writetoprojectscratchdeffile  Write output to project-scratch-def.json file.
+  --api-version=<value>               Override the api version used for api requests made by this command
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+ALIASES
+  $ sfdx jayree:org:settings
+
+EXAMPLES
+  $ sfdx jayree:org:settings
+  $ sfdx jayree:org:settings -u me@my.org
+  $ sfdx jayree:org:settings -u MyTestOrg1 -w
+```
+
+_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.0.4/src/commands/jayree/org/get/settings.ts)_
+
+### `sfdx jayree:org:stream`
+
+Listen to streaming api and platform events.
+
+```
+USAGE
+  $ sfdx jayree:org:stream -o <value> -c <value> [--json] [--api-version <value>] [-r <value>]
+
+FLAGS
+  -c, --channel=<value>     (required) The event name.
+  -o, --target-org=<value>  (required) Username or alias of the target org.
+  -r, --replay-id=<value>   Receive all stored events after the event specified by the replayId value and new events.
+                            [default: -1] Receive new events that are broadcast after the command subscribes. [-2]
+                            Receive all event, including past events that are within the retention window and new
+                            events.
+  --api-version=<value>     Override the api version used for api requests made by this command
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+ALIASES
+  $ sfdx jayree:org:streaming
+
+EXAMPLES
+  $ sfdx jayree org stream --channel=/event/eventName__e
+  ...
+```
+
+_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.0.4/src/commands/jayree/org/stream.ts)_
 <!-- commandsstop -->
