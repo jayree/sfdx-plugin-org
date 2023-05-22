@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/jayree/sfdx-plugin-org/compare/v1.0.4...v1.1.0) (2023-05-22)
+
+
+### Features
+
+* add org and flow commands ([3d507fe](https://github.com/jayree/sfdx-plugin-org/commit/3d507fe84303c6591c6a78d58a8ea22df0a28a2b))
+
 ## [1.0.4](https://github.com/jayree/sfdx-plugin-org/compare/v1.0.3...v1.0.4) (2023-05-19)
 
 
