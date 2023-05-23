@@ -7,7 +7,7 @@
   "bugs": "https://github.com/jayree/sfdx-plugin-org/issues",
   "dependencies": {
     "@jayree/changelog": "^1.1.1",
-    "@salesforce/sf-plugins-core": "^2.4.3",
+    "@salesforce/sf-plugins-core": "^3.0.1",
     "@salesforce/source-deploy-retrieve": "^8.5.3",
     "@salesforce/ts-types": "^2.0.2",
     "debug": "^4.3.4",
