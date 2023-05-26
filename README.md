@@ -49,7 +49,7 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.1/src/commands/jayree/flow/get/coverage.ts)_
+_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.2/src/commands/jayree/flow/get/coverage.ts)_
 
 ### `sfdx jayree:org:configure`
 
@@ -82,7 +82,7 @@ EXAMPLES
   $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Settings"
 ```
 
-_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.1/src/commands/jayree/org/configure/index.ts)_
+_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.2/src/commands/jayree/org/configure/index.ts)_
 
 ### `sfdx jayree:org:configure:country`
 
@@ -105,7 +105,7 @@ DESCRIPTION
   update country integration values in the State/Country Picklists
 ```
 
-_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.1/src/commands/jayree/org/configure/country.ts)_
+_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.2/src/commands/jayree/org/configure/country.ts)_
 
 ### `sfdx jayree:org:configure:state`
 
@@ -133,7 +133,7 @@ DESCRIPTION
   import (create/update) states into the State/Country Picklists
 ```
 
-_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.1/src/commands/jayree/org/configure/state.ts)_
+_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.2/src/commands/jayree/org/configure/state.ts)_
 
 ### `sfdx jayree:org:get:settings`
 
@@ -161,7 +161,7 @@ EXAMPLES
   $ sfdx jayree:org:settings -u MyTestOrg1 -w
 ```
 
-_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.1/src/commands/jayree/org/get/settings.ts)_
+_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.2/src/commands/jayree/org/get/settings.ts)_
 
 ### `sfdx jayree:org:stream`
 
@@ -191,5 +191,5 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.1/src/commands/jayree/org/stream.ts)_
+_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.2/src/commands/jayree/org/stream.ts)_
 <!-- commandsstop -->
