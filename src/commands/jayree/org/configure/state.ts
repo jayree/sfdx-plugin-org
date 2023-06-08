@@ -257,7 +257,7 @@ export default class ImportState extends SfCommand<AnyJson> {
         rendererOptions: {
           timer: {
             ...PRESET_TIMER,
-            condition: (duration): boolean => duration > 250,
+            condition: (duration: number): boolean => duration > 250,
           },
           collapseErrors: false,
           collapseSubtasks: false,
