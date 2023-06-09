@@ -8,7 +8,7 @@
   "dependencies": {
     "@jayree/changelog": "^1.1.2",
     "@salesforce/sf-plugins-core": "^3.0.4",
-    "@salesforce/source-deploy-retrieve": "^9.1.0",
+    "@salesforce/source-deploy-retrieve": "^9.2.1",
     "@salesforce/ts-types": "^2.0.2",
     "debug": "^4.3.4",
     "enquirer": "^2.3.6",
