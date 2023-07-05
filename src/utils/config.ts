@@ -92,6 +92,7 @@ export default (path = SfProject.resolveProjectPathSync()): Config => {
       (isWsl && defaults.puppeteerWSL) ||
       (isDocker() && defaults.puppeteerDocker) ||
       defaults.puppeteer,
+    setupTasks: configFromFile?.setupTasks,
   };
 
   resolvedConfigs[path] = config;
