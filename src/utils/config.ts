@@ -88,8 +88,7 @@ export default (path = SfProject.resolveProjectPathSync()): Config => {
     puppeteerDocker: configFromFile?.puppeteerDocker ?? defaults.puppeteerDocker,
     puppeteerWSL: configFromFile?.puppeteerWSL ?? defaults.puppeteerWSL,
     puppeteer:
-      configFromFile?.puppeteer ||
-      (isWsl && defaults.puppeteerWSL) ||
+      (configFromFile?.puppeteer ?? (isWsl && defaults.puppeteerWSL)) ||
       (isDocker() && defaults.puppeteerDocker) ||
       defaults.puppeteer,
   };
