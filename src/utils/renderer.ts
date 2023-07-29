@@ -281,8 +281,7 @@ export class MyDefaultRenderer implements ListrRenderer {
         break;
 
       case 'wrap':
-        parsed = this.wrap
-          .default(message, columns, { hard: true })
+        parsed = this.wrap(message, columns, { hard: true })
           .split(EOL)
           .map((s: string, i: number) => this.indent(s, i));
 
