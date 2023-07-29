@@ -13,11 +13,6 @@ import { SfProject, SfError } from '@salesforce/core';
 import { Task } from './puppeteer/configuretasks.js';
 
 type Config = {
-  ensureUserPermissions: string[];
-  ensureObjectPermissions: string[];
-  moveSourceFolders: string[];
-  applySourceFixes: string[];
-  runHooks: boolean;
   puppeteerDocker: {
     headless: boolean;
     args: string[];
@@ -33,11 +28,6 @@ type Config = {
 };
 
 const CONFIG_DEFAULTS = {
-  ensureUserPermissions: [],
-  ensureObjectPermissions: [],
-  moveSourceFolders: [],
-  applySourceFixes: ['source:retrieve:full', 'source:retrieve:all'],
-  runHooks: false,
   puppeteerDocker: {
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-features=site-per-process'],
@@ -80,17 +70,12 @@ export default (path = SfProject.resolveProjectPathSync()): Config => {
   }
 
   const config = {
-    ensureUserPermissions: configFromFile?.ensureUserPermissions ?? defaults.ensureUserPermissions,
-    ensureObjectPermissions: configFromFile?.ensureObjectPermissions ?? defaults.ensureObjectPermissions,
-    moveSourceFolders: configFromFile?.moveSourceFolders ?? defaults.moveSourceFolders,
-    applySourceFixes: configFromFile?.applySourceFixes ?? defaults.applySourceFixes,
-    runHooks: configFromFile?.runHooks ?? defaults.runHooks,
+    ...configFromFile,
     puppeteerDocker: configFromFile?.puppeteerDocker ?? defaults.puppeteerDocker,
     puppeteerWSL: configFromFile?.puppeteerWSL ?? defaults.puppeteerWSL,
     puppeteer:
-      (configFromFile?.puppeteer ?? (isWsl && defaults.puppeteerWSL)) ||
-      (isDocker() && defaults.puppeteerDocker) ||
-      defaults.puppeteer,
+      configFromFile?.puppeteer ??
+      ((isWsl && defaults.puppeteerWSL) || (isDocker() && defaults.puppeteerDocker) || defaults.puppeteer),
   };
 
   resolvedConfigs[path] = config;

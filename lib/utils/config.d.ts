@@ -1,10 +1,5 @@
 import { Task } from './puppeteer/configuretasks.js';
 type Config = {
-    ensureUserPermissions: string[];
-    ensureObjectPermissions: string[];
-    moveSourceFolders: string[];
-    applySourceFixes: string[];
-    runHooks: boolean;
     puppeteerDocker: {
         headless: boolean;
         args: string[];
