@@ -1,3 +1,11 @@
+## [1.1.13](https://github.com/jayree/sfdx-plugin-org/compare/v1.1.12...v1.1.13) (2023-07-30)
+
+
+### Bug Fixes
+
+* fix configure renderer ([6dec671](https://github.com/jayree/sfdx-plugin-org/commit/6dec67161316a7d21033fc223cd7a18b8dba2338))
+* restore config.setupTasks ([4222ba1](https://github.com/jayree/sfdx-plugin-org/commit/4222ba17ed91931cea02e207e3dfc170ec26664a))
+
 ## [1.1.12](https://github.com/jayree/sfdx-plugin-org/compare/v1.1.11...v1.1.12) (2023-07-28)
 
 
