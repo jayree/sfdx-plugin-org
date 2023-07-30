@@ -20,6 +20,7 @@ type TaskEvaluate = Array<{
 export type Task = {
     title?: string;
     isactive?: boolean;
+    isActive?: boolean;
     url?: string;
     iframe?: number;
     evaluate: TaskEvaluate;
@@ -28,6 +29,7 @@ export type Task = {
         evaluate: TaskEvaluate;
     }>;
 };
+export declare function readTasksFromProject(): Promise<Task[]>;
 export declare class PuppeteerConfigureTasks {
     currenTask: Task;
     private tasks;

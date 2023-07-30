@@ -7,52 +7,38 @@
 /* istanbul ignore file */
 import { join } from 'path';
 import fs from 'fs-extra';
-import isDocker from 'is-docker';
-import isWsl from 'is-wsl';
-import { SfProject, SfError } from '@salesforce/core';
+import { SfProject, SfError, Lifecycle } from '@salesforce/core';
 import { Task } from './puppeteer/configuretasks.js';
 
 type Config = {
-  puppeteerDocker: {
+  puppeteerDocker?: {
     headless: boolean;
     args: string[];
   };
-  puppeteerWSL: {
+  puppeteerWSL?: {
     headless: boolean;
     executablePath: string;
   };
-  puppeteer: {
+  puppeteer?: {
     headless: boolean;
   };
   setupTasks?: Task[];
 };
 
-const CONFIG_DEFAULTS = {
-  puppeteerDocker: {
-    headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-features=site-per-process'],
-  },
-  puppeteerWSL: {
-    headless: true,
-    executablePath: '/bin/google-chrome',
-  },
-  puppeteer: {
-    headless: true,
-  },
-};
-
 const resolvedConfigs: { [path: string]: Config } = {};
 
 // eslint-disable-next-line complexity
-export default (path = SfProject.resolveProjectPathSync()): Config => {
+export default async (path = SfProject.resolveProjectPathSync()): Promise<Config> => {
   if (path && resolvedConfigs[path]) {
     return resolvedConfigs[path];
   }
 
-  const defaults = CONFIG_DEFAULTS;
   let configFromFile: Config | undefined;
   try {
     configFromFile = fs.readJsonSync(join(path, '.sfdx-jayree.json')) as Config;
+    await Lifecycle.getInstance().emitWarning(
+      'The ".sfdx-jayree.json" config has been deprecated. Use "sfdx-project.json" instead.'
+    );
   } catch (error) {
     if ((error as SfError).code === 'ENOENT') {
       configFromFile = undefined;
@@ -61,21 +47,8 @@ export default (path = SfProject.resolveProjectPathSync()): Config => {
     }
   }
 
-  if (configFromFile?.puppeteer && isDocker()) {
-    configFromFile.puppeteer = { ...defaults.puppeteerDocker, ...configFromFile.puppeteer };
-  }
-
-  if (configFromFile?.puppeteer && isWsl) {
-    configFromFile.puppeteer = { ...defaults.puppeteerWSL, ...configFromFile.puppeteer };
-  }
-
   const config = {
     ...configFromFile,
-    puppeteerDocker: configFromFile?.puppeteerDocker ?? defaults.puppeteerDocker,
-    puppeteerWSL: configFromFile?.puppeteerWSL ?? defaults.puppeteerWSL,
-    puppeteer:
-      configFromFile?.puppeteer ??
-      ((isWsl && defaults.puppeteerWSL) || (isDocker() && defaults.puppeteerDocker) || defaults.puppeteer),
   };
 
   resolvedConfigs[path] = config;

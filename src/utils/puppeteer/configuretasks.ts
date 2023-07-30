@@ -7,7 +7,8 @@
 import playwright from 'playwright-chromium';
 import chalk from 'chalk';
 import Debug from 'debug';
-import config from '../config.js';
+import { SfProject } from '@salesforce/core';
+import { readLaunchOptionsFromProject } from './utils.js';
 
 const debug = Debug('jayree:org:configure');
 
@@ -23,11 +24,32 @@ type TaskEvaluate = Array<{
 export type Task = {
   title?: string;
   isactive?: boolean;
+  isActive?: boolean;
   url?: string;
   iframe?: number;
   evaluate: TaskEvaluate;
   tasks?: Array<{ title?: string; evaluate: TaskEvaluate }>;
 };
+
+export async function readTasksFromProject(): Promise<Task[]> {
+  const proj = await SfProject.resolve();
+  const projJson = (await proj.resolveProjectConfig()) as {
+    plugins?: {
+      'jayree/sfdx-plugin-org'?: {
+        tasks?: { [name: string]: Task };
+      };
+    };
+  };
+
+  const tasks = [];
+  if (projJson.plugins?.['jayree/sfdx-plugin-org']?.tasks) {
+    for (const [key, value] of Object.entries(projJson.plugins?.['jayree/sfdx-plugin-org']?.tasks)) {
+      tasks.push({ title: key, ...value });
+    }
+  }
+
+  return tasks;
+}
 
 export class PuppeteerConfigureTasks {
   public currenTask!: Task;
@@ -75,7 +97,7 @@ export class PuppeteerConfigureTasks {
                     if (_value !== null) {
                       return (_value[c.property as keyof HTMLElement] as string).trim().includes(c.value);
                     }
-                    return false;
+                    throw new Error(`property ${c.property} not found`);
                   },
                   call.waitFor
                 );
@@ -139,7 +161,7 @@ export class PuppeteerConfigureTasks {
             }, call);
             if (found !== call.type.list.selection) {
               debug(`value ${call.type.list.selection} not found`);
-              return false;
+              throw new Error(`value ${call.type.list.selection} not found`);
             }
           }
 
@@ -150,7 +172,7 @@ export class PuppeteerConfigureTasks {
               }, call.querySelector);
             } else {
               debug('button not found');
-              return false;
+              throw new Error('button not found');
             }
           }
 
@@ -163,7 +185,7 @@ export class PuppeteerConfigureTasks {
               }
             } else {
               debug('button not found');
-              return false;
+              throw new Error('button not found');
             }
           }
         } catch (error) {
@@ -237,7 +259,7 @@ export class PuppeteerConfigureTasks {
                 if (value !== null) {
                   return (value[c.property as keyof HTMLElement] as string)?.trim().includes(c.value);
                 }
-                return false;
+                throw new Error(`property ${c.property} not found`);
               },
               call.waitFor,
               {
@@ -265,7 +287,7 @@ export class PuppeteerConfigureTasks {
 
   public async open(): Promise<void> {
     if (!this.browser) {
-      this.browser = await playwright['chromium'].launch(config().puppeteer);
+      this.browser = await playwright['chromium'].launch(await readLaunchOptionsFromProject());
       this.context = await this.browser.newContext();
 
       const login = await this.context.newPage();

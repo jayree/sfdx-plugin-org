@@ -70,7 +70,7 @@ type Context = {
 // eslint-disable-next-line sf-plugin/command-example
 export default class ImportState extends SfCommand<AnyJson> {
   public static readonly summary = messages.getMessage('commandStateDescription');
-  public static readonly description = messages.getMessage('commandStateDescription');
+  // public static readonly description = messages.getMessage('commandStateDescription');
 
   public static readonly flags = {
     'target-org': requiredOrgFlagWithDeprecations,
@@ -94,6 +94,8 @@ export default class ImportState extends SfCommand<AnyJson> {
 
   public async run(): Promise<AnyJson> {
     const { flags } = await this.parse(ImportState);
+
+    await flags['target-org'].getConnection(flags['api-version']).refreshAuth();
 
     const taskRunner = new PuppeteerStateTasks({
       accessToken: flags['target-org'].getConnection(flags['api-version']).accessToken as string,

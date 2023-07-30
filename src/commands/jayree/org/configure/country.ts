@@ -16,8 +16,8 @@ import { Messages } from '@salesforce/core';
 import { ux } from '@oclif/core';
 import playwright from 'playwright-chromium';
 import { Tabletojson as tabletojson } from 'tabletojson';
-import config from '../../../../utils/config.js';
 import { configSelectors } from '../../../../utils/puppeteer/countrystateconfig.js';
+import { readLaunchOptionsFromProject } from '../../../../utils/puppeteer/utils.js';
 
 // eslint-disable-next-line no-underscore-dangle
 const __filename = fileURLToPath(import.meta.url);
@@ -30,7 +30,7 @@ const messages = Messages.loadMessages('@jayree/sfdx-plugin-org', 'createstateco
 // eslint-disable-next-line sf-plugin/command-example
 export default class UpdateCountry extends SfCommand<void> {
   public static readonly summary = messages.getMessage('commandCountryDescription');
-  public static readonly description = messages.getMessage('commandCountryDescription');
+  // public static readonly description = messages.getMessage('commandCountryDescription');
 
   public static readonly flags = {
     'target-org': requiredOrgFlagWithDeprecations,
@@ -47,7 +47,7 @@ export default class UpdateCountry extends SfCommand<void> {
     const { flags } = await this.parse(UpdateCountry);
     let spinnermessage = '';
 
-    const browser = await playwright['chromium'].launch(config().puppeteer);
+    const browser = await playwright['chromium'].launch(await readLaunchOptionsFromProject());
     const context = await browser.newContext();
 
     const page = await context.newPage();
@@ -79,6 +79,8 @@ export default class UpdateCountry extends SfCommand<void> {
       !flags.silent
         ? this.spinner.start('State and Country/Territory Picklist')
         : process.stdout.write('State and Country/Territory Picklist');
+
+      await flags['target-org'].getConnection(flags['api-version']).refreshAuth();
 
       const conn = flags['target-org'].getConnection(flags['api-version']);
 

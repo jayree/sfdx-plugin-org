@@ -7,8 +7,8 @@
 import playwright from 'playwright-chromium';
 import { Tabletojson as tabletojson } from 'tabletojson';
 import Debug from 'debug';
-import config from '../config.js';
 import { configSelectors, deactivateStates } from './countrystateconfig.js';
+import { readLaunchOptionsFromProject } from './utils.js';
 
 const debug = Debug('jayree:x:y');
 
@@ -438,7 +438,7 @@ export class PuppeteerStateTasks {
 
   public async open(): Promise<void> {
     if (!this.browser) {
-      this.browser = await playwright['chromium'].launch(config().puppeteer);
+      this.browser = await playwright['chromium'].launch(await readLaunchOptionsFromProject());
       this.context = await this.browser.newContext();
       const login = await this.context.newPage();
       await login.goto(`${this.auth.instanceUrl}/secur/frontdoor.jsp?sid=${this.auth.accessToken}`, {

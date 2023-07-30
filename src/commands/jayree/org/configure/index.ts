@@ -19,7 +19,7 @@ import { AnyJson } from '@salesforce/ts-types';
 import { ListrLogger, Listr, PRESET_TIMER } from 'listr2';
 import Debug from 'debug';
 import config from '../../../../utils/config.js';
-import { PuppeteerConfigureTasks, Task } from '../../../../utils/puppeteer/configuretasks.js';
+import { PuppeteerConfigureTasks, Task, readTasksFromProject } from '../../../../utils/puppeteer/configuretasks.js';
 
 // eslint-disable-next-line no-underscore-dangle
 const __filename = fileURLToPath(import.meta.url);
@@ -36,7 +36,7 @@ const debug = Debug('jayree:org:configure');
 
 export default class ConfigureOrg extends SfCommand<AnyJson> {
   public static readonly summary = messages.getMessage('commandDescription');
-  public static readonly description = messages.getMessage('commandDescription');
+  // public static readonly description = messages.getMessage('commandDescription');
 
   public static readonly examples = [
     `$ sfdx jayree:org:configure
@@ -65,7 +65,7 @@ $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Sett
 
     let allTasks: Task[] = [];
     let selectedSetupTasks: Task[] = [];
-    const configSetupTasks = config(configPath).setupTasks;
+    const configSetupTasks = (await config(configPath)).setupTasks ?? (await readTasksFromProject());
     if (configSetupTasks) {
       if (flags.tasks) {
         flags.tasks.forEach((task) => {
@@ -73,10 +73,12 @@ $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Sett
         });
         allTasks = selectedSetupTasks;
       } else {
-        selectedSetupTasks = configSetupTasks.filter((t) => t.isactive === true);
+        selectedSetupTasks = configSetupTasks.filter((t) => t.isactive === true || t.isActive === true);
         allTasks = configSetupTasks;
       }
     }
+
+    await flags['target-org'].getConnection(flags['api-version']).refreshAuth();
 
     const setupTaskRunner = new PuppeteerConfigureTasks(
       {

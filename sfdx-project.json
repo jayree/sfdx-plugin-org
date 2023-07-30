@@ -1,0 +1,45 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "plugins": {
+    "jayree/sfdx-plugin-org": {
+      "setup": {
+        "playwright": {
+          "headless": true,
+          "docker": {
+            "headless": true,
+            "args": ["--no-sandbox", "--disable-setuid-sandbox", "--disable-features=site-per-process"]
+          },
+          "wsl": {
+            "headless": true,
+            "executablePath": "/bin/google-chrome"
+          }
+        }
+      },
+      "tasks": {
+        "activity settings": {
+          "isActive": true,
+          "url": "/setup/activitiesSetupPage.apexp",
+          "evaluate": [
+            {
+              "querySelector": "#thePage\\3a theForm\\3a theBlock\\3a manyWhoPref",
+              "action": "click",
+              "type": { "checkbox": { "checked": true } },
+              "waitFor": ""
+            },
+            {
+              "querySelector": "#thePage\\3a theForm\\3a theBlock\\3a buttons\\3a submit",
+              "action": "click",
+              "type": "button",
+              "waitFor": "Navigation"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
