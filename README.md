@@ -49,7 +49,7 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.13/src/commands/jayree/flow/get/coverage.ts)_
+_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.0/src/commands/jayree/flow/get/coverage.ts)_
 
 ### `sfdx jayree:org:configure`
 
@@ -61,19 +61,13 @@ USAGE
 
 FLAGS
   -o, --target-org=<value>  (required) Username or alias of the target org.
-  -t, --tasks=<value>...    List of task titles, if no tasks are specified, all tasks marked as active will be executed.
+  -t, --tasks=<value>...    Task name(s) listed in sfdx-project.json, if no tasks are specified, all tasks marked as
+                            active will be executed.
   --api-version=<value>     Override the api version used for api requests made by this command
   --concurrent              Execute tasks in parallel.
 
 GLOBAL FLAGS
   --json  Format output as json.
-
-DESCRIPTION
-  Make configuration changes that are not covered by the metadata API.
-  See example configuration on how to define tasks
-
-  Make configuration changes that are not covered by the metadata API.
-  See example configuration on how to define tasks
 
 EXAMPLES
   $ sfdx jayree:org:configure
@@ -82,7 +76,7 @@ EXAMPLES
   $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Settings"
 ```
 
-_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.13/src/commands/jayree/org/configure/index.ts)_
+_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.0/src/commands/jayree/org/configure/index.ts)_
 
 ### `sfdx jayree:org:configure:country`
 
@@ -98,14 +92,9 @@ FLAGS
 
 GLOBAL FLAGS
   --json  Format output as json.
-
-DESCRIPTION
-  update country integration values in the State/Country Picklists
-
-  update country integration values in the State/Country Picklists
 ```
 
-_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.13/src/commands/jayree/org/configure/country.ts)_
+_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.0/src/commands/jayree/org/configure/country.ts)_
 
 ### `sfdx jayree:org:configure:state`
 
@@ -126,14 +115,9 @@ FLAGS
 
 GLOBAL FLAGS
   --json  Format output as json.
-
-DESCRIPTION
-  import (create/update) states into the State/Country Picklists
-
-  import (create/update) states into the State/Country Picklists
 ```
 
-_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.13/src/commands/jayree/org/configure/state.ts)_
+_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.0/src/commands/jayree/org/configure/state.ts)_
 
 ### `sfdx jayree:org:get:settings`
 
@@ -161,7 +145,7 @@ EXAMPLES
   $ sfdx jayree:org:settings -u MyTestOrg1 -w
 ```
 
-_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.13/src/commands/jayree/org/get/settings.ts)_
+_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.0/src/commands/jayree/org/get/settings.ts)_
 
 ### `sfdx jayree:org:stream`
 
@@ -191,5 +175,5 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.1.13/src/commands/jayree/org/stream.ts)_
+_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.0/src/commands/jayree/org/stream.ts)_
 <!-- commandsstop -->

@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jayree/sfdx-plugin-org/compare/v1.1.13...v1.2.0) (2023-07-31)
+
+
+### Features
+
+* the .sfdx-jayree.json config has been deprecated - use sfdx-project.json instead ([edc9799](https://github.com/jayree/sfdx-plugin-org/commit/edc97999fd33a64135aa7e49aa5bed533f75c827))
+
 ## [1.1.13](https://github.com/jayree/sfdx-plugin-org/compare/v1.1.12...v1.1.13) (2023-07-30)
 
 
