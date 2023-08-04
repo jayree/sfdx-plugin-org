@@ -1,3 +1,14 @@
+## [1.2.1](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.0...v1.2.1) (2023-08-04)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/sf-plugins-core from 3.1.12 to 3.1.13 ([#160](https://github.com/jayree/sfdx-plugin-org/issues/160)) ([028c855](https://github.com/jayree/sfdx-plugin-org/commit/028c85520d55ee8f47f8b79c609bdbe47f83e163))
+* **deps:** bump @salesforce/source-deploy-retrieve from 9.5.0 to 9.7.1 ([#156](https://github.com/jayree/sfdx-plugin-org/issues/156)) ([aa05eba](https://github.com/jayree/sfdx-plugin-org/commit/aa05eba711a8fd6744d07141b195f1cfe0106d18))
+* **deps:** bump @salesforce/ts-types from 2.0.5 to 2.0.6 ([#162](https://github.com/jayree/sfdx-plugin-org/issues/162)) ([a0834fa](https://github.com/jayree/sfdx-plugin-org/commit/a0834faec24c744c934479e5c1441452109e5e08))
+* **deps:** bump enquirer from 2.4.0 to 2.4.1 ([#157](https://github.com/jayree/sfdx-plugin-org/issues/157)) ([a5fd48e](https://github.com/jayree/sfdx-plugin-org/commit/a5fd48ee73900982c7db714aec1226349e6e9232))
+* **deps:** bump listr2 from 6.6.0 to 6.6.1 ([#163](https://github.com/jayree/sfdx-plugin-org/issues/163)) ([d406ccc](https://github.com/jayree/sfdx-plugin-org/commit/d406ccc7a71f6099e8e9b245c887992a50b1da5e))
+
 # [1.2.0](https://github.com/jayree/sfdx-plugin-org/compare/v1.1.13...v1.2.0) (2023-07-31)
 
 
