@@ -16,7 +16,7 @@
     "fs-extra": "^11.1.1",
     "is-docker": "^3.0.0",
     "is-wsl": "^2.2.0",
-    "listr2": "^6.6.0",
+    "listr2": "^6.6.1",
     "log-update": "^5.0.1",
     "playwright-chromium": "^1.36.1",
     "tabletojson": "^2.0.7",
