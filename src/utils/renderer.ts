@@ -91,7 +91,7 @@ export class MyDefaultRenderer implements ListrRenderer {
   public constructor(
     private readonly tasks: ListrDefaultRendererTask[],
     private readonly options: MyListrDefaultRendererOptions,
-    private readonly events: ListrEventManager
+    private readonly events: ListrEventManager,
   ) {
     this.options = {
       ...MyDefaultRenderer.rendererOptions,
@@ -311,7 +311,7 @@ export class MyDefaultRenderer implements ListrRenderer {
         (t) =>
           level > 0 &&
           typeof this.taskTime[id][t.id] !== 'undefined' &&
-          this.taskTime[id][t.id].getTimeSpan() > (this.options.hideAfterSeconds as number)
+          this.taskTime[id][t.id].getTimeSpan() > (this.options.hideAfterSeconds as number),
       );
     }
 
@@ -320,7 +320,7 @@ export class MyDefaultRenderer implements ListrRenderer {
         (t) =>
           level > 0 &&
           (typeof this.taskTime[id][t.id] === 'undefined' ||
-            this.taskTime[id][t.id].getTimeSpan() <= (this.options.hideAfterSeconds as number))
+            this.taskTime[id][t.id].getTimeSpan() <= (this.options.hideAfterSeconds as number)),
       );
     }
 
@@ -331,14 +331,18 @@ export class MyDefaultRenderer implements ListrRenderer {
           ...this.format(
             `... completed (${completed.length})`,
             this.logger.icon(ListrDefaultRendererLogLevels.COMPLETED),
-            level
-          )
+            level,
+          ),
         );
       }
       const failed = this.hiddenTasks[id].filter((t) => t.hasFailed());
       if (failed.length > 0) {
         preOutput.push(
-          ...this.format(`... failed (${failed.length})`, this.logger.icon(ListrDefaultRendererLogLevels.FAILED), level)
+          ...this.format(
+            `... failed (${failed.length})`,
+            this.logger.icon(ListrDefaultRendererLogLevels.FAILED),
+            level,
+          ),
         );
       }
       const skipped = this.hiddenTasks[id].filter((t) => t.isSkipped());
@@ -347,8 +351,8 @@ export class MyDefaultRenderer implements ListrRenderer {
           ...this.format(
             `... skipped (${skipped.length})`,
             this.logger.icon(ListrDefaultRendererLogLevels.SKIPPED_WITH_COLLAPSE),
-            level
-          )
+            level,
+          ),
         );
       }
     }
@@ -362,8 +366,8 @@ export class MyDefaultRenderer implements ListrRenderer {
         ...this.format(
           `... waiting (${this.currentTasks[id].length - (this.options.maxSubTasks as number)})`,
           this.logger.icon(ListrDefaultRendererLogLevels.WAITING),
-          level
-        )
+          level,
+        ),
       );
     }
 
@@ -395,7 +399,7 @@ export class MyDefaultRenderer implements ListrRenderer {
           if (task.isPrompt()) {
             if (this.activePrompt && this.activePrompt !== task.id) {
               throw new ListrRendererError(
-                'Only one prompt can be active at the given time, please re-evaluate your task design.'
+                'Only one prompt can be active at the given time, please re-evaluate your task design.',
               );
             } else if (!this.activePrompt) {
               task.on(ListrTaskEventType.PROMPT, (prompt: ListrTaskEventMap[ListrTaskEventType.PROMPT]): void => {
@@ -424,7 +428,7 @@ export class MyDefaultRenderer implements ListrRenderer {
               !(
                 tasks.some(
                   // eslint-disable-next-line @typescript-eslint/no-shadow
-                  (task) => task.hasFailed()
+                  (task) => task.hasFailed(),
                 ) &&
                 !task.hasFailed() &&
                 task.options.exitOnError !== false &&
@@ -440,8 +444,8 @@ export class MyDefaultRenderer implements ListrRenderer {
                       ? task.message.error
                       : (task.title as string),
                     this.style(task),
-                    level
-                  )
+                    level,
+                  ),
                 );
               } else if (task.isSkipped() && rendererOptions?.collapseSkips) {
                 // current task title and skip change the title
@@ -453,11 +457,11 @@ export class MyDefaultRenderer implements ListrRenderer {
                         field: ListrLogLevels.SKIPPED,
                         condition: rendererOptions.suffixSkips,
                         format: () => color.dim as LoggerFormat,
-                      }
+                      },
                     ),
                     this.style(task),
-                    level
-                  )
+                    level,
+                  ),
                 );
               } else if (task.isRetrying()) {
                 output.push(
@@ -468,8 +472,8 @@ export class MyDefaultRenderer implements ListrRenderer {
                       condition: rendererOptions?.suffixRetries,
                     }),
                     this.style(task),
-                    level
-                  )
+                    level,
+                  ),
                 );
               } else if (
                 task.isCompleted() &&
@@ -484,8 +488,8 @@ export class MyDefaultRenderer implements ListrRenderer {
                       args: [task.message.duration],
                     }),
                     this.style(task),
-                    level
-                  )
+                    level,
+                  ),
                 );
               } else if (task.isPaused()) {
                 output.push(
@@ -495,8 +499,8 @@ export class MyDefaultRenderer implements ListrRenderer {
                       args: [(task.message.paused as number) - Date.now()],
                     }),
                     this.style(task),
-                    level
-                  )
+                    level,
+                  ),
                 );
               } else {
                 // normal state
@@ -508,8 +512,8 @@ export class MyDefaultRenderer implements ListrRenderer {
                 ...this.format(
                   task.title as string,
                   this.logger.icon(ListrDefaultRendererLogLevels.COMPLETED_WITH_FAILED_SISTER_TASKS),
-                  level
-                )
+                  level,
+                ),
               );
             }
           }
@@ -544,7 +548,7 @@ export class MyDefaultRenderer implements ListrRenderer {
                   task.id,
                   new ProcessOutputBuffer({
                     limit: typeof rendererTaskOptions?.bottomBar === 'boolean' ? 1 : rendererTaskOptions?.bottomBar,
-                  })
+                  }),
                 );
 
                 // eslint-disable-next-line @typescript-eslint/no-shadow
@@ -660,7 +664,7 @@ export class MyDefaultRenderer implements ListrRenderer {
     task: ListrDefaultRendererTask,
     level: number,
     source: ListrLogLevels.OUTPUT | ListrLogLevels.SKIPPED | ListrLogLevels.FAILED = ListrLogLevels.OUTPUT,
-    data?: string | boolean
+    data?: string | boolean,
   ): string[] {
     if (!data) {
       switch (source) {

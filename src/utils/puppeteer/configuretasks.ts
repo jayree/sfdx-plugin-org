@@ -76,7 +76,7 @@ export class PuppeteerConfigureTasks {
               const value = await page.evaluate((c) => {
                 const element = document.querySelector<HTMLElement>(c.waitFor as string);
                 return Boolean(
-                  element && (element.offsetWidth || element.offsetHeight || element.getClientRects().length)
+                  element && (element.offsetWidth || element.offsetHeight || element.getClientRects().length),
                 );
               }, call);
               if (value === true) {
@@ -99,7 +99,7 @@ export class PuppeteerConfigureTasks {
                     }
                     throw new Error(`property ${c.property} not found`);
                   },
-                  call.waitFor
+                  call.waitFor,
                 );
               }
 
@@ -116,7 +116,7 @@ export class PuppeteerConfigureTasks {
                 checked: document.querySelector<HTMLInputElement>(c.querySelector)?.checked,
                 disabled: document.querySelector<HTMLInputElement>(c.querySelector)?.disabled,
               }),
-              call
+              call,
             );
 
             debug(state);
@@ -264,7 +264,7 @@ export class PuppeteerConfigureTasks {
               call.waitFor,
               {
                 timeout: 300000,
-              }
+              },
             );
           }
         }

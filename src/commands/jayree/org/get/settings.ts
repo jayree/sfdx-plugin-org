@@ -60,11 +60,11 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
     'api-version': orgApiVersionFlagWithDeprecations,
     writetoprojectscratchdeffile: Flags.boolean({
       char: 'w',
-      summary: messages.getMessage('writetoprojectscratchdeffile'),
+      summary: messages.getMessage('flags.writetoprojectscratchdeffile.summary'),
     }),
     file: Flags.string({
       char: 'f',
-      summary: messages.getMessage('fileFlagDescription'),
+      summary: messages.getMessage('flags.file.summary'),
     }),
   };
 
@@ -164,7 +164,7 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
         debug('delete ' + 'activitiesSettings:allowUsersToRelateMultipleContactsToTasksAndEvents');
 
         this.warn(
-          "You can't use the Tooling API or Metadata API to enable or disable Shared Activities.To enable this feature, visit the Activity Settings page in Setup.To disable this feature, contact Salesforce."
+          "You can't use the Tooling API or Metadata API to enable or disable Shared Activities.To enable this feature, visit the Activity Settings page in Setup.To disable this feature, contact Salesforce.",
         );
       }
     }
@@ -273,7 +273,7 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
       await fs.writeFile(deffilepath, JSON.stringify(deffile, null, 2));
     } else {
       this.styledHeader(
-        `received settings from Org: ${flags['target-org'].getUsername()} (${flags['target-org'].getOrgId()})`
+        `received settings from Org: ${flags['target-org'].getUsername()} (${flags['target-org'].getOrgId()})`,
       );
       this.styledJSON(settings);
     }

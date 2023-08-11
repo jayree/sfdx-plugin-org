@@ -40,13 +40,13 @@ export default class Streaming extends SfCommand<void> {
     channel: Flags.string({
       char: 'c',
       required: true,
-      summary: messages.getMessage('topicFlagDescription'),
+      summary: messages.getMessage('flags.channel.summary'),
       deprecateAliases: true,
       aliases: ['topic', 'p'],
     }),
     'replay-id': Flags.integer({
       char: 'r',
-      summary: messages.getMessage('replayIdFlagDescription'),
+      summary: messages.getMessage('flags.replay-id.summary'),
     }),
   };
 

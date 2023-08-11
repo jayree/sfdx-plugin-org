@@ -6,22 +6,22 @@ import (create/update) states into the State/Country Picklists
 
 update country integration values in the State/Country Picklists
 
-# countrycodeFlagDescription
+# flags.country-code.summary
 
 Alpha-2 code.
 
-# categoryFlagDescription
+# flags.category.summary
 
 Subdivision category.
 
-# languageFlagDescription
+# flags.language.summary
 
 Language code.
 
-# silentFlagDescription
+# flags.silent.summary
 
 silent mode.
 
-# concurrentFlagDescription
+# flags.concurrent.summary
 
 execute tasks in parallel.

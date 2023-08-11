@@ -37,7 +37,7 @@ export default async (path = SfProject.resolveProjectPathSync()): Promise<Config
   try {
     configFromFile = fs.readJsonSync(join(path, '.sfdx-jayree.json')) as Config;
     await Lifecycle.getInstance().emitWarning(
-      'The ".sfdx-jayree.json" config has been deprecated. Use "sfdx-project.json" instead.'
+      'The ".sfdx-jayree.json" config has been deprecated. Use "sfdx-project.json" instead.',
     );
   } catch (error) {
     if ((error as SfError).code === 'ENOENT') {
