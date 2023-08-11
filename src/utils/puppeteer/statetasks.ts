@@ -48,7 +48,7 @@ export class PuppeteerStateTasks {
   private static async setHTMLInputElementValue(
     page: playwright.Page,
     element: string,
-    newvalue: string
+    newvalue: string,
   ): Promise<'disabled' | 'changed' | 'unchanged'> {
     element = element.replace(/:/g, '\\:');
     const elementCurrentValue = await page.evaluate((s) => {
@@ -83,12 +83,12 @@ export class PuppeteerStateTasks {
     page: playwright.Page,
     element: string,
     newstate: boolean,
-    waitForEnable: boolean
+    waitForEnable: boolean,
   ): Promise<'disabled' | 'changed' | 'unchanged'> {
     element = element.replace(/:/g, '\\:');
     const elementCheckedState = await page.evaluate(
       (s) => document.querySelector<HTMLInputElement>(s)?.checked,
-      element
+      element,
     );
     if (!elementCheckedState === newstate) {
       if (waitForEnable) {
@@ -100,12 +100,12 @@ export class PuppeteerStateTasks {
           element,
           {
             timeout: 0,
-          }
+          },
         );
       }
       const elementDisabledState = await page.evaluate(
         (s) => document.querySelector<HTMLInputElement>(s)?.disabled,
-        element
+        element,
       );
       if (!elementDisabledState) {
         await page.click(element);
@@ -119,7 +119,7 @@ export class PuppeteerStateTasks {
   }
 
   public async validateParameterCountryCode(
-    countrycode: string
+    countrycode: string,
   ): Promise<{ selected: string | undefined; values: Array<{ name: string; value: string }> }> {
     const page = await this.context.newPage();
 
@@ -282,14 +282,14 @@ export class PuppeteerStateTasks {
         `/i18n/ConfigureCountry.apexp?countryIso=${this.countrycode}&setupid=AddressCleanerOverview`,
       {
         waitUntil: 'networkidle',
-      }
+      },
     );
 
     const setCountrySelector = configSelectors.setCountry;
     const editIntValResult = await PuppeteerStateTasks.setHTMLInputElementValue(
       page,
       setCountrySelector.editIntVal,
-      this.countrycode as string
+      this.countrycode as string,
     );
     debug({ editIntValResult });
     await page.click(setCountrySelector.save.replace(/:/g, '\\:'));
@@ -320,7 +320,7 @@ export class PuppeteerStateTasks {
         `/i18n/ConfigureState.apexp?countryIso=${countrycode}&setupid=AddressCleanerOverview&stateIso=${stateIsoCode}`,
       {
         waitUntil: 'networkidle',
-      }
+      },
     );
     let update = true;
 
@@ -334,7 +334,7 @@ export class PuppeteerStateTasks {
           `/i18n/ConfigureNewState.apexp?countryIso=${countrycode}&setupid=AddressCleanerOverview`,
         {
           waitUntil: 'networkidle',
-        }
+        },
       );
       await page.waitForSelector('.mainTitle');
     }
@@ -345,20 +345,20 @@ export class PuppeteerStateTasks {
     const editIsoCodeResult = await PuppeteerStateTasks.setHTMLInputElementValue(
       page,
       selector.editIsoCode,
-      stateIsoCode
+      stateIsoCode,
     );
     const editIntValResult = await PuppeteerStateTasks.setHTMLInputElementValue(page, selector.editIntVal, stateintVal);
     const editActiveResult = await PuppeteerStateTasks.setHTMLInputElementChecked(
       page,
       selector.editActive,
       true,
-      false
+      false,
     );
     const editVisibleResult = await PuppeteerStateTasks.setHTMLInputElementChecked(
       page,
       selector.editVisible,
       true,
-      true
+      true,
     );
 
     debug({ editNameResult, editIsoCodeResult, editIntValResult, editActiveResult, editVisibleResult });
@@ -391,7 +391,7 @@ export class PuppeteerStateTasks {
         `/i18n/ConfigureState.apexp?countryIso=${countrycode}&setupid=AddressCleanerOverview&stateIso=${stateIsoCode}`,
       {
         waitUntil: 'networkidle',
-      }
+      },
     );
 
     const selector = configSelectors.update;
@@ -400,13 +400,13 @@ export class PuppeteerStateTasks {
       page,
       selector.editVisible,
       false,
-      false
+      false,
     );
     const editActiveResult = await PuppeteerStateTasks.setHTMLInputElementChecked(
       page,
       selector.editActive,
       false,
-      false
+      false,
     );
     debug({ editVisibleResult, editActiveResult });
 
