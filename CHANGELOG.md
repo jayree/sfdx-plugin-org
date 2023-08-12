@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.2...v1.2.3) (2023-08-12)
+
+
+### Bug Fixes
+
+* **deps:** bump is-wsl from 2.2.0 to 3.0.0 ([#173](https://github.com/jayree/sfdx-plugin-org/issues/173)) ([38cb06b](https://github.com/jayree/sfdx-plugin-org/commit/38cb06b32e02f542cfddc10081db353bc42a9ede))
+
 ## [1.2.2](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.1...v1.2.2) (2023-08-11)
 
 
