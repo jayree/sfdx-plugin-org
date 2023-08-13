@@ -53,7 +53,7 @@ $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Sett
       summary: messages.getMessage('tasks'),
     }),
     concurrent: Flags.boolean({
-      summary: messages.getMessage('concurrent'),
+      summary: messages.getMessage('flags.concurrent.summary'),
       default: false,
     }),
   };
@@ -85,7 +85,7 @@ $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Sett
         accessToken: flags['target-org'].getConnection(flags['api-version']).accessToken as string,
         instanceUrl: flags['target-org'].getConnection(flags['api-version']).instanceUrl,
       },
-      selectedSetupTasks
+      selectedSetupTasks,
     );
 
     const setupTasks = new Listr<AnyJson>([], { concurrent: flags.concurrent, exitOnError: false });
@@ -138,7 +138,7 @@ $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Sett
         silentRendererCondition: this.jsonEnabled(),
         fallbackRendererCondition: debug.enabled,
         exitOnError: false,
-      }
+      },
     );
 
     try {

@@ -76,18 +76,18 @@ export default class ImportState extends SfCommand<AnyJson> {
     'target-org': requiredOrgFlagWithDeprecations,
     'api-version': orgApiVersionFlagWithDeprecations,
     'country-code': Flags.string({
-      summary: messages.getMessage('countrycodeFlagDescription'),
+      summary: messages.getMessage('flags.country-code.summary'),
       deprecateAliases: true,
       aliases: ['countrycode'],
     }),
     category: Flags.string({
-      summary: messages.getMessage('categoryFlagDescription'),
+      summary: messages.getMessage('flags.category.summary'),
     }),
     language: Flags.string({
-      summary: messages.getMessage('languageFlagDescription'),
+      summary: messages.getMessage('flags.language.summary'),
     }),
     concurrent: Flags.integer({
-      summary: messages.getMessage('concurrentFlagDescription'),
+      summary: messages.getMessage('flags.concurrent.summary'),
       default: 1,
     }),
   };
@@ -220,7 +220,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                 });
                 return deactivateTasks;
               },
-              { concurrent: flags.concurrent, exitOnError: false }
+              { concurrent: flags.concurrent, exitOnError: false },
             ),
         },
         {
@@ -250,7 +250,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                 });
                 return addTasks;
               },
-              { concurrent: flags.concurrent, exitOnError: false }
+              { concurrent: flags.concurrent, exitOnError: false },
             ),
         },
       ],
@@ -268,7 +268,7 @@ export default class ImportState extends SfCommand<AnyJson> {
         silentRendererCondition: this.jsonEnabled(),
         fallbackRendererCondition: debug.enabled,
         exitOnError: true,
-      }
+      },
     );
 
     try {
@@ -279,7 +279,7 @@ export default class ImportState extends SfCommand<AnyJson> {
       }
 
       context.result = context.result?.sort((a, b) =>
-        a['3166-2 code'] < b['3166-2 code'] ? -1 : a['3166-2 code'] > b['3166-2 code'] ? 1 : 0
+        a['3166-2 code'] < b['3166-2 code'] ? -1 : a['3166-2 code'] > b['3166-2 code'] ? 1 : 0,
       );
 
       if (debug.enabled) {

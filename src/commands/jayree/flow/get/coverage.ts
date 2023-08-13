@@ -48,24 +48,24 @@ Coverage: 82%
     const conn = org.getConnection(flags['api-version']);
 
     const query1 = await conn.tooling.query<{ expr0: number }>(
-      "SELECT count_distinct(DefinitionId) FROM Flow WHERE Status = 'Active' AND(ProcessType = 'AutolaunchedFlow' OR ProcessType = 'Workflow' OR ProcessType = 'CustomEvent' OR ProcessType = 'InvocableProcess')"
+      "SELECT count_distinct(DefinitionId) FROM Flow WHERE Status = 'Active' AND(ProcessType = 'AutolaunchedFlow' OR ProcessType = 'Workflow' OR ProcessType = 'CustomEvent' OR ProcessType = 'InvocableProcess')",
     );
 
     const numberOfActiveAutolaunchedFlowsAndProcesses = query1.records[0]['expr0'];
 
     const query2 = await conn.tooling.query<{ expr0: number }>(
-      'SELECT count_distinct(FlowVersionId) FROM FlowTestCoverage'
+      'SELECT count_distinct(FlowVersionId) FROM FlowTestCoverage',
     );
 
     const numberOfCoveredActiveAutolaunchedFlowsAndProcesses = query2.records[0]['expr0'];
 
     const query3 = await conn.tooling.query<{ Definition: { DeveloperName: string } }>(
-      "SELECT Definition.DeveloperName FROM Flow WHERE Status = 'Active' AND(ProcessType = 'AutolaunchedFlow' OR ProcessType = 'Workflow' OR ProcessType = 'CustomEvent' OR ProcessType = 'InvocableProcess') AND Id NOT IN(SELECT FlowVersionId FROM FlowTestCoverage)"
+      "SELECT Definition.DeveloperName FROM Flow WHERE Status = 'Active' AND(ProcessType = 'AutolaunchedFlow' OR ProcessType = 'Workflow' OR ProcessType = 'CustomEvent' OR ProcessType = 'InvocableProcess') AND Id NOT IN(SELECT FlowVersionId FROM FlowTestCoverage)",
     );
     const uncovered = query3.records.map((value) => value.Definition.DeveloperName);
 
     const query4 = await conn.tooling.query<{ DeveloperName: string }>(
-      'SELECT FlowVersion.Definition.DeveloperName FROM FlowTestCoverage GROUP BY FlowVersion.Definition.DeveloperName'
+      'SELECT FlowVersion.Definition.DeveloperName FROM FlowTestCoverage GROUP BY FlowVersion.Definition.DeveloperName',
     );
     const covered = query4.records.map((value) => value.DeveloperName);
 
@@ -74,7 +74,7 @@ Coverage: 82%
       'number of active autolaunched flows and processes': numberOfActiveAutolaunchedFlowsAndProcesses,
       'number of covered active autolaunched flows and processes': numberOfCoveredActiveAutolaunchedFlowsAndProcesses,
       Coverage: `${Math.floor(
-        (numberOfCoveredActiveAutolaunchedFlowsAndProcesses / numberOfActiveAutolaunchedFlowsAndProcesses) * 100
+        (numberOfCoveredActiveAutolaunchedFlowsAndProcesses / numberOfActiveAutolaunchedFlowsAndProcesses) * 100,
       )}%'`,
     });
 
@@ -100,14 +100,14 @@ Coverage: 82%
 
     if (covered.length !== numberOfCoveredActiveAutolaunchedFlowsAndProcesses) {
       this.warn(
-        'Error in the FlowTestCoverage table found, please delete all records in the FlowTestCoverage table, then run all tests, and use this command to check the Flow Test Coverage again'
+        'Error in the FlowTestCoverage table found, please delete all records in the FlowTestCoverage table, then run all tests, and use this command to check the Flow Test Coverage again',
       );
     }
 
     return {
       orgId: org.getOrgId(),
       Coverage: `${Math.floor(
-        (numberOfCoveredActiveAutolaunchedFlowsAndProcesses / numberOfActiveAutolaunchedFlowsAndProcesses) * 100
+        (numberOfCoveredActiveAutolaunchedFlowsAndProcesses / numberOfActiveAutolaunchedFlowsAndProcesses) * 100,
       )}%'`,
       numberOfActiveAutolaunchedFlowsAndProcesses,
       numberOfCoveredActiveAutolaunchedFlowsAndProcesses,

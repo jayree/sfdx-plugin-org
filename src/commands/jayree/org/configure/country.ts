@@ -36,7 +36,7 @@ export default class UpdateCountry extends SfCommand<void> {
     'target-org': requiredOrgFlagWithDeprecations,
     'api-version': orgApiVersionFlagWithDeprecations,
     silent: Flags.boolean({
-      summary: messages.getMessage('silentFlagDescription'),
+      summary: messages.getMessage('flags.silent.summary'),
       required: false,
       default: false,
       hidden: true,
@@ -144,7 +144,7 @@ export default class UpdateCountry extends SfCommand<void> {
           conn.instanceUrl + `/i18n/ConfigureCountry.apexp?countryIso=${countryCode}&setupid=AddressCleanerOverview`,
           {
             waitUntil: 'networkidle',
-          }
+          },
         );
         const setCountrySelector = configSelectors.setCountry;
         await setHTMLInputElementValue(countryCode, setCountrySelector.editIntVal);
