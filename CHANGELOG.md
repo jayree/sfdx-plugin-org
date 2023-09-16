@@ -1,3 +1,11 @@
+## [1.2.10](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.9...v1.2.10) (2023-09-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/source-deploy-retrieve from 9.7.9 to 9.7.13 ([#240](https://github.com/jayree/sfdx-plugin-org/issues/240)) ([da181e4](https://github.com/jayree/sfdx-plugin-org/commit/da181e49d1cb4ba70013440d706e59ad3b471680))
+* fix country code selector ([e437664](https://github.com/jayree/sfdx-plugin-org/commit/e437664be153bb6c1ad264da4229dd62fc6b8c72))
+
 ## [1.2.9](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.8...v1.2.9) (2023-09-15)
 
 
