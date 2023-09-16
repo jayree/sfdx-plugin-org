@@ -125,14 +125,9 @@ export class PuppeteerStateTasks {
 
     try {
       if (!this.countries) {
-        await page.goto('https://www.iso.org/obp/ui/#search', {
+        await page.goto('https://www.iso.org/obp/ui/#search/code', {
           waitUntil: 'networkidle',
         });
-
-        await page.waitForSelector('#gwt-uid-12');
-        await page.click('#gwt-uid-12');
-        await page.evaluate(() => document.querySelector<HTMLInputElement>('#gwt-uid-12')?.checked);
-        await page.click('.go');
 
         await page.waitForSelector('.v-grid-tablewrapper');
         await page.selectOption('.v-select-select', '8');
