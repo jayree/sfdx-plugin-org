@@ -70,7 +70,8 @@
     "/oclif.manifest.json",
     "/CHANGELOG.md",
     "/bin/is-sfdx.js",
-    "/schemas"
+    "/schemas",
+    "/oclif.lock"
   ],
   "homepage": "https://github.com/jayree/sfdx-plugin-org",
   "keywords": [
