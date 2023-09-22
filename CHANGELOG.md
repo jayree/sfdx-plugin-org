@@ -1,3 +1,13 @@
+## [1.2.11](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.10...v1.2.11) (2023-09-22)
+
+
+### Bug Fixes
+
+* add oclif.lock ([795c3a3](https://github.com/jayree/sfdx-plugin-org/commit/795c3a3ac54bf1d5fab19cbd52c5361ae2c220c6))
+* **deps:** bump @salesforce/sf-plugins-core from 3.1.22 to 3.1.23 ([#251](https://github.com/jayree/sfdx-plugin-org/issues/251)) ([e8655a7](https://github.com/jayree/sfdx-plugin-org/commit/e8655a7b9812edfc00618f72b4e8f885723c9fd8))
+* **deps:** bump @salesforce/source-deploy-retrieve from 9.7.13 to 9.7.15 ([#244](https://github.com/jayree/sfdx-plugin-org/issues/244)) ([dafefb0](https://github.com/jayree/sfdx-plugin-org/commit/dafefb0966c1d4d60712347a101a33b98213f90c))
+* **deps:** bump playwright-chromium from 1.38.0 to 1.38.1 ([#247](https://github.com/jayree/sfdx-plugin-org/issues/247)) ([035b617](https://github.com/jayree/sfdx-plugin-org/commit/035b61773f11979d903943e2e4cf20b12faf9f28))
+
 ## [1.2.10](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.9...v1.2.10) (2023-09-16)
 
 
