@@ -6,7 +6,7 @@ export default class ConfigureOrg extends SfCommand<AnyJson> {
     static readonly flags: {
         'target-org': import("@oclif/core/lib/interfaces/parser.js").OptionFlag<import("@salesforce/core").Org, import("@oclif/core/lib/interfaces/parser.js").CustomOptions>;
         'api-version': import("@oclif/core/lib/interfaces/parser.js").OptionFlag<string | undefined, import("@oclif/core/lib/interfaces/parser.js").CustomOptions>;
-        tasks: import("@oclif/core/lib/interfaces/parser.js").OptionFlag<string[] | undefined, import("@oclif/core/lib/interfaces/parser.js").CustomOptions>;
+        tasks: import("@oclif/core/lib/interfaces/parser.js").OptionFlag<string[], import("@oclif/core/lib/interfaces/parser.js").CustomOptions>;
         concurrent: import("@oclif/core/lib/interfaces/parser.js").BooleanFlag<boolean>;
     };
     run(): Promise<AnyJson>;
