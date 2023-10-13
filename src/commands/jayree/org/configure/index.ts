@@ -100,7 +100,7 @@ $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Sett
             task.skip();
           }
         },
-        options: { persistentOutput: false, bottomBar: 5 },
+        rendererOptions: { persistentOutput: false, bottomBar: 5 },
       });
     });
 

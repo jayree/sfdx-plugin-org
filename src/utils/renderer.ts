@@ -79,7 +79,7 @@ export class MyDefaultRenderer implements ListrRenderer {
   private truncate!: typeof truncate;
   private wrap!: typeof wrap;
   private readonly cache: ListrDefaultRendererCache = {
-    output: new Map(),
+    render: new Map(),
     rendererOptions: new Map(),
     rendererTaskOptions: new Map(),
   };
@@ -387,8 +387,8 @@ export class MyDefaultRenderer implements ListrRenderer {
           }
 
           // if this is already cached return the cache
-          if (this.cache.output.has(task.id)) {
-            return this.cache.output.get(task.id) as string[];
+          if (this.cache.render.has(task.id)) {
+            return this.cache.render.get(task.id) as string[];
           }
 
           this.calculate(task);
@@ -606,7 +606,7 @@ export class MyDefaultRenderer implements ListrRenderer {
         }
 
         if (task.isClosed()) {
-          this.cache.output.set(task.id, output);
+          this.cache.render.set(task.id, output);
           this.reset(task);
         }
 

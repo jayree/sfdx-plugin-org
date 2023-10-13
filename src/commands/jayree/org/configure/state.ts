@@ -15,6 +15,7 @@ import {
 import { Messages } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
 import { ListrLogger, Listr, PRESET_TIMER, ListrTask, ListrRendererValue } from 'listr2';
+import { ListrEnquirerPromptAdapter } from '@listr2/prompt-adapter-enquirer';
 import Debug from 'debug';
 import { MyDefaultRenderer } from '../../../../utils/renderer.js';
 import { PuppeteerStateTasks } from '../../../../utils/puppeteer/statetasks.js';
@@ -118,7 +119,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                 // eslint-disable-next-line @typescript-eslint/no-shadow
                 task: async (ctx: Context, task): Promise<void> => {
                   if (ctx.countryCode.selected === undefined) {
-                    ctx.countryCode.selected = await task.prompt<string>({
+                    ctx.countryCode.selected = await task.prompt(ListrEnquirerPromptAdapter).run<string>({
                       type: 'AutoComplete',
                       message: 'Select Country',
                       choices: ctx.countryCode.values.map((v) => {
@@ -139,7 +140,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                 // eslint-disable-next-line @typescript-eslint/no-shadow
                 task: async (ctx, task): Promise<void> => {
                   if (ctx.category.selected === undefined) {
-                    ctx.category.selected = await task.prompt<string>({
+                    ctx.category.selected = await task.prompt(ListrEnquirerPromptAdapter).run<string>({
                       type: 'AutoComplete',
                       message: 'Select Category',
                       choices: ctx.category.values as string[],
@@ -157,7 +158,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                 // eslint-disable-next-line @typescript-eslint/no-shadow
                 task: async (ctx, task): Promise<void> => {
                   if (ctx.language.selected === undefined) {
-                    ctx.language.selected = await task.prompt<string>({
+                    ctx.language.selected = await task.prompt(ListrEnquirerPromptAdapter).run<string>({
                       type: 'AutoComplete',
                       message: 'Select Language',
                       choices: ctx.language.values as string[],
@@ -215,7 +216,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                         ctx.result.push({ '3166-2 code': el, status: 'updated (deactivated)' });
                       }
                     },
-                    options: { persistentOutput: true },
+                    rendererOptions: { persistentOutput: true },
                   });
                 });
                 return deactivateTasks;
@@ -245,7 +246,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                         task.skip();
                       }
                     },
-                    options: { persistentOutput: true },
+                    rendererOptions: { persistentOutput: true },
                   });
                 });
                 return addTasks;
