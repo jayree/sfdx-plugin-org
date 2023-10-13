@@ -18,7 +18,7 @@
     "is-wsl": "^3.1.0",
     "listr2": "^6.6.1",
     "log-update": "^5.0.1",
-    "playwright-chromium": "^1.38.1",
+    "playwright-chromium": "^1.39.0",
     "tabletojson": "2.0.7",
     "tslib": "^2.6.1",
     "wrap-ansi": "^8.1.0"
@@ -45,7 +45,7 @@
     "eslint-plugin-header": "^3.1.1",
     "eslint-plugin-import": "2.28.1",
     "eslint-plugin-jsdoc": "^46.8.2",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-sf-plugin": "^1.16.8",
     "husky": "^8.0.3",
     "is-ci": "^3.0.1",
