@@ -1,3 +1,10 @@
+## [1.2.15](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.14...v1.2.15) (2023-10-14)
+
+
+### Bug Fixes
+
+* **deps:** bump listr2 from 6.6.1 to 7.0.1 ([#249](https://github.com/jayree/sfdx-plugin-org/issues/249)) ([85cc95d](https://github.com/jayree/sfdx-plugin-org/commit/85cc95d106e2eb50bd0829ab1b1606016c751a94))
+
 ## [1.2.14](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.13...v1.2.14) (2023-10-13)
 
 
