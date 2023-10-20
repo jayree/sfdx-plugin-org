@@ -551,10 +551,10 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
-"@listr2/prompt-adapter-enquirer@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-1.0.1.tgz#9ebafb5c60000cb144679a976989f2f2428fbbec"
-  integrity sha512-gC+0QFhX9ysk0n40036Fvt8U7ZIu805gSO4vVQBlOw2syPr60vWWgNI9hONPq47XOOqAMdax8fEcwlYsB7KtSg==
+"@listr2/prompt-adapter-enquirer@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-1.0.2.tgz#16f7b044c211c06c2365e8b0962982e4414e7982"
+  integrity sha512-+hFHGKuACQ/0FRMmnwRe8QpdXlYJG8LhkKC0/ftf6LptWAZDBuziWnqilWHCcInnQTtUsYXD2Sra1Oxjb5q0Dg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
