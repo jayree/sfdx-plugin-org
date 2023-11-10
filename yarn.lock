@@ -134,7 +134,7 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.19.1.tgz#7eea834cf32901ffdc1a7ee555e2f9c27e249ca2"
   integrity sha512-awrNfaMtnHUr653GgGEs++LlAvW6w+DcPrOliSMXWCKo597CwL5Acf/wWdNkf/tfEQE3mjkeD1YOVZOUV/od1w==
 
-"@babel/helper-validator-identifier@^7.22.5":
+"@babel/helper-validator-identifier@^7.22.20", "@babel/helper-validator-identifier@^7.22.5":
   version "7.22.20"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.22.20.tgz#c4ae002c61d2879e724581d96665583dbc1dc0e0"
   integrity sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==
@@ -1436,7 +1436,7 @@
   resolved "https://registry.yarnpkg.com/@types/wrap-ansi/-/wrap-ansi-8.0.2.tgz#78e7f8e0b8ca785893a30aa2e7750598ee61c438"
   integrity sha512-mdaFibQzYYqJF8Sc9By84eBLtDQD9Hnko0yXuezHBU5f5KdtQk+j5hPRQc1j4ayzdqGddKON6PjeuzxD5U1hPg==
 
-"@typescript-eslint/eslint-plugin@^6.10.0":
+"@typescript-eslint/eslint-plugin@^6.10.0", "@typescript-eslint/eslint-plugin@^6.9.1":
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.10.0.tgz#cfe2bd34e26d2289212946b96ab19dcad64b661a"
   integrity sha512-uoLj4g2OTL8rfUQVx2AFO1hp/zja1wABJq77P6IclQs6I/m9GLrm7jCdgzZkvWdDCQf1uEvoa8s8CupsgWQgVg==
@@ -1453,7 +1453,7 @@
     semver "^7.5.4"
     ts-api-utils "^1.0.1"
 
-"@typescript-eslint/parser@^6.10.0":
+"@typescript-eslint/parser@^6.10.0", "@typescript-eslint/parser@^6.9.1":
   version "6.10.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-6.10.0.tgz#578af79ae7273193b0b6b61a742a2bc8e02f875a"
   integrity sha512-+sZwIj+s+io9ozSxIWbNB5873OSdfeBEH/FR0re14WLI6BaKuSOnnwCJ2foUiu8uXf4dRp1UqHP0vrZ1zXGrog==
@@ -3300,10 +3300,26 @@ eslint-config-salesforce-license@^0.2.0:
   resolved "https://registry.yarnpkg.com/eslint-config-salesforce-license/-/eslint-config-salesforce-license-0.2.0.tgz#323193f1aa15dd33fbf108d25fc1210afc11065e"
   integrity sha512-DJdBvgj82Erum82YMe+YvG/o6ukna3UA++lRl0HSTldj0VlBl3Q8hzCp97nRXZHra6JH1I912yievZzklXDw6w==
 
-eslint-config-salesforce-typescript@^1.1.1, eslint-config-salesforce-typescript@^1.1.2:
+eslint-config-salesforce-typescript@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/eslint-config-salesforce-typescript/-/eslint-config-salesforce-typescript-1.1.2.tgz#86a303e37899122bd9706c72b95ed288408a4f45"
   integrity sha512-34RnT1fIo5cWdKwUH6IlfVKvVAQEH5R75K1O/c29U9qW5ZjmdfJ8NtI/4z143mhCM7wB9FsJROdKMJEISGThkA==
+
+eslint-config-salesforce-typescript@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-config-salesforce-typescript/-/eslint-config-salesforce-typescript-3.0.2.tgz#25e9e8797a109828a63a3893a15613c8ecefa1bf"
+  integrity sha512-3eNN2dKojedhxbsOGocXaU+83XoeOzc8pCiDjOvlUc7B9IYTgv7UwOgmIIoESmuHKcvsCDDFDttfLCSOCOaRtQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "^6.9.1"
+    "@typescript-eslint/parser" "^6.9.1"
+    eslint "^8.52.0"
+    eslint-config-prettier "^9.0.0"
+    eslint-config-salesforce "^2.0.2"
+    eslint-config-salesforce-license "^0.2.0"
+    eslint-plugin-header "^3.1.1"
+    eslint-plugin-import "^2.29.0"
+    eslint-plugin-jsdoc "^46.8.2"
+    eslint-plugin-unicorn "^49.0.0"
 
 eslint-config-salesforce@^2.0.1, eslint-config-salesforce@^2.0.2:
   version "2.0.2"
@@ -3353,7 +3369,7 @@ eslint-plugin-header@^3.1.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-header/-/eslint-plugin-header-3.1.1.tgz#6ce512432d57675265fac47292b50d1eff11acd6"
   integrity sha512-9vlKxuJ4qf793CmeeSrZUvVClw6amtpghq3CuWcB5cUNnWHQhgcqy5eF8oVKFk1G3Y/CbchGfEaw3wiIJaNmVg==
 
-eslint-plugin-import@2.29.0, eslint-plugin-import@^2.27.5:
+eslint-plugin-import@2.29.0, eslint-plugin-import@^2.27.5, eslint-plugin-import@^2.29.0:
   version "2.29.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.29.0.tgz#8133232e4329ee344f2f612885ac3073b0b7e155"
   integrity sha512-QPOO5NO6Odv5lpoTkddtutccQjysJuFxoPS7fAHO+9m9udNHvTCPSAMW9zGAYj8lAIdr40I8yPCdUYrncXtrwg==
@@ -3390,7 +3406,7 @@ eslint-plugin-jsdoc@^43.0.5:
     semver "^7.5.0"
     spdx-expression-parse "^3.0.1"
 
-eslint-plugin-jsdoc@^46.9.0:
+eslint-plugin-jsdoc@^46.8.2, eslint-plugin-jsdoc@^46.9.0:
   version "46.9.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-jsdoc/-/eslint-plugin-jsdoc-46.9.0.tgz#9887569dbeef0a008a2770bfc5d0f7fc39f21f2b"
   integrity sha512-UQuEtbqLNkPf5Nr/6PPRCtr9xypXY+g8y/Q7gPa0YK7eDhh0y2lWprXRnaYbW7ACgIUvpDKy9X2bZqxtGzBG9Q==
@@ -3476,6 +3492,26 @@ eslint-plugin-unicorn@^48.0.1:
     semver "^7.5.4"
     strip-indent "^3.0.0"
 
+eslint-plugin-unicorn@^49.0.0:
+  version "49.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-unicorn/-/eslint-plugin-unicorn-49.0.0.tgz#4449ea954d7e1455eec8518f9417d7021b245fa8"
+  integrity sha512-0fHEa/8Pih5cmzFW5L7xMEfUTvI9WKeQtjmKpTUmY+BiFCDxkxrTdnURJOHKykhtwIeyYsxnecbGvDCml++z4Q==
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.22.20"
+    "@eslint-community/eslint-utils" "^4.4.0"
+    ci-info "^3.8.0"
+    clean-regexp "^1.0.0"
+    esquery "^1.5.0"
+    indent-string "^4.0.0"
+    is-builtin-module "^3.2.1"
+    jsesc "^3.0.2"
+    pluralize "^8.0.0"
+    read-pkg-up "^7.0.1"
+    regexp-tree "^0.1.27"
+    regjsparser "^0.10.0"
+    semver "^7.5.4"
+    strip-indent "^3.0.0"
+
 eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
@@ -3521,7 +3557,7 @@ eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz#0cd72fe8550e3c2eae156a96a4dddcd1c8ac5800"
   integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@^8.41.0, eslint@^8.53.0:
+eslint@^8.41.0, eslint@^8.52.0, eslint@^8.53.0:
   version "8.53.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.53.0.tgz#14f2c8244298fcae1f46945459577413ba2697ce"
   integrity sha512-N4VuiPjXDUa4xVeV/GC/RV3hQW9Nw+Y463lkWaKKXKYMvmRiRDAtfpuPFLN+E1/6ZhyR8J2ig+eVREnYgUsiag==
