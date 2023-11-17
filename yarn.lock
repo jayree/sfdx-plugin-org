@@ -2412,7 +2412,7 @@ cheerio-select@^2.1.0:
     domhandler "^5.0.3"
     domutils "^3.0.1"
 
-cheerio@^1.0.0-rc.10:
+cheerio@^1.0.0-rc.12:
   version "1.0.0-rc.12"
   resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.12.tgz#788bf7466506b1c6bf5fae51d24a2c4d62e47683"
   integrity sha512-VqR8m68vM46BNnuZ5NtnGBKIE/DfN0cRIzg9n40EIq9NOv90ayxLBXA8fXC5gquFRGJSTRqBq25Jt2ECLR431Q==
@@ -4237,7 +4237,7 @@ gopd@^1.0.1:
   dependencies:
     get-intrinsic "^1.1.3"
 
-got@^11, got@^11.8.2, got@^11.8.6:
+got@^11, got@^11.8.6:
   version "11.8.6"
   resolved "https://registry.yarnpkg.com/got/-/got-11.8.6.tgz#276e827ead8772eddbcfc97170590b841823233a"
   integrity sha512-6tfZ91bOr7bOXnK7PRDCGBLa1H4U080YHNaAQ2KsMGlLEzRbk44nsZF2E1IeRc3vtJHPVbKCYgdFbaGO2ljd8g==
@@ -8026,13 +8026,12 @@ synckit@^0.8.5:
     "@pkgr/utils" "^2.3.1"
     tslib "^2.5.0"
 
-tabletojson@2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-2.0.7.tgz#e405c6a033b03316e824d6c4273a8787922c653b"
-  integrity sha512-rnt4Wz5IdnjzIUk4WIeFGdH3G3zRUlhQ9rc+d7e+iGbcVeJeay+8mRScazptoZG+ls1bX82kSuns9yVsMx5DGg==
+tabletojson@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.0.1.tgz#ef8c3b5bb466ea5d9a1db5ad444bedbea712a8cf"
+  integrity sha512-/C2vM3fgxlstwUQqOx1DvjRKrLmDG6iJxebxOq/kGZbektLGD3RPGq+cPlMX3s9Ms6Z5SpAcgtBYDllw1fr2xw==
   dependencies:
-    cheerio "^1.0.0-rc.10"
-    got "^11.8.2"
+    cheerio "^1.0.0-rc.12"
 
 tar@^6.0.2, tar@^6.1.0, tar@^6.1.11, tar@^6.1.2:
   version "6.1.13"
