@@ -7,7 +7,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { EOL } from 'os';
+import { EOL } from 'node:os';
 import type truncate from 'cli-truncate';
 import type { createLogUpdate } from 'log-update';
 import type wrap from 'wrap-ansi';
