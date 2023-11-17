@@ -15,7 +15,7 @@ import {
 import { Messages } from '@salesforce/core';
 import { ux } from '@oclif/core';
 import playwright from 'playwright-chromium';
-import { Tabletojson as tabletojson } from 'tabletojson';
+import { tabletojson } from 'tabletojson';
 import { configSelectors } from '../../../../utils/puppeteer/countrystateconfig.js';
 import { readLaunchOptionsFromProject } from '../../../../utils/puppeteer/utils.js';
 
