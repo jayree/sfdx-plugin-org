@@ -5,7 +5,7 @@
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 import playwright from 'playwright-chromium';
-import { Tabletojson as tabletojson } from 'tabletojson';
+import { tabletojson } from 'tabletojson';
 import Debug from 'debug';
 import { configSelectors, deactivateStates } from './countrystateconfig.js';
 import { readLaunchOptionsFromProject } from './utils.js';
