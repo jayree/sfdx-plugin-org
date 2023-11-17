@@ -12,7 +12,7 @@
     "@salesforce/sf-plugins-core": "^4.1.0",
     "@salesforce/source-deploy-retrieve": "^9.8.5",
     "@salesforce/ts-types": "^2.0.9",
-    "cli-truncate": "^3.1.0",
+    "cli-truncate": "^4.0.0",
     "debug": "^4.3.4",
     "enquirer": "^2.4.1",
     "fs-extra": "^11.1.1",
