@@ -33,7 +33,8 @@ USAGE
   $ sfdx jayree:flow:get:coverage -o <value> [--json] [--api-version <value>]
 
 FLAGS
-  -o, --target-org=<value>   (required) Username or alias of the target org.
+  -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
+                             configuration variable is already set.
       --api-version=<value>  Override the api version used for api requests made by this command
 
 GLOBAL FLAGS
@@ -49,7 +50,7 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.20/src/commands/jayree/flow/get/coverage.ts)_
+_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.21/src/commands/jayree/flow/get/coverage.ts)_
 
 ### `sfdx jayree:org:configure`
 
@@ -60,7 +61,8 @@ USAGE
   $ sfdx jayree:org:configure -o <value> [--json] [--api-version <value>] [-t <value>] [--concurrent]
 
 FLAGS
-  -o, --target-org=<value>   (required) Username or alias of the target org.
+  -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
+                             configuration variable is already set.
   -t, --tasks=<value>...     Task name(s) listed in sfdx-project.json, if no tasks are specified, all tasks marked as
                              active will be executed.
       --api-version=<value>  Override the api version used for api requests made by this command
@@ -76,7 +78,7 @@ EXAMPLES
   $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Settings"
 ```
 
-_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.20/src/commands/jayree/org/configure/index.ts)_
+_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.21/src/commands/jayree/org/configure/index.ts)_
 
 ### `sfdx jayree:org:configure:country`
 
@@ -87,14 +89,15 @@ USAGE
   $ sfdx jayree:org:configure:country -o <value> [--json] [--api-version <value>]
 
 FLAGS
-  -o, --target-org=<value>   (required) Username or alias of the target org.
+  -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
+                             configuration variable is already set.
       --api-version=<value>  Override the api version used for api requests made by this command
 
 GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.20/src/commands/jayree/org/configure/country.ts)_
+_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.21/src/commands/jayree/org/configure/country.ts)_
 
 ### `sfdx jayree:org:configure:state`
 
@@ -106,7 +109,8 @@ USAGE
     [--language <value>] [--concurrent <value>]
 
 FLAGS
-  -o, --target-org=<value>    (required) Username or alias of the target org.
+  -o, --target-org=<value>    (required) Username or alias of the target org. Not required if the `target-org`
+                              configuration variable is already set.
       --api-version=<value>   Override the api version used for api requests made by this command
       --category=<value>      Subdivision category.
       --concurrent=<value>    [default: 1] execute tasks in parallel.
@@ -117,7 +121,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.20/src/commands/jayree/org/configure/state.ts)_
+_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.21/src/commands/jayree/org/configure/state.ts)_
 
 ### `sfdx jayree:org:get:settings`
 
@@ -129,7 +133,8 @@ USAGE
 
 FLAGS
   -f, --file=<value>                  Write to 'file' instead of project-scratch-def.json.
-  -o, --target-org=<value>            (required) Username or alias of the target org.
+  -o, --target-org=<value>            (required) Username or alias of the target org. Not required if the `target-org`
+                                      configuration variable is already set.
   -w, --writetoprojectscratchdeffile  Write output to project-scratch-def.json file.
       --api-version=<value>           Override the api version used for api requests made by this command
 
@@ -145,7 +150,7 @@ EXAMPLES
   $ sfdx jayree:org:settings -u MyTestOrg1 -w
 ```
 
-_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.20/src/commands/jayree/org/get/settings.ts)_
+_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.21/src/commands/jayree/org/get/settings.ts)_
 
 ### `sfdx jayree:org:stream`
 
@@ -157,7 +162,8 @@ USAGE
 
 FLAGS
   -c, --channel=<value>      (required) The event name.
-  -o, --target-org=<value>   (required) Username or alias of the target org.
+  -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
+                             configuration variable is already set.
   -r, --replay-id=<value>    Receive all stored events after the event specified by the replayId value and new events.
                              [default: -1] Receive new events that are broadcast after the command subscribes. [-2]
                              Receive all event, including past events that are within the retention window and new
@@ -175,5 +181,5 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.20/src/commands/jayree/org/stream.ts)_
+_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.21/src/commands/jayree/org/stream.ts)_
 <!-- commandsstop -->
