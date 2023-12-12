@@ -978,10 +978,10 @@
     semver "^7.5.4"
     ts-retry-promise "^0.7.1"
 
-"@salesforce/core@^6.2.2":
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.2.2.tgz#c390c7c407e8916ad85a3e300d9d9e4fecfba207"
-  integrity sha512-R2ptk/+KSWDJOqdInxfzPTLF3V//vFtD4vQcjWIK9NaGCCq4ZwiF2gMpkBcKgDQneLUmva2NcmnzF3c51zQp5A==
+"@salesforce/core@^6.2.2", "@salesforce/core@^6.4.0":
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-6.4.1.tgz#27edd083b62ee96d6270b60da6dfb959bff1a0a5"
+  integrity sha512-Bn/Pox5JLeVBg35zgSmtNU+f9wdOaa7a/hmCIvQibci1dpKtLGUmSpdHibWR6zHag8ZoRkueea7zuqEjYzECyA==
   dependencies:
     "@salesforce/kit" "^3.0.15"
     "@salesforce/schemas" "^1.6.1"
@@ -1069,12 +1069,12 @@
     chalk "^4"
     inquirer "^8.2.5"
 
-"@salesforce/source-deploy-retrieve@^10.2.0":
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-10.2.0.tgz#073b6791eb8c3c7158bd97357eecfd6ca5a51cb2"
-  integrity sha512-0AkuQ8e0EBkh0OlDMqaYk1goAIw/Ge2W7PnkzB4FscgQmL7zupSVC+sb04YAO508NKPDZ5d8sZSId62hjq8DQg==
+"@salesforce/source-deploy-retrieve@^10.2.1":
+  version "10.2.1"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-10.2.1.tgz#fe5ba3006761ecc462b427c26619cdff26512e1e"
+  integrity sha512-KaslYNh0oZTKGklECIPRM4SwciPIZqQdjOe/YttCLh0JDchVVeu/Qv8VCldHGnhGUpZ83bSvWG/YWXeEtoY/2w==
   dependencies:
-    "@salesforce/core" "^6.2.2"
+    "@salesforce/core" "^6.4.0"
     "@salesforce/kit" "^3.0.15"
     "@salesforce/ts-types" "^2.0.9"
     fast-levenshtein "^3.0.0"
@@ -6813,10 +6813,10 @@ prettier@^2.8.8:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.8.tgz#e8c5d7e98a4305ffe3de2e1fc4aca1a71c28b1da"
   integrity sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==
 
-prettier@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.0.tgz#c6d16474a5f764ea1a4a373c593b779697744d5e"
-  integrity sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==
+prettier@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.1.1.tgz#6ba9f23165d690b6cbdaa88cb0807278f7019848"
+  integrity sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==
 
 pretty-bytes@^5.3.0:
   version "5.6.0"
