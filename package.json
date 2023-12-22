@@ -7,7 +7,7 @@
   "bugs": "https://github.com/jayree/sfdx-plugin-org/issues",
   "dependencies": {
     "@jayree/changelog": "^1.1.9",
-    "@listr2/prompt-adapter-enquirer": "^2.0.0",
+    "@listr2/prompt-adapter-enquirer": "^2.0.1",
     "@oclif/core": "^3.14.1",
     "@salesforce/sf-plugins-core": "^5.0.12",
     "@salesforce/source-deploy-retrieve": "^10.2.4",
