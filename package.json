@@ -9,7 +9,7 @@
     "@jayree/changelog": "^1.1.9",
     "@listr2/prompt-adapter-enquirer": "^2.0.1",
     "@oclif/core": "^3.14.1",
-    "@salesforce/sf-plugins-core": "^5.0.12",
+    "@salesforce/sf-plugins-core": "^5.0.13",
     "@salesforce/source-deploy-retrieve": "^10.2.4",
     "@salesforce/ts-types": "^2.0.9",
     "cli-truncate": "^4.0.0",
