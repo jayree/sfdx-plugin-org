@@ -21,7 +21,7 @@
     "listr2": "^8.0.1",
     "log-update": "^6.0.0",
     "playwright-chromium": "^1.40.1",
-    "tabletojson": "4.0.1",
+    "tabletojson": "4.1.0",
     "tslib": "^2.6.1",
     "wrap-ansi": "^9.0.0"
   },
