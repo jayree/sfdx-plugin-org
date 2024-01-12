@@ -8,7 +8,7 @@
   "dependencies": {
     "@jayree/changelog": "^1.1.9",
     "@listr2/prompt-adapter-enquirer": "^2.0.1",
-    "@oclif/core": "^3.16.0",
+    "@oclif/core": "^3.18.1",
     "@salesforce/sf-plugins-core": "^5.0.13",
     "@salesforce/source-deploy-retrieve": "^10.2.9",
     "@salesforce/ts-types": "^2.0.9",
