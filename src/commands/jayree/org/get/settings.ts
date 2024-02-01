@@ -215,7 +215,7 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
     if (flags.writetoprojectscratchdeffile) {
       const deffilepath =
         // eslint-disable-next-line @typescript-eslint/await-thenable
-        flags.file ?? join(await this.project.getPath(), 'config', 'project-scratch-def.json');
+        flags.file ?? join(this.project?.getPath() as string, 'config', 'project-scratch-def.json');
       let deffile: JsonMap = {};
 
       await fs
