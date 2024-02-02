@@ -17,20 +17,20 @@ sfdx plugins:install @jayree/sfdx-plugin-org
 ## Commands
 
 <!-- commands -->
-* [`sfdx jayree:flow:get:coverage`](#sfdx-jayreeflowgetcoverage)
-* [`sfdx jayree:org:configure`](#sfdx-jayreeorgconfigure)
-* [`sfdx jayree:org:configure:country`](#sfdx-jayreeorgconfigurecountry)
-* [`sfdx jayree:org:configure:state`](#sfdx-jayreeorgconfigurestate)
-* [`sfdx jayree:org:get:settings`](#sfdx-jayreeorggetsettings)
-* [`sfdx jayree:org:stream`](#sfdx-jayreeorgstream)
+* [`sfdx jayree flow get coverage`](#sfdx-jayree-flow-get-coverage)
+* [`sfdx jayree org configure`](#sfdx-jayree-org-configure)
+* [`sfdx jayree org configure country`](#sfdx-jayree-org-configure-country)
+* [`sfdx jayree org configure state`](#sfdx-jayree-org-configure-state)
+* [`sfdx jayree org get settings`](#sfdx-jayree-org-get-settings)
+* [`sfdx jayree org stream`](#sfdx-jayree-org-stream)
 
-### `sfdx jayree:flow:get:coverage`
+### `sfdx jayree flow get coverage`
 
 Check the flow test coverage of an Org.
 
 ```
 USAGE
-  $ sfdx jayree:flow:get:coverage -o <value> [--json] [--api-version <value>]
+  $ sfdx jayree flow get coverage -o <value> [--json] [--api-version <value>]
 
 FLAGS
   -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
@@ -41,7 +41,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 
 ALIASES
-  $ sfdx jayree:flowtestcoverage
+  $ sfdx jayree flowtestcoverage
 
 EXAMPLES
   $ sfdx jayree:flowtestcoverage
@@ -50,15 +50,15 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.31/src/commands/jayree/flow/get/coverage.ts)_
+_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.32/src/commands/jayree/flow/get/coverage.ts)_
 
-### `sfdx jayree:org:configure`
+### `sfdx jayree org configure`
 
 Make configuration changes that are not covered by the metadata API.
 
 ```
 USAGE
-  $ sfdx jayree:org:configure -o <value> [--json] [--api-version <value>] [-t <value>] [--concurrent]
+  $ sfdx jayree org configure -o <value> [--json] [--api-version <value>] [-t <value>] [--concurrent]
 
 FLAGS
   -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
@@ -78,15 +78,15 @@ EXAMPLES
   $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Settings"
 ```
 
-_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.31/src/commands/jayree/org/configure/index.ts)_
+_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.32/src/commands/jayree/org/configure/index.ts)_
 
-### `sfdx jayree:org:configure:country`
+### `sfdx jayree org configure country`
 
 update country integration values in the State/Country Picklists
 
 ```
 USAGE
-  $ sfdx jayree:org:configure:country -o <value> [--json] [--api-version <value>]
+  $ sfdx jayree org configure country -o <value> [--json] [--api-version <value>]
 
 FLAGS
   -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
@@ -97,15 +97,15 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.31/src/commands/jayree/org/configure/country.ts)_
+_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.32/src/commands/jayree/org/configure/country.ts)_
 
-### `sfdx jayree:org:configure:state`
+### `sfdx jayree org configure state`
 
 import (create/update) states into the State/Country Picklists
 
 ```
 USAGE
-  $ sfdx jayree:org:configure:state -o <value> [--json] [--api-version <value>] [--country-code <value>] [--category <value>]
+  $ sfdx jayree org configure state -o <value> [--json] [--api-version <value>] [--country-code <value>] [--category <value>]
     [--language <value>] [--concurrent <value>]
 
 FLAGS
@@ -121,15 +121,15 @@ GLOBAL FLAGS
   --json  Format output as json.
 ```
 
-_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.31/src/commands/jayree/org/configure/state.ts)_
+_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.32/src/commands/jayree/org/configure/state.ts)_
 
-### `sfdx jayree:org:get:settings`
+### `sfdx jayree org get settings`
 
 Write the current settings from an Org to a scratch org def file.
 
 ```
 USAGE
-  $ sfdx jayree:org:get:settings -o <value> [--json] [--api-version <value>] [-w] [-f <value>]
+  $ sfdx jayree org get settings -o <value> [--json] [--api-version <value>] [-w] [-f <value>]
 
 FLAGS
   -f, --file=<value>                  Write to 'file' instead of project-scratch-def.json.
@@ -142,7 +142,7 @@ GLOBAL FLAGS
   --json  Format output as json.
 
 ALIASES
-  $ sfdx jayree:org:settings
+  $ sfdx jayree org settings
 
 EXAMPLES
   $ sfdx jayree:org:settings
@@ -150,15 +150,15 @@ EXAMPLES
   $ sfdx jayree:org:settings -u MyTestOrg1 -w
 ```
 
-_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.31/src/commands/jayree/org/get/settings.ts)_
+_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.32/src/commands/jayree/org/get/settings.ts)_
 
-### `sfdx jayree:org:stream`
+### `sfdx jayree org stream`
 
 Listen to streaming api and platform events.
 
 ```
 USAGE
-  $ sfdx jayree:org:stream -o <value> -c <value> [--json] [--api-version <value>] [-r <value>]
+  $ sfdx jayree org stream -o <value> -c <value> [--json] [--api-version <value>] [-r <value>]
 
 FLAGS
   -c, --channel=<value>      (required) The event name.
@@ -174,12 +174,12 @@ GLOBAL FLAGS
   --json  Format output as json.
 
 ALIASES
-  $ sfdx jayree:org:streaming
+  $ sfdx jayree org streaming
 
 EXAMPLES
   $ sfdx jayree org stream --channel=/event/eventName__e
   ...
 ```
 
-_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.31/src/commands/jayree/org/stream.ts)_
+_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.32/src/commands/jayree/org/stream.ts)_
 <!-- commandsstop -->
