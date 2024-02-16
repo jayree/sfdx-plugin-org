@@ -42,7 +42,6 @@
     "patch-package": "^8.0.0",
     "prettier": "^3.2.5",
     "pretty-quick": "^4.0.0",
-    "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   },
@@ -50,13 +49,13 @@
     "node": ">=16.0.0"
   },
   "files": [
+    "/CHANGELOG.md",
     "/lib",
     "/messages",
+    "/npm-shrinkwrap.json",
+    "/oclif.lock",
     "/oclif.manifest.json",
-    "/CHANGELOG.md",
-    "/bin/is-sfdx.js",
-    "/schemas",
-    "/oclif.lock"
+    "/schemas"
   ],
   "homepage": "https://github.com/jayree/sfdx-plugin-org",
   "keywords": [
@@ -113,6 +112,7 @@
     "docs": "sf-docs",
     "format": "wireit",
     "lint": "wireit",
+    "postpack": "sf-clean",
     "prepack": "sf-prepack",
     "prepare": "patch-package && sf-install",
     "test": "wireit",
