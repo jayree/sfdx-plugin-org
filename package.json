@@ -10,7 +10,7 @@
     "@listr2/prompt-adapter-enquirer": "^2.0.2",
     "@oclif/core": "^3.20.0",
     "@salesforce/sf-plugins-core": "^7.1.14",
-    "@salesforce/source-deploy-retrieve": "^10.5.0",
+    "@salesforce/source-deploy-retrieve": "^10.5.1",
     "@salesforce/ts-types": "^2.0.9",
     "cli-truncate": "^4.0.0",
     "debug": "^4.3.4",
