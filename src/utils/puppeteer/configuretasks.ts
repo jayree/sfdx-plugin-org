@@ -135,7 +135,7 @@ export class PuppeteerConfigureTasks {
 
           if (typeof call.type === 'object' && call.type.list) {
             await page.waitForSelector('table', {
-              timeout: 300000,
+              timeout: 300_000,
               state: 'visible',
             });
             debug({
@@ -215,12 +215,12 @@ export class PuppeteerConfigureTasks {
         if (call.waitFor === 'Navigation') {
           await page.waitForNavigation({
             waitUntil: 'networkidle',
-            timeout: 300000,
+            timeout: 300_000,
           });
         } else if (call.waitFor !== '') {
           await page.waitForSelector(call.waitFor, {
             state: 'visible',
-            timeout: 300000,
+            timeout: 300_000,
           });
         }
       }
@@ -245,7 +245,7 @@ export class PuppeteerConfigureTasks {
         } else {
           await page.waitForSelector(call.waitFor[1], {
             state: 'visible',
-            timeout: 300000,
+            timeout: 300_000,
           });
         }
       }
@@ -263,7 +263,7 @@ export class PuppeteerConfigureTasks {
               },
               call.waitFor,
               {
-                timeout: 300000,
+                timeout: 300_000,
               },
             );
           }
@@ -293,7 +293,7 @@ export class PuppeteerConfigureTasks {
       const login = await this.context.newPage();
       await login.goto(`${this.auth.instanceUrl}/secur/frontdoor.jsp?sid=${this.auth.accessToken}`, {
         waitUntil: 'networkidle',
-        timeout: 300000,
+        timeout: 300_000,
       });
     }
   }
@@ -313,13 +313,13 @@ export class PuppeteerConfigureTasks {
       const page = await this.context.newPage();
       await page.goto(this.auth.instanceUrl + (task.url as string), {
         waitUntil: 'networkidle',
-        timeout: 300000,
+        timeout: 300_000,
       });
       if (task.iframe) {
-        await page.waitForSelector('iframe', { timeout: 300000, state: 'visible' });
+        await page.waitForSelector('iframe', { timeout: 300_000, state: 'visible' });
         await page.goto(page.frames()[task.iframe].url(), {
           waitUntil: 'networkidle',
-          timeout: 300000,
+          timeout: 300_000,
         });
       }
       if ((await PuppeteerConfigureTasks.subExec(page, subTask)) === true) {
