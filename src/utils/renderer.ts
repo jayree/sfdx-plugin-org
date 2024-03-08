@@ -42,7 +42,7 @@ interface MyListrDefaultRendererOptions extends ListrDefaultRendererOptions {
 
 function startTimeSpan(): { getTimeSpan: () => number } {
   const start = process.hrtime.bigint();
-  return { getTimeSpan: () => Number(process.hrtime.bigint() - start) / 1000000000 };
+  return { getTimeSpan: () => Number(process.hrtime.bigint() - start) / 1_000_000_000 };
 }
 
 export class MyDefaultRenderer implements ListrRenderer {
