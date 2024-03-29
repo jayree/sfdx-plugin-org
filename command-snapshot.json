@@ -1,50 +1,50 @@
 [
   {
-    "command": "jayree:flow:get:coverage",
-    "plugin": "@jayree/sfdx-plugin-org",
-    "flags": ["api-version", "json", "target-org"],
     "alias": ["jayree:flowtestcoverage"],
+    "command": "jayree:flow:get:coverage",
+    "flagAliases": ["apiversion", "targetusername", "u"],
     "flagChars": ["o"],
-    "flagAliases": ["apiversion", "targetusername", "u"]
+    "flags": ["api-version", "flags-dir", "json", "target-org"],
+    "plugin": "@jayree/sfdx-plugin-org"
   },
   {
+    "alias": [],
     "command": "jayree:org:configure",
-    "plugin": "@jayree/sfdx-plugin-org",
-    "flags": ["api-version", "concurrent", "json", "target-org", "tasks"],
-    "alias": [],
+    "flagAliases": ["apiversion", "targetusername", "u"],
     "flagChars": ["o", "t"],
-    "flagAliases": ["apiversion", "targetusername", "u"]
+    "flags": ["api-version", "concurrent", "flags-dir", "json", "target-org", "tasks"],
+    "plugin": "@jayree/sfdx-plugin-org"
   },
   {
+    "alias": [],
     "command": "jayree:org:configure:country",
-    "plugin": "@jayree/sfdx-plugin-org",
-    "flags": ["api-version", "json", "silent", "target-org"],
-    "alias": [],
+    "flagAliases": ["apiversion", "targetusername", "u"],
     "flagChars": ["o"],
-    "flagAliases": ["apiversion", "targetusername", "u"]
+    "flags": ["api-version", "flags-dir", "json", "silent", "target-org"],
+    "plugin": "@jayree/sfdx-plugin-org"
   },
   {
+    "alias": [],
     "command": "jayree:org:configure:state",
-    "plugin": "@jayree/sfdx-plugin-org",
-    "flags": ["api-version", "category", "concurrent", "country-code", "json", "language", "target-org"],
-    "alias": [],
+    "flagAliases": ["apiversion", "countrycode", "targetusername", "u"],
     "flagChars": ["o"],
-    "flagAliases": ["apiversion", "countrycode", "targetusername", "u"]
+    "flags": ["api-version", "category", "concurrent", "country-code", "flags-dir", "json", "language", "target-org"],
+    "plugin": "@jayree/sfdx-plugin-org"
   },
   {
-    "command": "jayree:org:get:settings",
-    "plugin": "@jayree/sfdx-plugin-org",
-    "flags": ["api-version", "file", "json", "target-org", "writetoprojectscratchdeffile"],
     "alias": ["jayree:org:settings"],
+    "command": "jayree:org:get:settings",
+    "flagAliases": ["apiversion", "targetusername", "u"],
     "flagChars": ["f", "o", "w"],
-    "flagAliases": ["apiversion", "targetusername", "u"]
+    "flags": ["api-version", "file", "flags-dir", "json", "target-org", "writetoprojectscratchdeffile"],
+    "plugin": "@jayree/sfdx-plugin-org"
   },
   {
-    "command": "jayree:org:stream",
-    "plugin": "@jayree/sfdx-plugin-org",
-    "flags": ["api-version", "channel", "json", "replay-id", "target-org"],
     "alias": ["jayree:org:streaming"],
+    "command": "jayree:org:stream",
+    "flagAliases": ["apiversion", "p", "targetusername", "topic", "u"],
     "flagChars": ["c", "o", "r"],
-    "flagAliases": ["apiversion", "p", "targetusername", "topic", "u"]
+    "flags": ["api-version", "channel", "flags-dir", "json", "replay-id", "target-org"],
+    "plugin": "@jayree/sfdx-plugin-org"
   }
 ]
