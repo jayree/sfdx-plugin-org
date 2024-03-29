@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@oclif/plugin-command-snapshot": "^5.1.2",
-    "@oclif/plugin-help": "^6.0.18",
+    "@oclif/plugin-help": "^6.0.20",
     "@salesforce/dev-scripts": "^8.4.2",
     "@salesforce/ts-sinon": "^1.4.19",
     "@types/debug": "^4.1.12",
