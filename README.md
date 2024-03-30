@@ -30,7 +30,7 @@ Check the flow test coverage of an Org.
 
 ```
 USAGE
-  $ sfdx jayree flow get coverage -o <value> [--json] [--api-version <value>]
+  $ sfdx jayree flow get coverage -o <value> [--json] [--flags-dir <value>] [--api-version <value>]
 
 FLAGS
   -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
@@ -38,7 +38,8 @@ FLAGS
       --api-version=<value>  Override the api version used for api requests made by this command
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 
 ALIASES
   $ sfdx jayree flowtestcoverage
@@ -50,7 +51,7 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.40/src/commands/jayree/flow/get/coverage.ts)_
+_See code: [src/commands/jayree/flow/get/coverage.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.41/src/commands/jayree/flow/get/coverage.ts)_
 
 ### `sfdx jayree org configure`
 
@@ -58,7 +59,8 @@ Make configuration changes that are not covered by the metadata API.
 
 ```
 USAGE
-  $ sfdx jayree org configure -o <value> [--json] [--api-version <value>] [-t <value>] [--concurrent]
+  $ sfdx jayree org configure -o <value> [--json] [--flags-dir <value>] [--api-version <value>] [-t <value>]
+  [--concurrent]
 
 FLAGS
   -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
@@ -69,7 +71,8 @@ FLAGS
       --concurrent           Execute tasks in parallel.
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 
 EXAMPLES
   $ sfdx jayree:org:configure
@@ -78,7 +81,7 @@ EXAMPLES
   $ sfdx jayree:org:configure --concurrent --tasks="Asset Settings","Activity Settings"
 ```
 
-_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.40/src/commands/jayree/org/configure/index.ts)_
+_See code: [src/commands/jayree/org/configure/index.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.41/src/commands/jayree/org/configure/index.ts)_
 
 ### `sfdx jayree org configure country`
 
@@ -86,7 +89,7 @@ update country integration values in the State/Country Picklists
 
 ```
 USAGE
-  $ sfdx jayree org configure country -o <value> [--json] [--api-version <value>]
+  $ sfdx jayree org configure country -o <value> [--json] [--flags-dir <value>] [--api-version <value>]
 
 FLAGS
   -o, --target-org=<value>   (required) Username or alias of the target org. Not required if the `target-org`
@@ -94,10 +97,11 @@ FLAGS
       --api-version=<value>  Override the api version used for api requests made by this command
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 ```
 
-_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.40/src/commands/jayree/org/configure/country.ts)_
+_See code: [src/commands/jayree/org/configure/country.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.41/src/commands/jayree/org/configure/country.ts)_
 
 ### `sfdx jayree org configure state`
 
@@ -105,8 +109,8 @@ import (create/update) states into the State/Country Picklists
 
 ```
 USAGE
-  $ sfdx jayree org configure state -o <value> [--json] [--api-version <value>] [--country-code <value>] [--category <value>]
-    [--language <value>] [--concurrent <value>]
+  $ sfdx jayree org configure state -o <value> [--json] [--flags-dir <value>] [--api-version <value>] [--country-code <value>]
+    [--category <value>] [--language <value>] [--concurrent <value>]
 
 FLAGS
   -o, --target-org=<value>    (required) Username or alias of the target org. Not required if the `target-org`
@@ -118,10 +122,11 @@ FLAGS
       --language=<value>      Language code.
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 ```
 
-_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.40/src/commands/jayree/org/configure/state.ts)_
+_See code: [src/commands/jayree/org/configure/state.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.41/src/commands/jayree/org/configure/state.ts)_
 
 ### `sfdx jayree org get settings`
 
@@ -129,7 +134,7 @@ Write the current settings from an Org to a scratch org def file.
 
 ```
 USAGE
-  $ sfdx jayree org get settings -o <value> [--json] [--api-version <value>] [-w] [-f <value>]
+  $ sfdx jayree org get settings -o <value> [--json] [--flags-dir <value>] [--api-version <value>] [-w] [-f <value>]
 
 FLAGS
   -f, --file=<value>                  Write to 'file' instead of project-scratch-def.json.
@@ -139,7 +144,8 @@ FLAGS
       --api-version=<value>           Override the api version used for api requests made by this command
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 
 ALIASES
   $ sfdx jayree org settings
@@ -150,7 +156,7 @@ EXAMPLES
   $ sfdx jayree:org:settings -u MyTestOrg1 -w
 ```
 
-_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.40/src/commands/jayree/org/get/settings.ts)_
+_See code: [src/commands/jayree/org/get/settings.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.41/src/commands/jayree/org/get/settings.ts)_
 
 ### `sfdx jayree org stream`
 
@@ -158,7 +164,7 @@ Listen to streaming api and platform events.
 
 ```
 USAGE
-  $ sfdx jayree org stream -o <value> -c <value> [--json] [--api-version <value>] [-r <value>]
+  $ sfdx jayree org stream -o <value> -c <value> [--json] [--flags-dir <value>] [--api-version <value>] [-r <value>]
 
 FLAGS
   -c, --channel=<value>      (required) The event name.
@@ -171,7 +177,8 @@ FLAGS
       --api-version=<value>  Override the api version used for api requests made by this command
 
 GLOBAL FLAGS
-  --json  Format output as json.
+  --flags-dir=<value>  Import flag values from a directory.
+  --json               Format output as json.
 
 ALIASES
   $ sfdx jayree org streaming
@@ -181,5 +188,5 @@ EXAMPLES
   ...
 ```
 
-_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.40/src/commands/jayree/org/stream.ts)_
+_See code: [src/commands/jayree/org/stream.ts](https://github.com/jayree/sfdx-plugin-org/blob/v1.2.41/src/commands/jayree/org/stream.ts)_
 <!-- commandsstop -->

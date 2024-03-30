@@ -1,3 +1,10 @@
+## [1.2.41](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.40...v1.2.41) (2024-03-30)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/sf-plugins-core from 7.1.16 to 8.0.2 ([#502](https://github.com/jayree/sfdx-plugin-org/issues/502)) ([cf9f91a](https://github.com/jayree/sfdx-plugin-org/commit/cf9f91ace5f8d30d0c12b78ee9120d47fd0c0cd9))
+
 ## [1.2.40](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.39...v1.2.40) (2024-03-29)
 
 
