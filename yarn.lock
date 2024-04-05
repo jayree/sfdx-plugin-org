@@ -5674,10 +5674,10 @@ linkinator@^6.0.4:
     server-destroy "^1.0.1"
     srcset "^5.0.0"
 
-listr2@^8.1.1:
-  version "8.1.1"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-8.1.1.tgz#89006fa8898488270243cf0e07107b0c9613d8c0"
-  integrity sha512-w//D3d/sogqVYtz3EXRJAAiblnSoklftUbIlvWMN7AwJlqVEqjrJ9X2LM4NWOtfPWPxxPop2jS+vU1+kpA01bg==
+listr2@^8.2.1:
+  version "8.2.1"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-8.2.1.tgz#06a1a6efe85f23c5324180d7c1ddbd96b5eefd6d"
+  integrity sha512-irTfvpib/rNiD637xeevjO2l3Z5loZmuaRi0L0YE5LfijwVY96oyVn0DFD3o/teAok7nfobMG1THvvcHh/BP6g==
   dependencies:
     cli-truncate "^4.0.0"
     colorette "^2.0.20"
