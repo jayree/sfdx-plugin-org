@@ -1,3 +1,15 @@
+## [1.2.42](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.41...v1.2.42) (2024-04-06)
+
+
+### Bug Fixes
+
+* **deps:** bump @listr2/prompt-adapter-enquirer from 2.0.4 to 2.0.8 ([#508](https://github.com/jayree/sfdx-plugin-org/issues/508)) ([1d61890](https://github.com/jayree/sfdx-plugin-org/commit/1d61890b2955dd572e5df2880d5a648fcf489c3f))
+* **deps:** bump @salesforce/core from 6.7.3 to 6.7.6 ([#507](https://github.com/jayree/sfdx-plugin-org/issues/507)) ([381c7c2](https://github.com/jayree/sfdx-plugin-org/commit/381c7c2ba7bf3a88c8b6ee4e89fb35b83283dc58))
+* **deps:** bump @salesforce/sf-plugins-core from 8.0.2 to 8.0.3 ([#510](https://github.com/jayree/sfdx-plugin-org/issues/510)) ([a795660](https://github.com/jayree/sfdx-plugin-org/commit/a795660be7902ed99c032e6b7666329f3fe41b93))
+* **deps:** bump @salesforce/source-deploy-retrieve from 10.6.1 to 10.9.0 ([#506](https://github.com/jayree/sfdx-plugin-org/issues/506)) ([3324d0e](https://github.com/jayree/sfdx-plugin-org/commit/3324d0e1d8216712e6ef9b0d6bc9b8674f7a4aba))
+* **deps:** bump listr2 from 8.1.1 to 8.2.1 ([#509](https://github.com/jayree/sfdx-plugin-org/issues/509)) ([902925e](https://github.com/jayree/sfdx-plugin-org/commit/902925e21fa8103f4af869175c86bb429bc5d488))
+* **deps:** bump playwright-chromium from 1.42.1 to 1.43.0 ([#511](https://github.com/jayree/sfdx-plugin-org/issues/511)) ([2a1f49d](https://github.com/jayree/sfdx-plugin-org/commit/2a1f49d501b0704b97c7060cbb7d10ea54b70388))
+
 ## [1.2.41](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.40...v1.2.41) (2024-03-30)
 
 
