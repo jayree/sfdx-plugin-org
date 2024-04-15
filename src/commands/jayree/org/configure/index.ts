@@ -4,7 +4,8 @@
  * Licensed under the BSD 3-Clause license.
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
-import { dirname } from 'node:path';
+import * as fs from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   Flags,
@@ -13,13 +14,39 @@ import {
   orgApiVersionFlagWithDeprecations,
   arrayWithDeprecation,
 } from '@salesforce/sf-plugins-core';
-import { Messages } from '@salesforce/core';
-import { traverse } from '@salesforce/core/lib/util/internal.js';
-import { AnyJson } from '@salesforce/ts-types';
+import { Messages, SfError } from '@salesforce/core';
+import { AnyJson, Optional } from '@salesforce/ts-types';
 import { ListrLogger, Listr, PRESET_TIMER } from 'listr2';
 import Debug from 'debug';
 import config from '../../../../utils/config.js';
 import { PuppeteerConfigureTasks, Task, readTasksFromProject } from '../../../../utils/puppeteer/configuretasks.js';
+
+const traverse = {
+  /**
+   * Searches a file path in an ascending manner (until reaching the filesystem root) for the first occurrence a
+   * specific file name.  Resolves with the directory path containing the located file, or `null` if the file was
+   * not found.
+   *
+   * @param dir The directory path in which to start the upward search.
+   * @param file The file name to look for.
+   */
+  forFile: async (dir: string, file: string): Promise<Optional<string>> => {
+    let foundProjectDir: Optional<string>;
+    try {
+      fs.statSync(join(dir, file));
+      foundProjectDir = dir;
+    } catch (err) {
+      if (err && (err as SfError).code === 'ENOENT') {
+        const nextDir = resolve(dir, '..');
+        if (nextDir !== dir) {
+          // stop at root
+          foundProjectDir = await traverse.forFile(nextDir, file);
+        }
+      }
+    }
+    return foundProjectDir;
+  },
+};
 
 // eslint-disable-next-line no-underscore-dangle
 const __filename = fileURLToPath(import.meta.url);
