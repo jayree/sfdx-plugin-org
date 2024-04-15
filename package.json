@@ -7,6 +7,7 @@
   "bugs": "https://github.com/jayree/sfdx-plugin-org/issues",
   "dependencies": {
     "@jayree/changelog": "^1.1.11",
+    "@jsforce/jsforce-node": "^3.1.0",
     "@listr2/prompt-adapter-enquirer": "^2.0.8",
     "@oclif/core": "^3.26.3",
     "@salesforce/core": "^7.2.0",
@@ -20,7 +21,6 @@
     "fs-extra": "^11.2.0",
     "is-docker": "^3.0.0",
     "is-wsl": "^3.1.0",
-    "jsforce": "^2.0.0-beta.29",
     "listr2": "^8.2.1",
     "log-update": "^6.0.0",
     "playwright-chromium": "^1.43.1",
