@@ -13,8 +13,8 @@ import {
   orgApiVersionFlagWithDeprecations,
 } from '@salesforce/sf-plugins-core';
 import { Messages } from '@salesforce/core';
-import { StreamingExtension, StreamingMessage } from 'jsforce/lib/api/streaming.js';
-import { Record } from 'jsforce';
+import { StreamingExtension, StreamingMessage } from '@jsforce/jsforce-node/lib/api/streaming.js';
+import { Record } from '@jsforce/jsforce-node';
 
 // eslint-disable-next-line no-underscore-dangle
 const __filename = fileURLToPath(import.meta.url);
