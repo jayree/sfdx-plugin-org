@@ -8251,10 +8251,10 @@ synckit@^0.8.6:
     "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
 
-tabletojson@4.1.3:
-  version "4.1.3"
-  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.3.tgz#7da49bc4f43245f46b872eb78aaa55c3558acb35"
-  integrity sha512-ac63/I5xfW1L162XZY9P1y1CtpZ0Hf7TW+PgRqOEeXFuLhm5D7kg/+7Wm2D6myU1H9qJlr4f+Jiozzq10BFjTg==
+tabletojson@4.1.4:
+  version "4.1.4"
+  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.4.tgz#b72d23c22f13b782ae4fa8c1da0b388010abc31d"
+  integrity sha512-Y2QpSgQk2ORLROr82dNIXbFKGJkqf8gwgGZ7pCFungVy3UCxaWb8xZT9yb3SHJsqVV6f8utLdbBJ4GVhPEPXog==
   dependencies:
     cheerio "^1.0.0-rc.12"
 
