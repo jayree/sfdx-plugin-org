@@ -1,3 +1,12 @@
+## [1.2.55](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.54...v1.2.55) (2024-06-21)
+
+
+### Bug Fixes
+
+* **deps:** bump @listr2/prompt-adapter-enquirer from 2.0.8 to 2.0.9 ([#606](https://github.com/jayree/sfdx-plugin-org/issues/606)) ([14920cc](https://github.com/jayree/sfdx-plugin-org/commit/14920cce6e9ce3a2b2048c76f9e7faf9a2305b39))
+* **deps:** bump listr2 from 8.2.1 to 8.2.2 ([#611](https://github.com/jayree/sfdx-plugin-org/issues/611)) ([a587e60](https://github.com/jayree/sfdx-plugin-org/commit/a587e60415cc881ef41c43563447d2e37765c267))
+* **deps:** bump tabletojson from 4.1.3 to 4.1.4 ([#602](https://github.com/jayree/sfdx-plugin-org/issues/602)) ([c64b325](https://github.com/jayree/sfdx-plugin-org/commit/c64b325939e2322ec6c445abbc092eccd38ec63c))
+
 ## [1.2.54](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.53...v1.2.54) (2024-06-14)
 
 
