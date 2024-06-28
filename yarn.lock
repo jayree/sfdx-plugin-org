@@ -1491,27 +1491,7 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@jsforce/jsforce-node@^3.2.0":
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.2.0.tgz#4b104613fc9bb74e0e38d2c00936ea2b228ba73a"
-  integrity sha512-3GjWNgWs0HFajVhIhwvBPb0B45o500wTBNEBYxy8XjeeRra+qw8A9xUrfVU7TAGev8kXuKhjJwaTiSzThpEnew==
-  dependencies:
-    "@sindresorhus/is" "^4"
-    "@types/node" "^18.15.3"
-    abort-controller "^3.0.0"
-    base64url "^3.0.1"
-    csv-parse "^5.5.2"
-    csv-stringify "^6.4.4"
-    faye "^1.4.0"
-    form-data "^4.0.0"
-    fs-extra "^8.1.0"
-    https-proxy-agent "^5.0.0"
-    multistream "^3.1.0"
-    node-fetch "^2.6.1"
-    strip-ansi "^6.0.0"
-    xml2js "^0.6.2"
-
-"@jsforce/jsforce-node@^3.2.1":
+"@jsforce/jsforce-node@^3.2.0", "@jsforce/jsforce-node@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.2.1.tgz#00fab05919e0cbe91ae4d873377e56cfbc087b98"
   integrity sha512-hjmZQbYVikm6ATmaErOp5NaKR2VofNZsrcGGHrdbGA+bAgpfg/+MA/HzRTb8BvYyPDq3RRc5A8Yk8gx9Vtcrxg==
@@ -2689,10 +2669,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^20.10.7":
-  version "20.12.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.7.tgz#04080362fa3dd6c5822061aa3124f5c152cff384"
-  integrity sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==
+"@types/node@*", "@types/node@^20.10.7", "@types/node@^20.12.13":
+  version "20.14.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.2.tgz#a5f4d2bcb4b6a87bffcaa717718c5a0f208f4a18"
+  integrity sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2705,13 +2685,6 @@
   version "18.19.33"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.19.33.tgz#98cd286a1b8a5e11aa06623210240bcc28e95c48"
   integrity sha512-NR9+KrpSajr2qBVp/Yt5TU/rp+b5Mayi3+OlMlcg2cVCfRmcG5PWZ7S4+MG9PZ5gWBoc9Pd0BKSRViuBCRPu0A==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^20.12.13":
-  version "20.14.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.14.2.tgz#a5f4d2bcb4b6a87bffcaa717718c5a0f208f4a18"
-  integrity sha512-xyu6WAMVwv6AKFLB+e/7ySZVr/0zLCzOa7rSpq6jNwpqOrUbcACDWC+53d4n2QHOnDou0fbIsg8wZu/sxrnI4Q==
   dependencies:
     undici-types "~5.26.4"
 
