@@ -1444,7 +1444,7 @@
   resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.1.tgz#1ec17e2edbec25c8306d424ecfbf13c7de1aaa31"
   integrity sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==
 
-"@salesforce/core@^7.3.10", "@salesforce/core@^7.3.9":
+"@salesforce/core@^7.3.9":
   version "7.4.0"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-7.4.0.tgz#11c45a5f432e032bf242aaace1a175779e3e096f"
   integrity sha512-wn3fJnpG8h493qKR52Il3xgRbXg4zwbV34wonf/mTZP3n5rJeC/7S69249CGN155Os6Lds5rEUo3pGJFwgCBdQ==
