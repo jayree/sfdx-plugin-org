@@ -1,3 +1,12 @@
+## [1.2.60](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.59...v1.2.60) (2024-07-19)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.2.2 to 3.2.4 ([#647](https://github.com/jayree/sfdx-plugin-org/issues/647)) ([030c675](https://github.com/jayree/sfdx-plugin-org/commit/030c67545957ff943a45b1e6971a735b37f8ed1f))
+* **deps:** bump @salesforce/source-deploy-retrieve from 12.1.5 to 12.1.7 ([#648](https://github.com/jayree/sfdx-plugin-org/issues/648)) ([12e5e15](https://github.com/jayree/sfdx-plugin-org/commit/12e5e15a886e7a6b76ad5494842a727a3337c854))
+* **deps:** bump playwright-chromium from 1.45.1 to 1.45.2 ([#645](https://github.com/jayree/sfdx-plugin-org/issues/645)) ([1f9cd16](https://github.com/jayree/sfdx-plugin-org/commit/1f9cd165c6b1e227dbb49e99b7594b594b2f9c46))
+
 ## [1.2.59](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.58...v1.2.59) (2024-07-12)
 
 
