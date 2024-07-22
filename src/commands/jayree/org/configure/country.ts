@@ -13,9 +13,9 @@ import {
   orgApiVersionFlagWithDeprecations,
 } from '@salesforce/sf-plugins-core';
 import { Messages } from '@salesforce/core';
-import { ux } from '@oclif/core';
 import playwright from 'playwright-chromium';
 import { tabletojson } from 'tabletojson';
+import progress from 'cli-progress';
 import { configSelectors } from '../../../../utils/puppeteer/countrystateconfig.js';
 import { readLaunchOptionsFromProject } from '../../../../utils/puppeteer/utils.js';
 
@@ -67,7 +67,7 @@ export default class UpdateCountry extends SfCommand<void> {
       }
     };
 
-    const bar = ux.progress({
+    const bar = new progress.SingleBar({
       barCompleteChar: '\u2588',
       barIncompleteChar: '\u2591',
       format: 'State and Country/Territory Picklist | [{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {text}',
