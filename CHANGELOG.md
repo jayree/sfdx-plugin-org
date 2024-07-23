@@ -1,3 +1,13 @@
+## [1.2.61](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.60...v1.2.61) (2024-07-23)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 3.26.6 to 4.0.13 ([#652](https://github.com/jayree/sfdx-plugin-org/issues/652)) ([f5213c4](https://github.com/jayree/sfdx-plugin-org/commit/f5213c4eaac9c5711f3606cc80c580654c685d70))
+* **deps:** bump @salesforce/core from 7.4.0 to 8.2.2 ([#653](https://github.com/jayree/sfdx-plugin-org/issues/653)) ([b0ff793](https://github.com/jayree/sfdx-plugin-org/commit/b0ff793c04360471d6dd1d8b7f90117f290b217f))
+* **deps:** bump @salesforce/sf-plugins-core from 9.1.0 to 11.2.1 ([#654](https://github.com/jayree/sfdx-plugin-org/issues/654)) ([d694b45](https://github.com/jayree/sfdx-plugin-org/commit/d694b45b0d03255d1ccc8ca55c201c40c92dbf31))
+* use cli-progress ([698d1b0](https://github.com/jayree/sfdx-plugin-org/commit/698d1b0c506d5f1e6a1dff2a11cde9e3562be6bf))
+
 ## [1.2.60](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.59...v1.2.60) (2024-07-19)
 
 
