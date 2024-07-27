@@ -273,7 +273,7 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
       await fs.writeFile(deffilepath, JSON.stringify(deffile, null, 2));
     } else {
       this.styledHeader(
-        `received settings from Org: ${flags['target-org'].getUsername()} (${flags['target-org'].getOrgId()})`,
+        `received settings from Org: ${flags['target-org'].getUsername() as string} (${flags['target-org'].getOrgId()})`,
       );
       this.styledJSON(settings);
     }

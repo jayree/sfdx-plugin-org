@@ -87,7 +87,7 @@ export default class UpdateCountry extends SfCommand<void> {
       spinnermessage = `login to ${conn.instanceUrl}`;
       // eslint-disable-next-line no-unused-expressions
       !flags.silent ? this.spinner.start(spinnermessage) : process.stdout.write('.');
-      await page.goto(`${conn.instanceUrl}/secur/frontdoor.jsp?sid=${conn.accessToken}`, {
+      await page.goto(`${conn.instanceUrl}/secur/frontdoor.jsp?sid=${conn.accessToken as string}`, {
         waitUntil: 'networkidle',
       });
 

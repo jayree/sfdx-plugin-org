@@ -467,7 +467,7 @@ export class MyDefaultRenderer implements ListrRenderer {
                 output.push(
                   ...this.format(
                     this.logger.suffix(task.title as string, {
-                      field: `${ListrLogLevels.RETRY}:${task.message.retry?.count}`,
+                      field: `${ListrLogLevels.RETRY}:${task.message.retry?.count as number}`,
                       format: () => color.yellow as LoggerFormat,
                       condition: rendererOptions?.suffixRetries,
                     }),
