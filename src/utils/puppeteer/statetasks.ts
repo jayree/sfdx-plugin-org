@@ -274,7 +274,7 @@ export class PuppeteerStateTasks {
 
     await page.goto(
       this.auth.instanceUrl +
-        `/i18n/ConfigureCountry.apexp?countryIso=${this.countrycode}&setupid=AddressCleanerOverview`,
+        `/i18n/ConfigureCountry.apexp?countryIso=${this.countrycode as string}&setupid=AddressCleanerOverview`,
       {
         waitUntil: 'networkidle',
       },
