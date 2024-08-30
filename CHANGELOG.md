@@ -1,3 +1,14 @@
+## [1.2.68](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.67...v1.2.68) (2024-08-30)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.2 to 1.2.3 ([#714](https://github.com/jayree/sfdx-plugin-org/issues/714)) ([2a4261e](https://github.com/jayree/sfdx-plugin-org/commit/2a4261e6b3f7c3510e662af05877cbc0a398383a))
+* **deps:** bump @oclif/core from 4.0.18 to 4.0.19 ([#712](https://github.com/jayree/sfdx-plugin-org/issues/712)) ([883eb33](https://github.com/jayree/sfdx-plugin-org/commit/883eb337fef0c5857cb8620e2a515e0a74f79486))
+* **deps:** bump @salesforce/core from 8.4.0 to 8.5.1 ([#717](https://github.com/jayree/sfdx-plugin-org/issues/717)) ([2ff0068](https://github.com/jayree/sfdx-plugin-org/commit/2ff00688f8b6776d8707e357491dfa1c1f5c85d2))
+* **deps:** bump @salesforce/sf-plugins-core from 11.3.4 to 11.3.6 ([#713](https://github.com/jayree/sfdx-plugin-org/issues/713)) ([6a37b3e](https://github.com/jayree/sfdx-plugin-org/commit/6a37b3eb47bafffa6d3d102947d168f743460260))
+* **deps:** bump tslib from 2.6.3 to 2.7.0 ([#719](https://github.com/jayree/sfdx-plugin-org/issues/719)) ([dff994b](https://github.com/jayree/sfdx-plugin-org/commit/dff994bf41aa0ec511b3d19881de4a059c2415eb))
+
 ## [1.2.67](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.66...v1.2.67) (2024-08-23)
 
 
