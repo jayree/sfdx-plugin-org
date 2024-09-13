@@ -1,3 +1,13 @@
+## [1.2.71](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.70...v1.2.71) (2024-09-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.0.20 to 4.0.22 ([#734](https://github.com/jayree/sfdx-plugin-org/issues/734)) ([a6d6576](https://github.com/jayree/sfdx-plugin-org/commit/a6d6576e340abf7b1df29ab184b9f9bd92334fe3))
+* **deps:** bump @salesforce/core from 8.5.4 to 8.5.7 ([#731](https://github.com/jayree/sfdx-plugin-org/issues/731)) ([e737d1a](https://github.com/jayree/sfdx-plugin-org/commit/e737d1a412cea51de3390728201c3afd3edea6ed))
+* **deps:** bump @salesforce/sf-plugins-core from 11.3.7 to 11.3.10 ([#737](https://github.com/jayree/sfdx-plugin-org/issues/737)) ([d76dfe1](https://github.com/jayree/sfdx-plugin-org/commit/d76dfe1cf723856550a77e948492b6b0d59bde8d))
+* **deps:** bump @salesforce/source-deploy-retrieve from 12.6.2 to 12.6.3 ([#738](https://github.com/jayree/sfdx-plugin-org/issues/738)) ([39f0065](https://github.com/jayree/sfdx-plugin-org/commit/39f00657e40ac09c3151ad16418d88994da12527))
+
 ## [1.2.70](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.69...v1.2.70) (2024-09-06)
 
 
