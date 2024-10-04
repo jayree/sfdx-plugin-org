@@ -1618,10 +1618,10 @@
     strip-ansi "^6.0.0"
     xml2js "^0.6.2"
 
-"@listr2/prompt-adapter-enquirer@^2.0.11":
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-2.0.11.tgz#a0711917fe00ac4718b1711e7cfd219ceec47a3e"
-  integrity sha512-4xmQnYzB06d1iiutJdTZyEcvCR9RVC6QehogRqDQckBNfwD7i+6hEntFVAtewI1/52lT3HkgKptJeFwCwmjX0g==
+"@listr2/prompt-adapter-enquirer@^2.0.12":
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-2.0.12.tgz#e65d01880c653d6a03c1a4899cdee71ca157c1a0"
+  integrity sha512-WR1RvaiRuSOQ8i8Hr6CLlPXFsL2u9xwoADKYD2GeUsk7EBOx7cb9GFvJhHnlVUZq4LaPvY1U1NtrgXoslteaVA==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
