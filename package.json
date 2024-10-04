@@ -12,7 +12,7 @@
     "@oclif/core": "^4.0.23",
     "@salesforce/core": "^8.6.1",
     "@salesforce/sf-plugins-core": "^11.3.10",
-    "@salesforce/source-deploy-retrieve": "^12.7.1",
+    "@salesforce/source-deploy-retrieve": "^12.7.3",
     "@salesforce/ts-types": "^2.0.12",
     "chalk": "^5.3.0",
     "cli-progress": "^3.12.0",
