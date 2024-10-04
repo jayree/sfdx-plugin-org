@@ -1,3 +1,14 @@
+## [1.2.75](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.74...v1.2.75) (2024-10-04)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.4.2 to 3.5.1 ([#754](https://github.com/jayree/sfdx-plugin-org/issues/754)) ([463a8b0](https://github.com/jayree/sfdx-plugin-org/commit/463a8b05eae24e14a5e9fdd556c28371508de8ca))
+* **deps:** bump @listr2/prompt-adapter-enquirer from 2.0.11 to 2.0.12 ([#758](https://github.com/jayree/sfdx-plugin-org/issues/758)) ([6bead15](https://github.com/jayree/sfdx-plugin-org/commit/6bead152e04dc9e96e25e07cdfccc1d28511de86))
+* **deps:** bump @oclif/core from 4.0.23 to 4.0.27 ([#751](https://github.com/jayree/sfdx-plugin-org/issues/751)) ([66ca689](https://github.com/jayree/sfdx-plugin-org/commit/66ca68976f3087b2a7440c2a642a7b155467fd8c))
+* **deps:** bump @salesforce/source-deploy-retrieve from 12.7.1 to 12.7.3 ([#750](https://github.com/jayree/sfdx-plugin-org/issues/750)) ([b05ab97](https://github.com/jayree/sfdx-plugin-org/commit/b05ab97f433206579b0a7bff77bfc88d3d8743fb))
+* **deps:** bump listr2 from 8.2.4 to 8.2.5 ([#755](https://github.com/jayree/sfdx-plugin-org/issues/755)) ([c831e1e](https://github.com/jayree/sfdx-plugin-org/commit/c831e1e51c216b1786d7a7aec24dce3ffff00dc7))
+
 ## [1.2.74](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.73...v1.2.74) (2024-09-28)
 
 
