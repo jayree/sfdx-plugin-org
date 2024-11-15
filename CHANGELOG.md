@@ -1,3 +1,11 @@
+## [1.2.81](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.80...v1.2.81) (2024-11-15)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.0.31 to 4.0.32 ([#802](https://github.com/jayree/sfdx-plugin-org/issues/802)) ([661eec1](https://github.com/jayree/sfdx-plugin-org/commit/661eec13a4fe3f1dae11f09fc5453d0dce1e61f3))
+* **deps:** bump @salesforce/core from 8.6.4 to 8.8.0 ([#803](https://github.com/jayree/sfdx-plugin-org/issues/803)) ([dcc4916](https://github.com/jayree/sfdx-plugin-org/commit/dcc4916f0acab340f4b40872297c9fea5e5017f2))
+
 ## [1.2.80](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.79...v1.2.80) (2024-11-08)
 
 
