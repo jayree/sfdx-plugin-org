@@ -1,3 +1,11 @@
+## [1.2.87](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.86...v1.2.87) (2024-12-27)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.1.1 to 4.2.0 ([#835](https://github.com/jayree/sfdx-plugin-org/issues/835)) ([717eb48](https://github.com/jayree/sfdx-plugin-org/commit/717eb4847312aa8e75c3fe0018565f98b20bb8cb))
+* **deps:** bump chalk from 5.4.0 to 5.4.1 ([#837](https://github.com/jayree/sfdx-plugin-org/issues/837)) ([f114194](https://github.com/jayree/sfdx-plugin-org/commit/f1141941ee2c1b2ccd95e57a20def9b048922769))
+
 ## [1.2.86](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.85...v1.2.86) (2024-12-20)
 
 
