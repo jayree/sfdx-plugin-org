@@ -1,3 +1,11 @@
+## [1.2.90](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.89...v1.2.90) (2025-01-17)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.2.2 to 4.2.3 ([#848](https://github.com/jayree/sfdx-plugin-org/issues/848)) ([c060fbd](https://github.com/jayree/sfdx-plugin-org/commit/c060fbd773cc7c50f3bc00b5bd907460aac06518))
+* **deps:** bump fs-extra from 11.2.0 to 11.3.0 ([#850](https://github.com/jayree/sfdx-plugin-org/issues/850)) ([1763b07](https://github.com/jayree/sfdx-plugin-org/commit/1763b07982244e64df1b3c5c0b195eafa2586b8d))
+
 ## [1.2.89](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.88...v1.2.89) (2025-01-10)
 
 
