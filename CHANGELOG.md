@@ -1,3 +1,11 @@
+## [1.2.94](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.93...v1.2.94) (2025-02-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.2.5 to 4.2.6 ([#877](https://github.com/jayree/sfdx-plugin-org/issues/877)) ([170e749](https://github.com/jayree/sfdx-plugin-org/commit/170e749799512ae20c50fc19782006c6d9fd3525))
+* **deps:** bump playwright-chromium from 1.50.0 to 1.50.1 ([#874](https://github.com/jayree/sfdx-plugin-org/issues/874)) ([f316ce6](https://github.com/jayree/sfdx-plugin-org/commit/f316ce6219738f40367dd2e10219b573caf30027))
+
 ## [1.2.93](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.92...v1.2.93) (2025-01-31)
 
 
