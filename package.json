@@ -8,7 +8,7 @@
   "dependencies": {
     "@jayree/changelog": "^1.2.8",
     "@jsforce/jsforce-node": "^3.7.0",
-    "@listr2/prompt-adapter-enquirer": "^2.0.12",
+    "@listr2/prompt-adapter-enquirer": "^2.0.15",
     "@oclif/core": "^4.2.10",
     "@salesforce/core": "^8.9.0",
     "@salesforce/sf-plugins-core": "^11.3.12",
