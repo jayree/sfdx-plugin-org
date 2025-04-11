@@ -22,7 +22,7 @@
     "fs-extra": "^11.3.0",
     "is-docker": "^3.0.0",
     "is-wsl": "^3.1.0",
-    "listr2": "^8.2.5",
+    "listr2": "^8.3.2",
     "log-update": "^6.0.0",
     "playwright-chromium": "^1.51.1",
     "tabletojson": "4.1.5",
