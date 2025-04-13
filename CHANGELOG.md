@@ -1,3 +1,10 @@
+## [1.2.105](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.104...v1.2.105) (2025-04-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @listr2/prompt-adapter-enquirer from 2.0.12 to 2.0.15 ([#939](https://github.com/jayree/sfdx-plugin-org/issues/939)) ([8d01083](https://github.com/jayree/sfdx-plugin-org/commit/8d01083d147f2c27bac346c3e48173b3c1b7533e))
+
 ## [1.2.104](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.103...v1.2.104) (2025-04-12)
 
 
