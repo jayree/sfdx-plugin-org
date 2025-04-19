@@ -1,3 +1,10 @@
+## [1.2.108](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.107...v1.2.108) (2025-04-19)
+
+
+### Bug Fixes
+
+* **deps:** bump playwright-chromium from 1.51.1 to 1.52.0 ([#947](https://github.com/jayree/sfdx-plugin-org/issues/947)) ([7836450](https://github.com/jayree/sfdx-plugin-org/commit/7836450730d9cf3a1355fdbb8e41dd1ba2846934))
+
 ## [1.2.107](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.106...v1.2.107) (2025-04-18)
 
 
