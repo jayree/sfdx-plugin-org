@@ -1,3 +1,10 @@
+## [1.2.110](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.109...v1.2.110) (2025-04-25)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.7.0 to 3.8.0 ([#954](https://github.com/jayree/sfdx-plugin-org/issues/954)) ([4dc716f](https://github.com/jayree/sfdx-plugin-org/commit/4dc716fae362151c051502dfc24bd674cfe1151f))
+
 ## [1.2.109](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.108...v1.2.109) (2025-04-20)
 
 
