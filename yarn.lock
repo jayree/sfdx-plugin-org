@@ -1587,10 +1587,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@jsforce/jsforce-node@^3.7.0":
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.7.0.tgz#aaa317eef3207489db90498f79e96c5bd9f53469"
-  integrity sha512-v9pc3lPM5RMuB81Gasz5/NKcjktE1LLEACRFopB9LiXRafb4K9bStSMl3nLEHq7+OFdtxfQB3Sx2rYXJGG4DKw==
+"@jsforce/jsforce-node@^3.7.0", "@jsforce/jsforce-node@^3.8.0":
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/@jsforce/jsforce-node/-/jsforce-node-3.8.0.tgz#c4ef21994f6b83d2c6f21d20ada70481a641e2c1"
+  integrity sha512-oiPovVNSQHk54i5G/xauufSzzuU4ElRvsnWVAiAJq20SOiHNR9LUye7nhUy4Cfgje1asXBc+CCs8g+Vv+x54AA==
   dependencies:
     "@sindresorhus/is" "^4"
     base64url "^3.0.1"
