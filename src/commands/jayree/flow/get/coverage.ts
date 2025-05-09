@@ -10,6 +10,7 @@ import {
   SfCommand,
   requiredOrgFlagWithDeprecations,
   orgApiVersionFlagWithDeprecations,
+  convertToNewTableAPI,
 } from '@salesforce/sf-plugins-core';
 import { Messages } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
@@ -87,16 +88,18 @@ Coverage: 82%
       });
     }
 
-    this.table(x, {
-      TESTCOVERAGE: {
-        header: 'all flows and processes that have test coverage',
-        get: (row) => row['all flows and processes that have test coverage'],
-      },
-      NOTESTCOVERAGE: {
-        header: 'all active autolaunched flows and processes that don’t have test coverage',
-        get: (row) => row['all active autolaunched flows and processes that don’t have test coverage'],
-      },
-    });
+    this.table(
+      convertToNewTableAPI(x, {
+        TESTCOVERAGE: {
+          header: 'all flows and processes that have test coverage',
+          get: (row) => row['all flows and processes that have test coverage'],
+        },
+        NOTESTCOVERAGE: {
+          header: 'all active autolaunched flows and processes that don’t have test coverage',
+          get: (row) => row['all active autolaunched flows and processes that don’t have test coverage'],
+        },
+      }),
+    );
 
     if (covered.length !== numberOfCoveredActiveAutolaunchedFlowsAndProcesses) {
       this.warn(
