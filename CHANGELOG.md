@@ -1,3 +1,14 @@
+## [1.2.112](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.111...v1.2.112) (2025-05-09)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.8 to 1.2.9 ([#969](https://github.com/jayree/sfdx-plugin-org/issues/969)) ([3f3110a](https://github.com/jayree/sfdx-plugin-org/commit/3f3110ac25186e1f2661bc07bfd08f6f7c4f54bd))
+* **deps:** bump @listr2/prompt-adapter-enquirer from 2.0.15 to 2.0.16 ([#967](https://github.com/jayree/sfdx-plugin-org/issues/967)) ([a5de135](https://github.com/jayree/sfdx-plugin-org/commit/a5de13589e37e7a07e9c4bcc783d90e011cb4911))
+* **deps:** bump @salesforce/core from 8.10.1 to 8.10.3 ([#964](https://github.com/jayree/sfdx-plugin-org/issues/964)) ([60266e1](https://github.com/jayree/sfdx-plugin-org/commit/60266e16f0b6270633a3f86c6d150601de29d5f1))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#970](https://github.com/jayree/sfdx-plugin-org/issues/970)) ([81ae016](https://github.com/jayree/sfdx-plugin-org/commit/81ae01651d0029fb162d043ee7988d672036b569))
+* **deps:** bump listr2 from 8.3.2 to 8.3.3 ([#968](https://github.com/jayree/sfdx-plugin-org/issues/968)) ([c18779d](https://github.com/jayree/sfdx-plugin-org/commit/c18779df655f5777b5e81d864e1fc2754f08e634))
+
 ## [1.2.111](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.110...v1.2.111) (2025-05-02)
 
 
