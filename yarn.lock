@@ -1603,10 +1603,10 @@
     node-fetch "^2.6.1"
     xml2js "^0.6.2"
 
-"@listr2/prompt-adapter-enquirer@^2.0.15":
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-2.0.15.tgz#9e0e29bc66dc2eca5fbd5cd34a3c8e197c4ca214"
-  integrity sha512-o/mvK72xAGZf9/50rVbmdD8f/RMwSHDk94mw6k4ZZGTFKYbuLrbQJwh+GWbmB0+bDxjsR9CiQ79Pzd46FkLDxA==
+"@listr2/prompt-adapter-enquirer@^2.0.16":
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-2.0.16.tgz#309b5ed28dd12af886734963f0ac210517f7a5c7"
+  integrity sha512-CNhdBXWi+HWJCyjYwOSgEmK0rrUnwZrG9h0bKUrwxSqpz5A6unMTxvN254k+3TbDZRtzu+21mcb4KNT/6vxIzg==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
