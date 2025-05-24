@@ -1,3 +1,10 @@
+## [1.2.117](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.116...v1.2.117) (2025-05-24)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/source-deploy-retrieve ([#981](https://github.com/jayree/sfdx-plugin-org/issues/981)) ([569d5fe](https://github.com/jayree/sfdx-plugin-org/commit/569d5fe385b07a98b1bae943fb9c67201edc7ef2))
+
 ## [1.2.116](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.115...v1.2.116) (2025-05-23)
 
 
