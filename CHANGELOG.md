@@ -1,3 +1,10 @@
+## [1.2.118](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.117...v1.2.118) (2025-05-30)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 8.11.1 to 8.11.4 ([#985](https://github.com/jayree/sfdx-plugin-org/issues/985)) ([62212bd](https://github.com/jayree/sfdx-plugin-org/commit/62212bd8a6b720b39a9d9f8db06ef3aab2945d8e))
+
 ## [1.2.117](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.116...v1.2.117) (2025-05-24)
 
 
