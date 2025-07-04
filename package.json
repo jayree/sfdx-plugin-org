@@ -24,7 +24,7 @@
     "is-wsl": "^3.1.0",
     "listr2": "^8.3.3",
     "log-update": "^6.0.0",
-    "playwright-chromium": "^1.53.1",
+    "playwright-chromium": "^1.53.2",
     "tabletojson": "4.1.6",
     "tslib": "^2.8.1",
     "wrap-ansi": "^9.0.0"
