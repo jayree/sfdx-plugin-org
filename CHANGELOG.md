@@ -1,3 +1,15 @@
+## [1.2.136](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.135...v1.2.136) (2025-09-12)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.10.4 to 3.10.7 ([#1109](https://github.com/jayree/sfdx-plugin-org/issues/1109)) ([d12d74d](https://github.com/jayree/sfdx-plugin-org/commit/d12d74d01865cd2bf4d1f51d210c63ee7d81c36c))
+* **deps:** bump @oclif/core from 4.5.2 to 4.5.3 ([#1107](https://github.com/jayree/sfdx-plugin-org/issues/1107)) ([1169170](https://github.com/jayree/sfdx-plugin-org/commit/1169170f6575bcfb40f08c4bdca8e86fb58cc4c2))
+* **deps:** bump @salesforce/core from 8.23.0 to 8.23.1 ([#1104](https://github.com/jayree/sfdx-plugin-org/issues/1104)) ([5b70a99](https://github.com/jayree/sfdx-plugin-org/commit/5b70a999ff7d9c2933e7105a50561a021eb73a71))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1101](https://github.com/jayree/sfdx-plugin-org/issues/1101)) ([71e8aff](https://github.com/jayree/sfdx-plugin-org/commit/71e8affea839344b041cb714be0bfa69044b0b36))
+* **deps:** bump chalk from 5.6.0 to 5.6.2 ([#1103](https://github.com/jayree/sfdx-plugin-org/issues/1103)) ([130cb3c](https://github.com/jayree/sfdx-plugin-org/commit/130cb3cf496bf93b699a1e5182a17c9668bc304d))
+* **deps:** bump wrap-ansi from 9.0.0 to 9.0.2 ([#1108](https://github.com/jayree/sfdx-plugin-org/issues/1108)) ([24d77c8](https://github.com/jayree/sfdx-plugin-org/commit/24d77c899bccf5927019556a9dcc70dbff9089ba))
+
 ## [1.2.135](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.134...v1.2.135) (2025-09-05)
 
 
