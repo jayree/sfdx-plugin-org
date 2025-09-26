@@ -1,3 +1,12 @@
+## [1.2.138](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.137...v1.2.138) (2025-09-26)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.16 to 1.2.18 ([#1121](https://github.com/jayree/sfdx-plugin-org/issues/1121)) ([7e0b8f4](https://github.com/jayree/sfdx-plugin-org/commit/7e0b8f4d269fdf68317d9259a624072b64167297))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1122](https://github.com/jayree/sfdx-plugin-org/issues/1122)) ([c950508](https://github.com/jayree/sfdx-plugin-org/commit/c9505087a196a02c645dcc58c357641d202dd1da))
+* **deps:** bump playwright-chromium from 1.55.0 to 1.55.1 ([#1124](https://github.com/jayree/sfdx-plugin-org/issues/1124)) ([ce2df1f](https://github.com/jayree/sfdx-plugin-org/commit/ce2df1f10af22e739455a192822bf8fd32360392))
+
 ## [1.2.137](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.136...v1.2.137) (2025-09-19)
 
 
