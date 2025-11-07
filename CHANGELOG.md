@@ -1,3 +1,10 @@
+## [1.2.143](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.142...v1.2.143) (2025-11-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.18 to 1.2.19 ([#1161](https://github.com/jayree/sfdx-plugin-org/issues/1161)) ([a4aecd5](https://github.com/jayree/sfdx-plugin-org/commit/a4aecd5d2506afba9aacc4de75b388289bd39ebf))
+
 ## [1.2.142](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.141...v1.2.142) (2025-10-31)
 
 
