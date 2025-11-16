@@ -152,7 +152,7 @@ export class PuppeteerConfigureTasks {
                 const elements = document.querySelectorAll(c.querySelectorAll);
                 const ret: string[] = [];
                 elements.forEach((element) => {
-                  ret.push(element.textContent?.trim() as string);
+                  ret.push(element.textContent?.trim());
                 });
                 return ret;
               }, call),
