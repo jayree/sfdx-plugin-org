@@ -1,10 +1,10 @@
 import type { ListrDefaultRendererOptions, ListrDefaultRendererTask, ListrDefaultRendererTaskOptions } from 'listr2';
 import type { ListrRenderer } from 'listr2';
 import type { ListrEventManager } from 'listr2';
-interface MyListrDefaultRendererOptions extends ListrDefaultRendererOptions {
+type MyListrDefaultRendererOptions = {
     maxSubTasks?: number;
     hideAfterSeconds?: number;
-}
+} & ListrDefaultRendererOptions;
 export declare class MyDefaultRenderer implements ListrRenderer {
     private readonly tasks;
     private readonly options;
