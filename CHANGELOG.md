@@ -1,3 +1,13 @@
+## [1.2.146](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.145...v1.2.146) (2025-11-16)
+
+
+### Bug Fixes
+
+* **deps:** bump cli-truncate from 4.0.0 to 5.1.1 ([#1146](https://github.com/jayree/sfdx-plugin-org/issues/1146)) ([28855d5](https://github.com/jayree/sfdx-plugin-org/commit/28855d5dd8d51b1002df88eaef0e6d965cd7a70a))
+* **deps:** bump is-docker from 3.0.0 to 4.0.0 ([#1117](https://github.com/jayree/sfdx-plugin-org/issues/1117)) ([9172b13](https://github.com/jayree/sfdx-plugin-org/commit/9172b138332d8e7f5fe929f54401f16df41df843))
+* **deps:** bump listr2 from 8.3.3 to 9.0.5 ([#1147](https://github.com/jayree/sfdx-plugin-org/issues/1147)) ([7ff1318](https://github.com/jayree/sfdx-plugin-org/commit/7ff1318377596e1fd5c4e4de27a183ff85170c2c))
+* **deps:** bump log-update from 6.1.0 to 7.0.1 ([#1125](https://github.com/jayree/sfdx-plugin-org/issues/1125)) ([53799d8](https://github.com/jayree/sfdx-plugin-org/commit/53799d8e076c433d51f08ddb94b49a1b863a1461))
+
 ## [1.2.145](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.144...v1.2.145) (2025-11-16)
 
 
