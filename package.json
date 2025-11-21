@@ -23,7 +23,7 @@
     "is-docker": "^4.0.0",
     "is-wsl": "^3.1.0",
     "listr2": "^9.0.5",
-    "log-update": "^7.0.1",
+    "log-update": "^7.0.2",
     "playwright-chromium": "^1.56.1",
     "tabletojson": "4.1.6",
     "tslib": "^2.8.1",
