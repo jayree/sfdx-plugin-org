@@ -1,3 +1,10 @@
+## [1.2.152](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.151...v1.2.152) (2025-12-19)
+
+
+### Bug Fixes
+
+* **deps:** bump fs-extra from 11.3.2 to 11.3.3 ([#1194](https://github.com/jayree/sfdx-plugin-org/issues/1194)) ([e8893ee](https://github.com/jayree/sfdx-plugin-org/commit/e8893ee45b224e900abbfddff4cce820eaabae65))
+
 ## [1.2.151](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.150...v1.2.151) (2025-12-13)
 
 
