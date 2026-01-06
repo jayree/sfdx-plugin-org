@@ -1,3 +1,11 @@
+## [1.2.153](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.152...v1.2.153) (2026-01-06)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.22 to 1.2.23 ([#1200](https://github.com/jayree/sfdx-plugin-org/issues/1200)) ([f66cb25](https://github.com/jayree/sfdx-plugin-org/commit/f66cb252d9504990a8989a84a51551d310d21304))
+* **deps:** bump @listr2/prompt-adapter-enquirer from 2.0.16 to 3.0.5 ([#1174](https://github.com/jayree/sfdx-plugin-org/issues/1174)) ([d78f45b](https://github.com/jayree/sfdx-plugin-org/commit/d78f45bcc550e67deb2e32ef4084f9f2223d7c12))
+
 ## [1.2.152](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.151...v1.2.152) (2025-12-19)
 
 
