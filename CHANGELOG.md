@@ -1,3 +1,12 @@
+## [1.2.155](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.154...v1.2.155) (2026-01-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.10.10 to 3.10.13 ([#1205](https://github.com/jayree/sfdx-plugin-org/issues/1205)) ([3baf1a0](https://github.com/jayree/sfdx-plugin-org/commit/3baf1a00d05e7b5eed9bd770df05527c1d83299f))
+* **deps:** bump @salesforce/core from 8.24.0 to 8.24.3 ([#1204](https://github.com/jayree/sfdx-plugin-org/issues/1204)) ([ea3f76c](https://github.com/jayree/sfdx-plugin-org/commit/ea3f76ccafe3c9103392ca3e59c6e947d176a469))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1209](https://github.com/jayree/sfdx-plugin-org/issues/1209)) ([8364176](https://github.com/jayree/sfdx-plugin-org/commit/8364176890547d8978a06c21e530758baf538905))
+
 ## [1.2.154](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.153...v1.2.154) (2026-01-09)
 
 
