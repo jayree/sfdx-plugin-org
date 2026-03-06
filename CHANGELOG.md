@@ -1,3 +1,14 @@
+## [1.2.162](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.161...v1.2.162) (2026-03-06)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.25 to 1.2.26 ([#1250](https://github.com/jayree/sfdx-plugin-org/issues/1250)) ([74a33e2](https://github.com/jayree/sfdx-plugin-org/commit/74a33e2937337f91c32d41e049b0779949595cbe))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1245](https://github.com/jayree/sfdx-plugin-org/issues/1245)) ([94c54b6](https://github.com/jayree/sfdx-plugin-org/commit/94c54b6b96bd131308c7f321ae6f59c382832b24))
+* **deps:** bump cli-truncate from 5.1.1 to 5.2.0 ([#1251](https://github.com/jayree/sfdx-plugin-org/issues/1251)) ([5bbb445](https://github.com/jayree/sfdx-plugin-org/commit/5bbb4455084670ffd044943e544ec67f34e1cf97))
+* **deps:** bump fs-extra from 11.3.3 to 11.3.4 ([#1247](https://github.com/jayree/sfdx-plugin-org/issues/1247)) ([0d43176](https://github.com/jayree/sfdx-plugin-org/commit/0d43176c5a9f4aab5a9f1d3b6d9c91767671000a))
+* **deps:** bump log-update from 7.1.0 to 7.2.0 ([#1252](https://github.com/jayree/sfdx-plugin-org/issues/1252)) ([02d8ece](https://github.com/jayree/sfdx-plugin-org/commit/02d8ece871d1160ee3c3b1fcd9db881fd3286929))
+
 ## [1.2.161](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.160...v1.2.161) (2026-02-27)
 
 
