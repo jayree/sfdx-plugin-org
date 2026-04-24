@@ -1,3 +1,11 @@
+## [1.2.169](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.168...v1.2.169) (2026-04-24)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.28 to 1.2.29 ([#1305](https://github.com/jayree/sfdx-plugin-org/issues/1305)) ([63a07ca](https://github.com/jayree/sfdx-plugin-org/commit/63a07ca5353cb1ca3551ee460a61604c7b3cb979))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1304](https://github.com/jayree/sfdx-plugin-org/issues/1304)) ([732a6d2](https://github.com/jayree/sfdx-plugin-org/commit/732a6d2f402459b7e6ca3a8a5ddd1205338fb4d7))
+
 ## [1.2.168](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.167...v1.2.168) (2026-04-17)
 
 
