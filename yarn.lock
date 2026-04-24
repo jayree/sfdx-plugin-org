@@ -6687,14 +6687,15 @@ log-update@^6.1.0:
     strip-ansi "^7.1.0"
     wrap-ansi "^9.0.0"
 
-log-update@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/log-update/-/log-update-7.2.0.tgz#cd6c87c1270c80b53fa1d6d8ac5b2c624a286258"
-  integrity sha512-iLs7dGSyjZiUgvrUvuD3FndAxVJk+TywBkkkwUSm9HdYoskJalWg5qVsEiXeufPvRVPbCUmNQewg798rx+sPXg==
+log-update@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/log-update/-/log-update-8.0.0.tgz#07d7bde6320dda8cf6fb12619e9d30695525b141"
+  integrity sha512-lddSgOt3bPASrylL54ZSpy8nBHns+vBVSoILlVOx+dei300pnLRN958rj/EdlVLKuWlSESU3qdnDZdAI7FXYGg==
   dependencies:
     ansi-escapes "^7.3.0"
     cli-cursor "^5.0.0"
-    slice-ansi "^8.0.0"
+    slice-ansi "^9.0.0"
+    string-width "^8.2.0"
     strip-ansi "^7.2.0"
     wrap-ansi "^10.0.0"
 
@@ -8455,6 +8456,14 @@ slice-ansi@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-8.0.0.tgz#22d0b66d18bc5c57f488bfcf36cbde3bef731537"
   integrity sha512-stxByr12oeeOyY2BlviTNQlYV5xOj47GirPr4yA1hE9JCtxfQN0+tVbkxwCtYDQWhEKWFHsEK48ORg5jrouCAg==
+  dependencies:
+    ansi-styles "^6.2.3"
+    is-fullwidth-code-point "^5.1.0"
+
+slice-ansi@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-9.0.0.tgz#8ed38fdc31f16b607a56cf86c3160d2684f1b61b"
+  integrity sha512-SO/3iYL5S3W57LLEniscOGPZgOqZUPCx6d3dB+52B80yJ0XstzsC/eV8gnA4tM3MHDrKz+OCFSLNjswdSC+/bA==
   dependencies:
     ansi-styles "^6.2.3"
     is-fullwidth-code-point "^5.1.0"
