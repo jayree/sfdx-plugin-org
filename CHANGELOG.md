@@ -1,3 +1,13 @@
+## [1.2.177](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.176...v1.2.177) (2026-06-19)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.11.4 to 4.11.7 ([#1367](https://github.com/jayree/sfdx-plugin-org/issues/1367)) ([49386e5](https://github.com/jayree/sfdx-plugin-org/commit/49386e5190d8f5aa2a06b885c84e935d02bdbb28))
+* **deps:** bump @salesforce/core from 8.31.1 to 8.31.2 ([#1368](https://github.com/jayree/sfdx-plugin-org/issues/1368)) ([6da7ebb](https://github.com/jayree/sfdx-plugin-org/commit/6da7ebbcc3cfe79e6e97ee2d662a44d6bb8a015b))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1364](https://github.com/jayree/sfdx-plugin-org/issues/1364)) ([c9e8752](https://github.com/jayree/sfdx-plugin-org/commit/c9e8752872f1b8453bd15a5db3f2b77b857d5ce0))
+* **deps:** bump playwright-chromium from 1.60.0 to 1.61.0 ([#1366](https://github.com/jayree/sfdx-plugin-org/issues/1366)) ([1a3a25e](https://github.com/jayree/sfdx-plugin-org/commit/1a3a25e9f846c957ad9df654af9589b3491e96bd))
+
 ## [1.2.176](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.175...v1.2.176) (2026-06-12)
 
 
