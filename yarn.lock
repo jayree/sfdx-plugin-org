@@ -1516,7 +1516,7 @@
     "@pnpm/network.ca-file" "^1.0.1"
     config-chain "^1.1.11"
 
-"@salesforce/core@^8.23.1", "@salesforce/core@^8.31.2", "@salesforce/core@^8.31.4":
+"@salesforce/core@^8.23.1", "@salesforce/core@^8.31.4":
   version "8.31.4"
   resolved "https://registry.yarnpkg.com/@salesforce/core/-/core-8.31.4.tgz#481f0330347da5ef4d23ebf6a8bd628a54106103"
   integrity sha512-G/zgo9ygO+0l2x9gCOnp6BR7q2Rlt8MHDoj4DIpu2utsZznIcH7iNTEoKjul1BMKDPARuBGUp0Tyr0c8dLf32g==
@@ -1606,12 +1606,12 @@
     cli-progress "^3.12.0"
     terminal-link "^3.0.0"
 
-"@salesforce/source-deploy-retrieve@^12.36.7":
-  version "12.36.7"
-  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-12.36.7.tgz#d80fa77a3870cb249ff0f8a78036a2566a10fbd8"
-  integrity sha512-uP2tDBq4DEab+oJ6bi3AVGHZS2VdirpVzJ/Xv0ZEPO+OBbr8XQZqqQ9iulvrLaqpANTqs3UDAWTm8kzm61LQ7A==
+"@salesforce/source-deploy-retrieve@^12.37.0":
+  version "12.37.0"
+  resolved "https://registry.yarnpkg.com/@salesforce/source-deploy-retrieve/-/source-deploy-retrieve-12.37.0.tgz#9726be00568f186e265b3952d044ef973463bc8b"
+  integrity sha512-t8c+hOG3G8d8SozvZo+HK38R3HkYT8eEO9INi4Aum4LWP0nZDDqt0PbU8j8YLWLPixWfhoaHb+Wzp92xn3RY2A==
   dependencies:
-    "@salesforce/core" "^8.31.2"
+    "@salesforce/core" "^8.31.4"
     "@salesforce/kit" "^3.2.4"
     "@salesforce/ts-types" "^2.0.12"
     "@salesforce/types" "^1.6.0"
