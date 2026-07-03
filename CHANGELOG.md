@@ -1,3 +1,16 @@
+## [1.2.179](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.178...v1.2.179) (2026-07-03)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.10.17 to 3.10.19 ([#1390](https://github.com/jayree/sfdx-plugin-org/issues/1390)) ([393ddbe](https://github.com/jayree/sfdx-plugin-org/commit/393ddbea6dec9afde52fcf5bdcbdcac5132c814a))
+* **deps:** bump @oclif/core from 4.11.11 to 4.11.14 ([#1393](https://github.com/jayree/sfdx-plugin-org/issues/1393)) ([1cee536](https://github.com/jayree/sfdx-plugin-org/commit/1cee536a6156e8db42736b54b4d1a2eb19cbfed6))
+* **deps:** bump @salesforce/core from 8.31.4 to 8.31.5 ([#1391](https://github.com/jayree/sfdx-plugin-org/issues/1391)) ([f2cf0e5](https://github.com/jayree/sfdx-plugin-org/commit/f2cf0e548599d726610dc7adbbbc11c7ed10a634))
+* **deps:** bump @salesforce/sf-plugins-core from 12.2.24 to 12.2.25 ([#1383](https://github.com/jayree/sfdx-plugin-org/issues/1383)) ([8bfbd40](https://github.com/jayree/sfdx-plugin-org/commit/8bfbd40a2d45a14915a1048c27060e9892949a5c))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1394](https://github.com/jayree/sfdx-plugin-org/issues/1394)) ([5e3e4ce](https://github.com/jayree/sfdx-plugin-org/commit/5e3e4ce38f23ff0f9e40ce996362bac265474cc2))
+* **deps:** bump fs-extra from 11.3.5 to 11.3.6 ([#1386](https://github.com/jayree/sfdx-plugin-org/issues/1386)) ([82d12c4](https://github.com/jayree/sfdx-plugin-org/commit/82d12c4d1e91b4c73bc5ce23c53c407912712d20))
+* **deps:** bump tabletojson from 4.1.10 to 4.1.11 ([#1385](https://github.com/jayree/sfdx-plugin-org/issues/1385)) ([d311f2e](https://github.com/jayree/sfdx-plugin-org/commit/d311f2ecd4a1fc8989e1e4253113ed045498bc8e))
+
 ## [1.2.178](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.177...v1.2.178) (2026-06-26)
 
 
