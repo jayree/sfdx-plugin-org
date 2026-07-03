@@ -7880,10 +7880,10 @@ synckit@^0.11.13:
   dependencies:
     "@pkgr/core" "^0.3.6"
 
-tabletojson@4.1.10:
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.10.tgz#79cc5dd9b3239c5e1ff7a27bfb1746a6ea8b1bc1"
-  integrity sha512-hvYEHg+iXpXrlOXXwa9waMJ2hgFPKHxgmHKnoN1lbi6rPcKS1rswMi0fhlqAHxmuz4st9gKcYGbuiKAfftM4wg==
+tabletojson@4.1.11:
+  version "4.1.11"
+  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.11.tgz#cc3a5c8b5d19454fb8e08ee652c2cc15d03b142d"
+  integrity sha512-8XmLOHNmyTPlKWryNYcVwRWCA2V4QilLD8NEwJr4knGAq1fntjKHk1pmFZE0teNacaSESFcaUYI+5dRWivbDKg==
   dependencies:
     cheerio "^1.2.0"
 
