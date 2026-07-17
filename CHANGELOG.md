@@ -1,3 +1,12 @@
+## [1.2.181](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.180...v1.2.181) (2026-07-17)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/core from 8.32.2 to 8.32.4 ([#1410](https://github.com/jayree/sfdx-plugin-org/issues/1410)) ([5a604d6](https://github.com/jayree/sfdx-plugin-org/commit/5a604d68b6c21359b9947a88362a7f86871ea775))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1411](https://github.com/jayree/sfdx-plugin-org/issues/1411)) ([2bd5eb7](https://github.com/jayree/sfdx-plugin-org/commit/2bd5eb7cc914630ce254b6911af5b1a05829f932))
+* **deps:** bump tabletojson from 4.1.11 to 4.1.12 ([#1412](https://github.com/jayree/sfdx-plugin-org/issues/1412)) ([6950ae3](https://github.com/jayree/sfdx-plugin-org/commit/6950ae339dae85bb0acdfc06fd8a3779c8de3e3f))
+
 ## [1.2.180](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.179...v1.2.180) (2026-07-10)
 
 
