@@ -13,5 +13,5 @@ type Config = {
     };
     setupTasks?: Task[];
 };
-declare const _default: (path?: string) => Promise<Config>;
 export default _default;
+declare function _default(path?: string): Promise<Config>;
