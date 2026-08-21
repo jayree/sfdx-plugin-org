@@ -1,3 +1,26 @@
+# [2.0.0](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.184...v2.0.0) (2026-08-21)
+
+
+* feat!: require Node >=22.0.0, drop EOL Node versions ([31b65cb](https://github.com/jayree/sfdx-plugin-org/commit/31b65cb5142c1c5fc64f2bba5d9457f1e245bd6a))
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/core from 4.13.3 to 4.13.5 ([#1450](https://github.com/jayree/sfdx-plugin-org/issues/1450)) ([16e295e](https://github.com/jayree/sfdx-plugin-org/commit/16e295e45d4fb8e9197669e0864e241590c52de4))
+* **deps:** bump @salesforce/sf-plugins-core from 12.2.28 to 13.0.0 ([#1432](https://github.com/jayree/sfdx-plugin-org/issues/1432)) ([025dfb8](https://github.com/jayree/sfdx-plugin-org/commit/025dfb83a98aefa740b798bead59239c1194b9b5))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1447](https://github.com/jayree/sfdx-plugin-org/issues/1447)) ([391f4ca](https://github.com/jayree/sfdx-plugin-org/commit/391f4ca1c866ee9606dc0f88e5dbeb7b327d0bf8))
+* **deps:** bump @salesforce/ts-types from 2.0.12 to 3.0.1 ([#1436](https://github.com/jayree/sfdx-plugin-org/issues/1436)) ([67dc453](https://github.com/jayree/sfdx-plugin-org/commit/67dc4536c9fb3df07fbcd2d2164744646981c6d8))
+* **deps:** bump chalk from 5.6.2 to 6.0.0 ([#1423](https://github.com/jayree/sfdx-plugin-org/issues/1423)) ([63692eb](https://github.com/jayree/sfdx-plugin-org/commit/63692ebb50de9b5db4156dfd0b84d5d47aa4dcc7))
+* **deps:** bump cli-truncate from 5.2.0 to 6.1.1 ([#1396](https://github.com/jayree/sfdx-plugin-org/issues/1396)) ([7b2b2b4](https://github.com/jayree/sfdx-plugin-org/commit/7b2b2b412aa0906b81970938d66696959f4e85ec))
+* **deps:** bump log-update from 7.2.0 to 8.0.0 ([#1289](https://github.com/jayree/sfdx-plugin-org/issues/1289)) ([00d5a64](https://github.com/jayree/sfdx-plugin-org/commit/00d5a64de42905d59b77ca00bbbae42c7e1a8ecc))
+* **deps:** bump tabletojson from 4.1.12 to 4.1.13 ([#1452](https://github.com/jayree/sfdx-plugin-org/issues/1452)) ([e987f70](https://github.com/jayree/sfdx-plugin-org/commit/e987f704502785a2c274d94052ee630e708140ed))
+* **deps:** bump wrap-ansi from 9.0.2 to 10.0.1 ([#1451](https://github.com/jayree/sfdx-plugin-org/issues/1451)) ([a2cb855](https://github.com/jayree/sfdx-plugin-org/commit/a2cb855eca4aea8c9c2bb584d23cf818a38b0b06))
+
+
+### BREAKING CHANGES
+
+* raises minimum Node to >=22.0.0
+
 ## [1.2.184](https://github.com/jayree/sfdx-plugin-org/compare/v1.2.183...v1.2.184) (2026-08-07)
 
 
