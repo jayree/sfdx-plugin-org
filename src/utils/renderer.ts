@@ -13,9 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+
 import { EOL } from 'node:os';
 import type truncate from 'cli-truncate';
 import type { createLogUpdate } from 'log-update';
@@ -283,9 +281,7 @@ export class MyDefaultRenderer implements ListrRenderer {
 
     switch (this.options.formatOutput) {
       case 'truncate':
-        parsed = message.split(EOL).map((s, i) => {
-          return this.truncate(this.indent(s, i), columns);
-        });
+        parsed = message.split(EOL).map((s, i) => this.truncate(this.indent(s, i), columns));
 
         break;
 
@@ -296,6 +292,7 @@ export class MyDefaultRenderer implements ListrRenderer {
 
         break;
 
+      case undefined:
       default:
         throw new ListrRendererError('Format option for the renderer is wrong.');
     }

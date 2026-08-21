@@ -75,6 +75,8 @@ export class PuppeteerConfigureTasks {
 
   // eslint-disable-next-line complexity
   private static async subExec(page: playwright.Page, task: Task): Promise<boolean> {
+    // Browser operations are ordered; changing this to a concurrent loop breaks task execution.
+    // eslint-disable-next-line @typescript-eslint/await-thenable
     for await (const call of task.evaluate) {
       if (call.action === 'click') {
         try {
@@ -198,7 +200,7 @@ export class PuppeteerConfigureTasks {
             }
           }
         } catch (error) {
-          throw new Error((error as Error).message);
+          throw new Error((error as Error).message, { cause: error });
         }
       }
 
@@ -313,11 +315,11 @@ export class PuppeteerConfigureTasks {
       await this.open();
     }
 
-    if (!task.tasks) {
-      task.tasks = [{ evaluate: task.evaluate }];
-    }
+    task.tasks ??= [{ evaluate: task.evaluate }];
 
     let retValue = false;
+    // Subtasks need separate ordered browser sessions.
+    // eslint-disable-next-line @typescript-eslint/await-thenable
     for await (const subTask of task.tasks) {
       const page = await this.context.newPage();
       await page.goto(this.auth.instanceUrl + (task.url as string), {

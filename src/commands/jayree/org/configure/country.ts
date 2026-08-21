@@ -36,7 +36,6 @@ const __dirname = dirname(__filename);
 Messages.importMessagesDirectory(__dirname);
 const messages = Messages.loadMessages('@jayree/sfdx-plugin-org', 'createstatecountry');
 
-// eslint-disable-next-line sf-plugin/command-example
 export default class UpdateCountry extends SfCommand<void> {
   public static readonly summary = messages.getMessage('commandCountryDescription');
   // public static readonly description = messages.getMessage('commandCountryDescription');
@@ -54,8 +53,6 @@ export default class UpdateCountry extends SfCommand<void> {
 
   public async run(): Promise<void> {
     const { flags } = await this.parse(UpdateCountry);
-    let spinnermessage = '';
-
     const browser = await playwright['chromium'].launch(await readLaunchOptionsFromProject());
     const context = await browser.newContext();
 
@@ -84,25 +81,30 @@ export default class UpdateCountry extends SfCommand<void> {
     });
 
     try {
-      // eslint-disable-next-line no-unused-expressions
-      !flags.silent
-        ? this.spinner.start('State and Country/Territory Picklist')
-        : process.stdout.write('State and Country/Territory Picklist');
+      if (!flags.silent) {
+        this.spinner.start('State and Country/Territory Picklist');
+      } else {
+        process.stdout.write('State and Country/Territory Picklist');
+      }
 
       await flags['target-org'].getConnection(flags['api-version']).refreshAuth();
 
       const conn = flags['target-org'].getConnection(flags['api-version']);
 
-      spinnermessage = `login to ${conn.instanceUrl}`;
-      // eslint-disable-next-line no-unused-expressions
-      !flags.silent ? this.spinner.start(spinnermessage) : process.stdout.write('.');
+      if (!flags.silent) {
+        this.spinner.start(`login to ${conn.instanceUrl}`);
+      } else {
+        process.stdout.write('.');
+      }
       await page.goto(`${conn.instanceUrl}/secur/frontdoor.jsp?sid=${conn.accessToken as string}`, {
         waitUntil: 'networkidle',
       });
 
-      spinnermessage = 'retrieve list of countries';
-      // eslint-disable-next-line no-unused-expressions
-      !flags.silent ? this.spinner.start(spinnermessage) : process.stdout.write('.');
+      if (!flags.silent) {
+        this.spinner.start('retrieve list of countries');
+      } else {
+        process.stdout.write('.');
+      }
 
       try {
         await page.goto(conn.instanceUrl + '/i18n/ConfigStateCountry.apexp?setupid=AddressCleanerOverview', {
@@ -110,7 +112,7 @@ export default class UpdateCountry extends SfCommand<void> {
         });
         await page.waitForSelector('.list', { state: 'visible' });
       } catch (error) {
-        throw Error("list of countries couldn't be loaded");
+        throw new Error("list of countries couldn't be loaded", { cause: error });
       }
       this.spinner.stop();
 
@@ -138,17 +140,20 @@ export default class UpdateCountry extends SfCommand<void> {
         });
       }
 
+      // The country updates must remain sequential to avoid concurrent browser navigation.
+      // eslint-disable-next-line @typescript-eslint/await-thenable
       for await (const value of list) {
         const countryCode = value['Country/Territory Code'];
         const countryName = value.Country;
 
         curr = curr + 1;
-        // eslint-disable-next-line no-unused-expressions
-        !flags.silent
-          ? bar.update(curr, {
-              text: 'update ' + countryName + '/' + countryCode,
-            })
-          : process.stdout.write('.');
+        if (!flags.silent) {
+          bar.update(curr, {
+            text: 'update ' + countryName + '/' + countryCode,
+          });
+        } else {
+          process.stdout.write('.');
+        }
         await page.goto(
           conn.instanceUrl + `/i18n/ConfigureCountry.apexp?countryIso=${countryCode}&setupid=AddressCleanerOverview`,
           {
@@ -161,11 +166,12 @@ export default class UpdateCountry extends SfCommand<void> {
         await page.click(setCountrySelector.save.replace(/:/g, '\\:'));
         await page.waitForSelector('.message.confirmM3', { state: 'visible' });
       }
-    } catch (error) {
-      throw new Error((error as Error).message);
     } finally {
-      // eslint-disable-next-line no-unused-expressions
-      !flags.silent ? bar.update(bar.getTotal(), { text: '' }) : process.stdout.write('.');
+      if (!flags.silent) {
+        bar.update(bar.getTotal(), { text: '' });
+      } else {
+        process.stdout.write('.');
+      }
 
       this.spinner.stop();
       bar.stop();

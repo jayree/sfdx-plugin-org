@@ -6,7 +6,9 @@
   "compilerOptions": {
     "outDir": "lib",
     "incremental": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "rootDir": "./src"
   },
   "include": ["./src/**/*.ts"]
 }
