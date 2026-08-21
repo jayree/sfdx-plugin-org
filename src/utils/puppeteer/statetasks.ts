@@ -172,7 +172,6 @@ export class PuppeteerStateTasks {
         this.countrycode = countrycode.toUpperCase();
         const table = await page.evaluate(() => document.querySelector('table#subdivision')?.outerHTML);
 
-        // eslint-disable-next-line @typescript-eslint/no-shadow
         const converted = tabletojson.convert(table as string)[0] as Array<{
           'Subdivision category'?: string;
           '3166-2 code': string;
@@ -197,9 +196,7 @@ export class PuppeteerStateTasks {
           converted.forEach((value) => {
             const keyval = value['Subdivision category'] as string;
             delete value['Subdivision category'];
-            if (jsonParsed[keyval] === undefined) {
-              jsonParsed[keyval] = [];
-            }
+            jsonParsed[keyval] ??= [];
             jsonParsed[keyval].push(value);
           });
         }

@@ -77,7 +77,6 @@ type Context = {
   };
 };
 
-// eslint-disable-next-line sf-plugin/command-example
 export default class ImportState extends SfCommand<AnyJson> {
   public static readonly summary = messages.getMessage('commandStateDescription');
   // public static readonly description = messages.getMessage('commandStateDescription');
@@ -131,9 +130,7 @@ export default class ImportState extends SfCommand<AnyJson> {
                     ctx.countryCode.selected = await task.prompt(ListrEnquirerPromptAdapter).run<string>({
                       type: 'AutoComplete',
                       message: 'Select Country',
-                      choices: ctx.countryCode.values.map((v) => {
-                        return { name: v.value, message: v.name };
-                      }),
+                      choices: ctx.countryCode.values.map((v) => ({ name: v.value, message: v.name })),
                     });
                     ctx.countryCode = await taskRunner.validateParameterCountryCode(ctx.countryCode.selected);
                     ctx.category = taskRunner.validateParameterCategory(ctx.category.selected as string);

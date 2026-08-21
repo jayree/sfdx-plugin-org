@@ -36,7 +36,6 @@ type Config = {
 
 const resolvedConfigs: { [path: string]: Config } = {};
 
-// eslint-disable-next-line complexity
 export default async (path = SfProject.resolveProjectPathSync()): Promise<Config> => {
   if (path && resolvedConfigs[path]) {
     return resolvedConfigs[path];

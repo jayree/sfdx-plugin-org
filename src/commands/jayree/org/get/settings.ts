@@ -136,6 +136,8 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
 
     const retrieveResult = await mdapiRetrieve.pollStatus(1000);
 
+    // Retrieve responses are processed serially because each file is read asynchronously.
+    // eslint-disable-next-line @typescript-eslint/await-thenable
     for await (const setting of retrieveResult
       .getFileResponses()
       .filter((component) => component.type === 'Settings')) {
@@ -222,9 +224,7 @@ $ sfdx jayree:org:settings -u MyTestOrg1 -w`,
     settings = sortKeys(settings);
 
     if (flags.writetoprojectscratchdeffile) {
-      const deffilepath =
-        // eslint-disable-next-line @typescript-eslint/await-thenable
-        flags.file ?? join(this.project?.getPath() as string, 'config', 'project-scratch-def.json');
+      const deffilepath = flags.file ?? join(this.project?.getPath() as string, 'config', 'project-scratch-def.json');
       let deffile: JsonMap = {};
 
       await fs
