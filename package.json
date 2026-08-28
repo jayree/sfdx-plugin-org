@@ -10,7 +10,7 @@
     "@jsforce/jsforce-node": "^3.10.23",
     "@listr2/prompt-adapter-enquirer": "^4.3.0",
     "@oclif/core": "^4.14.0",
-    "@salesforce/core": "^9.1.4",
+    "@salesforce/core": "^9.1.6",
     "@salesforce/sf-plugins-core": "^13.0.3",
     "@salesforce/source-deploy-retrieve": "^13.2.0",
     "@salesforce/ts-types": "^3.0.1",
