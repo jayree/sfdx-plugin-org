@@ -9,7 +9,7 @@
     "@jayree/changelog": "^1.2.39",
     "@jsforce/jsforce-node": "^3.10.23",
     "@listr2/prompt-adapter-enquirer": "^4.3.0",
-    "@oclif/core": "^4.14.0",
+    "@oclif/core": "^5.0.0",
     "@salesforce/core": "^9.1.9",
     "@salesforce/sf-plugins-core": "^13.0.3",
     "@salesforce/source-deploy-retrieve": "^13.3.0",
