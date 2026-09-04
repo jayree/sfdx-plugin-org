@@ -1260,7 +1260,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/core@^4.11.4", "@oclif/core@^4.14.0":
+"@oclif/core@^4.14.0":
   version "4.14.0"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-4.14.0.tgz#b5c46200788f95ce57809ddec1502ae0aa9abf2b"
   integrity sha512-QCJIZoVJxV7jywgVAUlsQwl3dr3Sa21kfi5z9KrYolbexWJUtFSEtMoNiBWojD05mYycLnB50gp/VxlGdaOCRA==
@@ -1352,10 +1352,10 @@
     lodash "^4.18.1"
     registry-auth-token "^5.1.1"
 
-"@oclif/table@^0.5.9":
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/@oclif/table/-/table-0.5.9.tgz#e9d119c424eabb8c20da044fafabf2f55c40966b"
-  integrity sha512-/bvSRF38rrZ8O3hsChEKb98bEpmY7GAMeMU5hRkt73RCEoAo1UuRKX4IO0zlkD6UooSs30LfEMJeSU2NZOkndA==
+"@oclif/table@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@oclif/table/-/table-1.0.0.tgz#fd9b89d159346db28f7053492c8e3537b0813b36"
+  integrity sha512-+Mggw/KHkdH0NxLFS4y0E5gZyy6CmDlOHh/wkwkF+RYnOEvneZ6E5BAJ+VqXXDZmRHNw6Mei7L19VHEQYgKooQ==
   dependencies:
     "@types/react" "^18.3.12"
     change-case "^5.4.4"
@@ -1514,15 +1514,15 @@
   resolved "https://registry.yarnpkg.com/@salesforce/prettier-config/-/prettier-config-0.0.4.tgz#fc84ea1585b2eb4bf156514911bac17b7f7e434c"
   integrity sha512-GBjR7f/jv7rcSrTvNgbkWvOykXg/PZqL7TztylKwaogWdrCbypJE8qEfBy9nILkICrwmDbQApOC8TqoO3bQKSw==
 
-"@salesforce/sf-plugins-core@^13.0.3":
-  version "13.0.3"
-  resolved "https://registry.yarnpkg.com/@salesforce/sf-plugins-core/-/sf-plugins-core-13.0.3.tgz#698046d9f15727436f4c801e114c4699d3085762"
-  integrity sha512-5vL5sk7sZNf2Ab8LtGiH1B30cBzdNbQhfQh1WqeRieiH7qEHRxRPMlOiZWAR3JyYII3DrqxsNyO0SjBBTNNxag==
+"@salesforce/sf-plugins-core@^13.0.4":
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/@salesforce/sf-plugins-core/-/sf-plugins-core-13.0.4.tgz#cd0fe99fdebe8b481a49eb41705c20c603afeb3b"
+  integrity sha512-AChjRg6dx2/njPjvGTa+leY4i1oBfQb6pIgLaP0EXVNKA1aByAzLZIhcnMS0Z2mr38vFzD4IySBMcYg3fupunA==
   dependencies:
     "@inquirer/confirm" "^6.1.1"
     "@inquirer/password" "^5.1.1"
-    "@oclif/core" "^4.11.4"
-    "@oclif/table" "^0.5.9"
+    "@oclif/core" "^5.0.0"
+    "@oclif/table" "^1.0.0"
     "@salesforce/core" "^9.1.4"
     "@salesforce/kit" "^4.0.0"
     "@salesforce/ts-types" "^3.0.0"
