@@ -7376,10 +7376,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-tabletojson@4.1.14:
-  version "4.1.14"
-  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.14.tgz#298d8d288fd1df0b6b831e6c7c271e801fd56e66"
-  integrity sha512-RI0v1usmN1wkCRbD+TN2Oe2O4SixsmuS9bOtrFjlcLAHc+wl/FqrerB7ZUCTQlXfZZrK0OsnPNsxMdWDHwiDxw==
+tabletojson@4.1.15:
+  version "4.1.15"
+  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.15.tgz#2f79bfdfebba7a42e835bce3e3185d62807a498a"
+  integrity sha512-DLV1Ecao0P375RWTYH4ZP1Jg7jNx6Eocst5YWC76fB/I1DtZ3yUAY2qC7KG9pTrg96zWsPR5K7Heh0o6lCJHAQ==
   dependencies:
     cheerio "^1.2.0"
 
