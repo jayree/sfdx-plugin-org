@@ -1,3 +1,11 @@
+## [2.0.7](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.6...v2.0.7) (2026-09-25)
+
+
+### Bug Fixes
+
+* **deps:** bump @salesforce/source-deploy-retrieve from 13.3.2 to 13.4.0 ([#1493](https://github.com/jayree/sfdx-plugin-org/issues/1493)) ([a9a3d32](https://github.com/jayree/sfdx-plugin-org/commit/a9a3d32ac5f0772765057d7340cd902b54822c79))
+* **deps:** bump wrap-ansi from 10.0.1 to 10.0.2 ([#1496](https://github.com/jayree/sfdx-plugin-org/issues/1496)) ([fb916fe](https://github.com/jayree/sfdx-plugin-org/commit/fb916fe96d08bd3183d54c8daa191600f79b3eb2))
+
 ## [2.0.6](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.5...v2.0.6) (2026-09-21)
 
 
