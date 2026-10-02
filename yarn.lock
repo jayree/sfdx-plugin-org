@@ -1126,14 +1126,14 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.6.tgz#8dc9afa2ac1506cb1a58f89940f1c124446c8df3"
   integrity sha512-+Sg6GCR/wy1oSmQDFq4LQDAhm3ETKnorxN+y5nbLULOR3P0c14f2Wurzj3/xqPXtasLFfHd5iRFQ7AJt4KH2cw==
 
-"@jayree/changelog@^1.2.39":
-  version "1.2.39"
-  resolved "https://registry.yarnpkg.com/@jayree/changelog/-/changelog-1.2.39.tgz#7dfa9bd7a3ca84e4605f5f7a5267b35013d5f7d9"
-  integrity sha512-d/coEvYgkBiYJNcLNcoFY5Dp2zt9urRAKfclWLfFKny/S+mhi1/6PlaW7WV8TaIzOX6/vtIzLaSj4rWvqTl5YQ==
+"@jayree/changelog@^1.2.42":
+  version "1.2.42"
+  resolved "https://registry.yarnpkg.com/@jayree/changelog/-/changelog-1.2.42.tgz#d8680ca41cf56fcd6d735e2210f4a754a045dde2"
+  integrity sha512-fEr0yyZTXE0Pb4abNIqhO8++sjwQFvQAHYirxNkQo2B1BdqKS1ipmYtJySiTySK9QIhiAN5Zig1rXYYYEY+c8Q==
   dependencies:
     debug "^4.4.1"
-    fs-extra "^11.3.6"
-    marked "^18.0.6"
+    fs-extra "^11.4.1"
+    marked "^18.0.14"
     marked-terminal "^7.3.0"
     semver "^7.8.5"
     semver-compare "^1.0.0"
@@ -4177,7 +4177,7 @@ fs-extra@^10.0.0:
     jsonfile "^6.0.1"
     universalify "^2.0.0"
 
-fs-extra@^11.0.0, fs-extra@^11.3.6, fs-extra@^11.4.1:
+fs-extra@^11.0.0, fs-extra@^11.4.1:
   version "11.4.1"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.4.1.tgz#6a01ca80008eacf3ca1ffde5ef79088f68203a5a"
   integrity sha512-KYAb4c9BJQI6QqGKthV68OHe0badztdXJWKo0WtBA9IuCFPTKvE5ZdUBglP833aMjhaSPNO4A5j/EkzZtGlKjA==
@@ -5585,10 +5585,10 @@ marked@^13.0.0:
   resolved "https://registry.yarnpkg.com/marked/-/marked-13.0.3.tgz#5c5b4a5d0198060c7c9bc6ef9420a7fed30f822d"
   integrity sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==
 
-marked@^18.0.6:
-  version "18.0.10"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-18.0.10.tgz#a09ac1f54e378b9efc8b31707adc188fdc047d2e"
-  integrity sha512-FJeH4bRpYoXiggcgriCGItKCSv3xkngJc4QCZ/rkQCogU3VYaLxYJoZl8Nw/b4+x7iij/pd+09mZ6A1dXzpL0A==
+marked@^18.0.14:
+  version "18.0.14"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-18.0.14.tgz#90c0ed46b3f9f1e99d8d96cc8b06937884adedc5"
+  integrity sha512-mBHK6FBHuBAlhgRe88w9F0O1AbwwXJUcQibUbC/QcdTbVGAD7aWza+xt3N6oT/jCZx3/OMeS+8rnuiHZcQ9s7A==
 
 math-intrinsics@^1.1.0:
   version "1.1.0"
