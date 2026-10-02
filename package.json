@@ -33,7 +33,7 @@
     "@oclif/plugin-command-snapshot": "^6.0.0",
     "@oclif/plugin-help": "^7.0.0",
     "@salesforce/dev-scripts": "^14.0.0",
-    "@salesforce/ts-sinon": "^1.4.36",
+    "@salesforce/ts-sinon": "^1.4.37",
     "@types/chai": "^5.2.3",
     "@types/cli-progress": "^3.11.6",
     "@types/debug": "^4.1.13",
