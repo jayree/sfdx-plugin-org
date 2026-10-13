@@ -1,3 +1,20 @@
+## [2.0.8](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.7...v2.0.8) (2026-10-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.39 to 1.2.42 ([#1499](https://github.com/jayree/sfdx-plugin-org/issues/1499)) ([e1a3a00](https://github.com/jayree/sfdx-plugin-org/commit/e1a3a00202d360e64359c7285531f63b38f1b770))
+* **deps:** bump @jsforce/jsforce-node from 3.10.25 to 3.10.29 ([#1516](https://github.com/jayree/sfdx-plugin-org/issues/1516)) ([5ca97b3](https://github.com/jayree/sfdx-plugin-org/commit/5ca97b3df7848cfccf14177be48e997fc911462a))
+* **deps:** bump @oclif/core from 4.14.0 to 5.1.2 ([#1503](https://github.com/jayree/sfdx-plugin-org/issues/1503)) ([fe5c476](https://github.com/jayree/sfdx-plugin-org/commit/fe5c4764ed00c0bb677b535664e8b70cd637f389))
+* **deps:** bump @salesforce/sf-plugins-core from 13.0.3 to 13.0.4 ([#1477](https://github.com/jayree/sfdx-plugin-org/issues/1477)) ([2b06ced](https://github.com/jayree/sfdx-plugin-org/commit/2b06ced2c9254e632d595a9f305062de859066bd))
+* **deps:** bump @salesforce/sf-plugins-core from 13.0.4 to 13.0.7 ([#1513](https://github.com/jayree/sfdx-plugin-org/issues/1513)) ([f648925](https://github.com/jayree/sfdx-plugin-org/commit/f648925f89ec5597b9a5d840771f79e52396dc10))
+* **deps:** bump @salesforce/source-deploy-retrieve from 13.4.0 to 13.4.1 ([#1500](https://github.com/jayree/sfdx-plugin-org/issues/1500)) ([624481d](https://github.com/jayree/sfdx-plugin-org/commit/624481d21e3fbcabdb994e2095162e126f2d7b84))
+* **deps:** bump @salesforce/source-deploy-retrieve from 13.4.1 to 13.4.5 ([#1515](https://github.com/jayree/sfdx-plugin-org/issues/1515)) ([a35a956](https://github.com/jayree/sfdx-plugin-org/commit/a35a9563e87565b161a10a8da6f54324802b4a66))
+* **deps:** bump @salesforce/ts-types from 3.2.0 to 3.2.1 ([#1509](https://github.com/jayree/sfdx-plugin-org/issues/1509)) ([3d06f11](https://github.com/jayree/sfdx-plugin-org/commit/3d06f11307b2220d121c88d4b52e8f945208287b))
+* **deps:** bump chalk from 6.0.0 to 6.0.1 ([#1504](https://github.com/jayree/sfdx-plugin-org/issues/1504)) ([476ba83](https://github.com/jayree/sfdx-plugin-org/commit/476ba83561f4b92703c003b219b20d8f3fcce42b))
+* **deps:** bump fs-extra from 11.4.0 to 11.4.1 ([#1502](https://github.com/jayree/sfdx-plugin-org/issues/1502)) ([7a42353](https://github.com/jayree/sfdx-plugin-org/commit/7a4235351beacdfcc180002416bc3ea733550511))
+* **deps:** bump github/codeql-action from 4.38.2 to 4.38.3 ([#1519](https://github.com/jayree/sfdx-plugin-org/issues/1519)) ([11e2a49](https://github.com/jayree/sfdx-plugin-org/commit/11e2a497536592b93ad8476198640ec0c6f43805))
+
 ## [2.0.7](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.6...v2.0.7) (2026-09-25)
 
 
