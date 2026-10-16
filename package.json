@@ -6,7 +6,7 @@
   "type": "module",
   "bugs": "https://github.com/jayree/sfdx-plugin-org/issues",
   "dependencies": {
-    "@jayree/changelog": "^1.2.42",
+    "@jayree/changelog": "^1.2.43",
     "@jsforce/jsforce-node": "^3.10.29",
     "@listr2/prompt-adapter-enquirer": "^4.4.1",
     "@oclif/core": "^5.1.7",
