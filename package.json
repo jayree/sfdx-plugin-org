@@ -30,7 +30,7 @@
     "wrap-ansi": "^10.0.2"
   },
   "devDependencies": {
-    "@oclif/plugin-command-snapshot": "^6.0.2",
+    "@oclif/plugin-command-snapshot": "^6.0.5",
     "@oclif/plugin-help": "^7.0.4",
     "@salesforce/dev-scripts": "^15.0.0",
     "@salesforce/ts-sinon": "^1.4.39",
