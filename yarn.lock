@@ -5538,14 +5538,14 @@ linkinator@^6.3.0:
     server-destroy "^1.0.1"
     srcset "^5.0.0"
 
-listr2@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-11.0.0.tgz#e3e792ae2a6155122abdd9e7c150d7af2fc58458"
-  integrity sha512-8K88S0aSrcSXdJfiZtEy5BQMnR+TyjrCGLcgAvQs6ta0NEnIm0RJ72/Pv67Jvg07cfBhDbuN74V81lSSVYEFEw==
+listr2@^11.4.0:
+  version "11.4.0"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-11.4.0.tgz#92bdee883d1d1790fb0e26bd499525250c02356d"
+  integrity sha512-N6jpS9lEmqGcWqJqryuOfjPUTn7mcDvG5ndsTlZk4Aohwfywc7deqjscI9lm7K+FHS6anZmazE8/IQxQfVTHZg==
   dependencies:
     cli-truncate "^6.1.1"
     log-update "^8.0.0"
-    wrap-ansi "^10.0.0"
+    wrap-ansi "^10.0.2"
 
 locate-path@^5.0.0:
   version "5.0.0"
