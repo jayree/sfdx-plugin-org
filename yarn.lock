@@ -1428,10 +1428,10 @@
   resolved "https://registry.yarnpkg.com/@keyv/serialize/-/serialize-1.1.1.tgz#0c01dd3a3483882af7cf3878d4e71d505c81fc4a"
   integrity sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==
 
-"@listr2/prompt-adapter-enquirer@^4.4.1":
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-4.4.1.tgz#5e32c56585ed7034385404886124d71ae439022f"
-  integrity sha512-6aLEu0Hjy0ygfKgxzhMWEvlxh90gcFeq8wuWbOnKoRqVj0PV28p1vJUpo/0rIc4mn08ECN1ioeaWXL1xPeovNg==
+"@listr2/prompt-adapter-enquirer@^4.4.3":
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/@listr2/prompt-adapter-enquirer/-/prompt-adapter-enquirer-4.4.3.tgz#a122bd2976686459c264b2b4b4ed9c4feafaa677"
+  integrity sha512-7P0Kh6Df8gO2pv0gMBNXfyD2GcRdgF1VDlIL6afdp4QJLeo+DVhR3BfYLsL0krMcWvCe/V7gqE+POePLVBiDeg==
 
 "@napi-rs/wasm-runtime@^1.1.4":
   version "1.2.3"
