@@ -1,3 +1,15 @@
+## [2.0.11](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.10...v2.0.11) (2026-10-23)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.10.29 to 3.12.0 ([#1533](https://github.com/jayree/sfdx-plugin-org/issues/1533)) ([8ec9b8d](https://github.com/jayree/sfdx-plugin-org/commit/8ec9b8dd82144fefd72e551429e98728155be69e))
+* **deps:** bump @listr2/prompt-adapter-enquirer from 4.4.1 to 4.4.3 ([#1540](https://github.com/jayree/sfdx-plugin-org/issues/1540)) ([93794fe](https://github.com/jayree/sfdx-plugin-org/commit/93794fe9829105bc1088b80eb98a68ba41bf0b99))
+* **deps:** bump @salesforce/source-deploy-retrieve from 13.4.6 to 13.6.0 ([#1536](https://github.com/jayree/sfdx-plugin-org/issues/1536)) ([784987b](https://github.com/jayree/sfdx-plugin-org/commit/784987b84da5a3885dad320920dc953335cd69fd))
+* **deps:** bump listr2 from 11.0.0 to 11.4.0 ([#1541](https://github.com/jayree/sfdx-plugin-org/issues/1541)) ([723d172](https://github.com/jayree/sfdx-plugin-org/commit/723d17214d8182b5e1468c3ec33d34f9d74dc18b))
+* **deps:** bump playwright-chromium from 1.64.0 to 1.64.1 ([#1538](https://github.com/jayree/sfdx-plugin-org/issues/1538)) ([0b8473c](https://github.com/jayree/sfdx-plugin-org/commit/0b8473c9b75cdb6bec1aeb9f644847ef1309bef3))
+* **deps:** bump tabletojson from 4.1.15 to 4.1.16 ([#1539](https://github.com/jayree/sfdx-plugin-org/issues/1539)) ([3199988](https://github.com/jayree/sfdx-plugin-org/commit/319998831355c674e21c744d06882309e08a377b))
+
 ## [2.0.10](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.9...v2.0.10) (2026-10-19)
 
 
