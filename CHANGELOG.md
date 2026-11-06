@@ -1,3 +1,15 @@
+## [2.0.14](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.13...v2.0.14) (2026-11-06)
+
+
+### Bug Fixes
+
+* **deps:** bump @jsforce/jsforce-node from 3.12.0 to 3.13.1 ([#1556](https://github.com/jayree/sfdx-plugin-org/issues/1556)) ([ab6f198](https://github.com/jayree/sfdx-plugin-org/commit/ab6f1984f0ddf4d507e97eca817b1da4d15fb2dd))
+* **deps:** bump @oclif/core from 5.1.10 to 5.1.11 ([#1558](https://github.com/jayree/sfdx-plugin-org/issues/1558)) ([b2d4ee1](https://github.com/jayree/sfdx-plugin-org/commit/b2d4ee12703678aeebbbe4534cd23f88c9fc28d5))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1563](https://github.com/jayree/sfdx-plugin-org/issues/1563)) ([ab71776](https://github.com/jayree/sfdx-plugin-org/commit/ab71776da60639b95eff61d49d420a22710cf6f9))
+* **deps:** bump cli-truncate from 6.1.1 to 6.2.0 ([#1562](https://github.com/jayree/sfdx-plugin-org/issues/1562)) ([6ac9ebd](https://github.com/jayree/sfdx-plugin-org/commit/6ac9ebdb013acecfaf37047de2dfa3d5c1c5c922))
+* **deps:** bump github/codeql-action from 4.39.1 to 4.39.2 ([#1555](https://github.com/jayree/sfdx-plugin-org/issues/1555)) ([fb257f4](https://github.com/jayree/sfdx-plugin-org/commit/fb257f4e7053e58969fb9771d500f9c5fc7d07a7))
+* **deps:** bump tslib from 2.8.1 to 2.9.1 ([#1559](https://github.com/jayree/sfdx-plugin-org/issues/1559)) ([e2ff701](https://github.com/jayree/sfdx-plugin-org/commit/e2ff7011c61e52371d596a0064056ac6a862c9fb))
+
 ## [2.0.13](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.12...v2.0.13) (2026-10-30)
 
 
