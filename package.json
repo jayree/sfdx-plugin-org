@@ -11,7 +11,7 @@
     "@listr2/prompt-adapter-enquirer": "^4.4.4",
     "@oclif/core": "^5.1.12",
     "@salesforce/core": "^9.4.5",
-    "@salesforce/sf-plugins-core": "^13.0.8",
+    "@salesforce/sf-plugins-core": "^13.0.9",
     "@salesforce/source-deploy-retrieve": "^13.10.1",
     "@salesforce/ts-types": "^3.2.4",
     "chalk": "^6.0.1",
