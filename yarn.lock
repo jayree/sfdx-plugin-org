@@ -3244,7 +3244,7 @@ cli-truncate@^4.0.0:
     slice-ansi "^5.0.0"
     string-width "^7.0.0"
 
-cli-truncate@^6.0.0, cli-truncate@^6.1.1, cli-truncate@^6.2.0:
+cli-truncate@^6.0.0, cli-truncate@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/cli-truncate/-/cli-truncate-6.2.0.tgz#d82f0601a62cd11c4fea53c67fd0b02b541f9d5b"
   integrity sha512-5uyZew3nYoDgyltqSI8OER6DuyecorYOSVDAXl9wQ9Y8Re/HaQ/5qP0HmTUOUQqmvtpB+mlsf1gG/FUS3U1gLQ==
@@ -5463,12 +5463,12 @@ linkinator@^6.3.0:
     server-destroy "^1.0.1"
     srcset "^5.0.0"
 
-listr2@^11.4.0:
-  version "11.4.0"
-  resolved "https://registry.yarnpkg.com/listr2/-/listr2-11.4.0.tgz#92bdee883d1d1790fb0e26bd499525250c02356d"
-  integrity sha512-N6jpS9lEmqGcWqJqryuOfjPUTn7mcDvG5ndsTlZk4Aohwfywc7deqjscI9lm7K+FHS6anZmazE8/IQxQfVTHZg==
+listr2@^11.4.1:
+  version "11.4.1"
+  resolved "https://registry.yarnpkg.com/listr2/-/listr2-11.4.1.tgz#32a99b9a9d09ea929be5ceb26cb37da915a7fdfb"
+  integrity sha512-Mc8GEdPxl6b7bxFNwUJPOuGlrLSbnudPqF6F2EkgNr9dZQWezIrCfwywoGhy4eIdQvfJgbT7/rITN9S7uX89gQ==
   dependencies:
-    cli-truncate "^6.1.1"
+    cli-truncate "^6.2.0"
     log-update "^8.0.0"
     wrap-ansi "^10.0.2"
 
