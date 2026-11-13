@@ -1,3 +1,18 @@
+## [2.0.16](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.15...v2.0.16) (2026-11-13)
+
+
+### Bug Fixes
+
+* **deps:** bump @jayree/changelog from 1.2.44 to 1.2.45 ([#1566](https://github.com/jayree/sfdx-plugin-org/issues/1566)) ([d267b00](https://github.com/jayree/sfdx-plugin-org/commit/d267b0089b90bf770eae42ad7fd28925022af0d0))
+* **deps:** bump @listr2/prompt-adapter-enquirer from 4.4.3 to 4.4.4 ([#1571](https://github.com/jayree/sfdx-plugin-org/issues/1571)) ([3b263a0](https://github.com/jayree/sfdx-plugin-org/commit/3b263a0a303fa7d31c8ca15154386b77d904d464))
+* **deps:** bump @oclif/core from 5.1.11 to 5.1.12 ([#1576](https://github.com/jayree/sfdx-plugin-org/issues/1576)) ([b09ed0b](https://github.com/jayree/sfdx-plugin-org/commit/b09ed0b520d35e1d7813b765e979ed575ea09f03))
+* **deps:** bump @salesforce/core from 9.4.4 to 9.4.5 ([#1565](https://github.com/jayree/sfdx-plugin-org/issues/1565)) ([b0132e0](https://github.com/jayree/sfdx-plugin-org/commit/b0132e020d5a6cfe09845c914bc11e390aaa7de8))
+* **deps:** bump @salesforce/sf-plugins-core from 13.0.8 to 13.0.9 ([#1573](https://github.com/jayree/sfdx-plugin-org/issues/1573)) ([47fd307](https://github.com/jayree/sfdx-plugin-org/commit/47fd307dfbe51104496a71027040aca36c3c6632))
+* **deps:** bump @salesforce/source-deploy-retrieve ([#1575](https://github.com/jayree/sfdx-plugin-org/issues/1575)) ([eae582a](https://github.com/jayree/sfdx-plugin-org/commit/eae582aef76ec203ed233105bc6d60107b49a1f2))
+* **deps:** bump @salesforce/ts-types from 3.2.3 to 3.2.4 ([#1569](https://github.com/jayree/sfdx-plugin-org/issues/1569)) ([a668263](https://github.com/jayree/sfdx-plugin-org/commit/a6682631babf1249f390ff6fa4802c55dbaf43d2))
+* **deps:** bump listr2 from 11.4.0 to 11.4.1 ([#1570](https://github.com/jayree/sfdx-plugin-org/issues/1570)) ([77341bd](https://github.com/jayree/sfdx-plugin-org/commit/77341bd3b3de1f65de304a0aae3c4084af8a6b75))
+* **deps:** bump playwright-chromium from 1.64.1 to 1.65.0 ([#1567](https://github.com/jayree/sfdx-plugin-org/issues/1567)) ([a3e8ee9](https://github.com/jayree/sfdx-plugin-org/commit/a3e8ee9ad8ea2e3c0499a0e69df10d2ca8d29814))
+
 ## [2.0.15](https://github.com/jayree/sfdx-plugin-org/compare/v2.0.14...v2.0.15) (2026-11-09)
 
 
