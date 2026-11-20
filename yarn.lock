@@ -1691,7 +1691,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@oclif/core@^5.0.0", "@oclif/core@^5.1.11", "@oclif/core@^5.1.12", "@oclif/core@^5.1.8", "@oclif/core@^5.1.9":
+"@oclif/core@^5.0.0", "@oclif/core@^5.1.12", "@oclif/core@^5.1.8", "@oclif/core@^5.1.9":
   version "5.1.12"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.1.12.tgz#19ea10358248b169b67cfd98eef7be2b43a8cbd4"
   integrity sha512-t8W/ljOb9DIsFNXbfLU4UpZ8+C/X0QuvJOuQXQVCthiw5zSdwKnKoq7HmyBUJwwo28302eiN0rRj8vN9k1U1Mw==
@@ -1730,12 +1730,12 @@
     semver "^7.8.6"
     ts-json-schema-generator "^2.9.0"
 
-"@oclif/plugin-help@^7.0.4", "@oclif/plugin-help@^7.0.7":
-  version "7.0.7"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-7.0.7.tgz#b05ad3d446d47ed94703ee4e753d8fd2f961381a"
-  integrity sha512-k1mWE1bp3AhO6MIKRpdgbGKiPORNCikYRhpGCM7kIz0ywn72/vijoSPOxTfZRbVZyJKFtR25rZ9Lj+QGG2aBNQ==
+"@oclif/plugin-help@^7.0.10", "@oclif/plugin-help@^7.0.4":
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-7.0.10.tgz#a346cb3281e00fc5fe1d0c0c7172b37b441d0dad"
+  integrity sha512-MinKzVlVMkggwECYLxZ4ppl/Yb8lm1Ge1In7FU/yuA1LyEXrE3pT1d2LT+3nZfhklo25qO4hczJykEMM4C5/Vw==
   dependencies:
-    "@oclif/core" "^5.1.11"
+    "@oclif/core" "^5.1.12"
 
 "@oclif/plugin-not-found@^4.0.5":
   version "4.0.7"
