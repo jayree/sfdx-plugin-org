@@ -32,7 +32,7 @@
   "devDependencies": {
     "@oclif/plugin-command-snapshot": "^6.0.13",
     "@oclif/plugin-help": "^7.0.10",
-    "@salesforce/dev-scripts": "^15.0.0",
+    "@salesforce/dev-scripts": "^15.0.1",
     "@salesforce/ts-sinon": "^1.4.45",
     "@types/chai": "^5.2.3",
     "@types/cli-progress": "^3.11.6",
