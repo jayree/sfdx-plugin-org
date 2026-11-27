@@ -8114,10 +8114,10 @@ supports-terminal-graphics@^0.1.0:
   resolved "https://registry.yarnpkg.com/supports-terminal-graphics/-/supports-terminal-graphics-0.1.0.tgz#1d599d12373e1ac1b8e7f4618888197950401f16"
   integrity sha512-+KdfozhS0Fw8y5Sghw8kkZNGT8nWYzJ1EzcoIvVjxhl+26TJTs26y02yfBgvc1jh5AS/c8jcI3xtahhR95KRyQ==
 
-tabletojson@4.1.16:
-  version "4.1.16"
-  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.16.tgz#a180ed30766f1b979bd76688974e420667cf577f"
-  integrity sha512-Tw4/aksXIOxRWD7N0CFn5fI9g829BvAH30l5WxmzyxUeSycQJvZzfaNzwEsG1bSunl1znymnP4/xIK2OZc/EOA==
+tabletojson@4.1.17:
+  version "4.1.17"
+  resolved "https://registry.yarnpkg.com/tabletojson/-/tabletojson-4.1.17.tgz#96b35a484d89e9add5d74999dae747c0f776f79b"
+  integrity sha512-MwpQsQiildnZDpgxV1D4/JtS/lRJ61+qbd3zEV40qqGP26i4oXeu8x6F0uad+kk6sLFypj3dxCI6Vbga5AszEQ==
   dependencies:
     cheerio "^1.2.0"
 
